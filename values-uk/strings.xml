@@ -1,0 +1,537 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+/*
+* Copyright (C) 2008 The Android Open Source Project
+*
+* Licensed under the Apache License, Version 2.0 (the "License");
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+*
+*      http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+*/
+ -->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name" msgid="649227358658669779">"Launcher3"</string>
+    <string name="folder_name" msgid="7371454440695724752"></string>
+    <string name="work_folder_name" msgid="3753320833950115786">"Робоча папка"</string>
+    <string name="activity_not_found" msgid="8071924732094499514">"Додаток видалено."</string>
+    <string name="activity_not_available" msgid="7456344436509528827">"Додаток недоступний"</string>
+    <string name="safemode_shortcut_error" msgid="9160126848219158407">"Завантажений додаток вимкнено в безпечному режимі"</string>
+    <string name="safemode_widget_error" msgid="4863470563535682004">"У безпечному режимі віджети вимкнено"</string>
+    <string name="shortcut_not_available" msgid="2536503539825726397">"Ярлик недоступний"</string>
+    <string name="home_screen" msgid="806512411299847073">"Головний екран"</string>
+    <string name="custom_actions" msgid="3747508247759093328">"Спеціальні дії"</string>
+    <string name="long_press_widget_to_add" msgid="7699152356777458215">"Натисніть і утримуйте, щоб вибрати віджет."</string>
+    <string name="long_accessible_way_to_add" msgid="4289502106628154155">"Двічі натисніть і утримуйте, щоб вибрати віджет, або виконайте іншу дію."</string>
+    <string name="widget_dims_format" msgid="2370757736025621599">"%1$d × %2$d"</string>
+    <string name="widget_accessible_dims_format" msgid="3640149169885301790">"Ширина – %1$d, висота – %2$d"</string>
+    <string name="add_item_request_drag_hint" msgid="5899764264480397019">"Натисніть і утримуйте, щоб додати вручну"</string>
+    <string name="place_automatically" msgid="8064208734425456485">"Додати автоматично"</string>
+    <string name="all_apps_search_bar_hint" msgid="1390553134053255246">"Пошук додатків"</string>
+    <string name="all_apps_loading_message" msgid="5813968043155271636">"Завантаження додатків…"</string>
+    <string name="all_apps_no_search_results" msgid="3200346862396363786">"Немає додатків для запиту \"<xliff:g id="QUERY">%1$s</xliff:g>\""</string>
+    <string name="all_apps_search_market_message" msgid="1366263386197059176">"Шукати ще додатки"</string>
+    <string name="notifications_header" msgid="1404149926117359025">"Сповіщення"</string>
+    <string name="out_of_space" msgid="4691004494942118364">"На цьому головному екрані більше немає місця."</string>
+    <string name="hotseat_out_of_space" msgid="7448809638125333693">"В області \"Вибране\" немає місця"</string>
+    <string name="all_apps_button_label" msgid="8130441508702294465">"Список додатків"</string>
+    <string name="all_apps_home_button_label" msgid="252062713717058851">"Головний екран"</string>
+    <string name="remove_drop_target_label" msgid="7812859488053230776">"Видалити"</string>
+    <string name="uninstall_drop_target_label" msgid="4722034217958379417">"Видалити"</string>
+    <string name="app_info_drop_target_label" msgid="692894985365717661">"Про додаток"</string>
+    <string name="permlab_install_shortcut" msgid="5632423390354674437">"створення ярликів"</string>
+    <string name="permdesc_install_shortcut" msgid="923466509822011139">"Дозволяє програмі самостійно додавати ярлики."</string>
+    <string name="permlab_read_settings" msgid="1941457408239617576">"читати налаштування та ярлики головного екрана"</string>
+    <string name="permdesc_read_settings" msgid="5833423719057558387">"Дозволяє програмі читати налаштування та ярлики на головному екрані."</string>
+    <string name="permlab_write_settings" msgid="3574213698004620587">"записувати налаштування та ярлики головного екрана"</string>
+    <string name="permdesc_write_settings" msgid="5440712911516509985">"Дозволяє програмі змінювати налаштування та ярлики на головному екрані."</string>
+    <string name="msg_no_phone_permission" msgid="9208659281529857371">"Додаток <xliff:g id="APP_NAME">%1$s</xliff:g> не має дозволу телефонувати"</string>
+    <string name="gadget_error_text" msgid="6081085226050792095">"Проблема із завантаженням віджета"</string>
+    <string name="gadget_setup_text" msgid="8274003207686040488">"Налаштування"</string>
+    <string name="uninstall_system_app_text" msgid="4172046090762920660">"Це системна програма, її неможливо видалити."</string>
+    <string name="folder_hint_text" msgid="6617836969016293992">"Папка без назви"</string>
+    <string name="disabled_app_label" msgid="6673129024321402780">"<xliff:g id="APP_NAME">%1$s</xliff:g> вимкнено"</string>
+    <string name="default_scroll_format" msgid="7475544710230993317">"Сторінка %1$d з %2$d"</string>
+    <string name="workspace_scroll_format" msgid="8458889198184077399">"Головний екран %1$d з %2$d"</string>
+    <string name="workspace_new_page" msgid="257366611030256142">"Нова сторінка головного екрана"</string>
+    <string name="folder_opened" msgid="94695026776264709">"Папку відкрито (<xliff:g id="WIDTH">%1$d</xliff:g> х <xliff:g id="HEIGHT">%2$d</xliff:g>)"</string>
+    <string name="folder_tap_to_close" msgid="4625795376335528256">"Торкніться, щоб закрити папку"</string>
+    <string name="folder_tap_to_rename" msgid="4017685068016979677">"Торкніться, щоб зберегти зміни"</string>
+    <string name="folder_closed" msgid="4100806530910930934">"Папку закрито"</string>
+    <string name="folder_renamed" msgid="1794088362165669656">"Папку перейменовано на <xliff:g id="NAME">%1$s</xliff:g>"</string>
+    <string name="folder_name_format" msgid="6629239338071103179">"Папка <xliff:g id="NAME">%1$s</xliff:g>"</string>
+    <string name="widget_button_text" msgid="2880537293434387943">"Віджети"</string>
+    <string name="wallpaper_button_text" msgid="8404103075899945851">"Фонові малюнки"</string>
+    <string name="settings_button_text" msgid="8873672322605444408">"Налаштування головного екрана"</string>
+    <string name="msg_disabled_by_admin" msgid="6898038085516271325">"Вимкнув адміністратор"</string>
+    <string name="accessibility_action_overview" msgid="6257665857640347026">"Огляд"</string>
+    <string name="allow_rotation_title" msgid="7728578836261442095">"Дозволити обертання головного екрана"</string>
+    <string name="allow_rotation_desc" msgid="8662546029078692509">"Коли телефон обертається"</string>
+    <string name="allow_rotation_blocked_desc" msgid="3212602545192996253">"Поточні налаштування дисплея не підтримують обертання"</string>
+    <string name="icon_badging_title" msgid="874121399231955394">"Значки сповіщень"</string>
+    <string name="icon_badging_desc_on" msgid="2627952638544674079">"Увімкнено"</string>
+    <string name="icon_badging_desc_off" msgid="5503319969924580241">"Вимкнено"</string>
+    <string name="title_missing_notification_access" msgid="7503287056163941064">"Потрібен доступ до сповіщень"</string>
+    <string name="msg_missing_notification_access" msgid="281113995110910548">"Щоб показувати значки сповіщень, увімкніть сповіщення в додатку <xliff:g id="NAME">%1$s</xliff:g>"</string>
+    <string name="title_change_settings" msgid="1376365968844349552">"Змінити налаштування"</string>
+    <string name="auto_add_shortcuts_label" msgid="8222286205987725611">"Додати значок на головний екран"</string>
+    <string name="auto_add_shortcuts_description" msgid="7117251166066978730">"Для нових додатків"</string>
+    <string name="icon_shape_override_label" msgid="2977264953998281004">"Змінити форму значка"</string>
+    <string name="icon_shape_system_default" msgid="1709762974822753030">"Використовувати налаштування системи за умовчанням"</string>
+    <string name="icon_shape_square" msgid="633575066111622774">"Квадрат"</string>
+    <string name="icon_shape_squircle" msgid="5658049910802669495">"Квадрат із заокругленими кутами"</string>
+    <string name="icon_shape_circle" msgid="6550072265930144217">"Круг"</string>
+    <string name="icon_shape_teardrop" msgid="4525869388200835463">"Сльоза"</string>
+    <string name="icon_shape_override_progress" msgid="3461735694970239908">"Змінюється форма значка"</string>
+    <string name="package_state_unknown" msgid="7592128424511031410">"Невідомо"</string>
+    <string name="abandoned_clean_this" msgid="7610119707847920412">"Видалити"</string>
+    <string name="abandoned_search" msgid="891119232568284442">"Шукати"</string>
+    <string name="abandoned_promises_title" msgid="7096178467971716750">"Цей додаток не встановлено"</string>
+    <string name="abandoned_promise_explanation" msgid="3990027586878167529">"Додаток для цього значка не встановлено. Можна видалити значок або знайти додаток і встановити його вручну."</string>
+    <string name="app_downloading_title" msgid="8336702962104482644">"<xliff:g id="NAME">%1$s</xliff:g> завантажується, <xliff:g id="PROGRESS">%2$s</xliff:g>"</string>
+    <string name="app_waiting_download_title" msgid="7053938513995617849">"<xliff:g id="NAME">%1$s</xliff:g> очікує на завантаження"</string>
+    <string name="widgets_bottom_sheet_title" msgid="2904559530954183366">"Віджети додатка <xliff:g id="NAME">%1$s</xliff:g>"</string>
+    <string name="action_add_to_workspace" msgid="8902165848117513641">"Додати на головний екран"</string>
+    <string name="action_move_here" msgid="2170188780612570250">"Перемістити елемент сюди"</string>
+    <string name="item_added_to_workspace" msgid="4211073925752213539">"Елемент додано на головний екран"</string>
+    <string name="item_removed" msgid="851119963877842327">"Елемент вилучено"</string>
+    <string name="action_move" msgid="4339390619886385032">"Перемістити елемент"</string>
+    <string name="move_to_empty_cell" msgid="2833711483015685619">"Перемістити в рядок <xliff:g id="NUMBER_0">%1$s</xliff:g>, стовпець <xliff:g id="NUMBER_1">%2$s</xliff:g>"</string>
+    <string name="move_to_position" msgid="6750008980455459790">"Перемістити на <xliff:g id="NUMBER">%1$s</xliff:g> місце"</string>
+    <string name="move_to_hotseat_position" msgid="6295412897075147808">"Перемістити у вибране на <xliff:g id="NUMBER">%1$s</xliff:g> місце"</string>
+    <string name="item_moved" msgid="4606538322571412879">"Елемент переміщено"</string>
+    <string name="add_to_folder" msgid="9040534766770853243">"Додати в папку \"<xliff:g id="NAME">%1$s</xliff:g>\""</string>
+    <string name="add_to_folder_with_app" msgid="4534929978967147231">"Додати в папку з додатком <xliff:g id="NAME">%1$s</xliff:g>"</string>
+    <string name="added_to_folder" msgid="4793259502305558003">"Елемент додано в папку"</string>
+    <string name="create_folder_with" msgid="4050141361160214248">"Створити папку з: <xliff:g id="NAME">%1$s</xliff:g>"</string>
+    <string name="folder_created" msgid="6409794597405184510">"Папку створено"</string>
+    <string name="action_move_to_workspace" msgid="1603837886334246317">"Перемістити на головний екран"</string>
+    <string name="action_move_screen_left" msgid="8854216831569401665">"Перемістити екран ліворуч"</string>
+    <string name="action_move_screen_right" msgid="329334910274311123">"Перемістити екран праворуч"</string>
+    <string name="screen_moved" msgid="266230079505650577">"Екран переміщено"</string>
+    <string name="action_resize" msgid="1802976324781771067">"Змінити розміри"</string>
+    <string name="action_increase_width" msgid="8773715375078513326">"Збільшити ширину"</string>
+    <string name="action_increase_height" msgid="459390020612501122">"Збільшити висоту"</string>
+    <string name="action_decrease_width" msgid="1374549771083094654">"Зменшити ширину"</string>
+    <string name="action_decrease_height" msgid="282377193880900022">"Зменшити висоту"</string>
+    <string name="widget_resized" msgid="9130327887929620">"Розміри віджета змінено на <xliff:g id="NUMBER_0">%1$s</xliff:g> завширшки та <xliff:g id="NUMBER_1">%2$s</xliff:g> заввишки"</string>
+    <string name="action_deep_shortcut" msgid="2864038805849372848">"Ярлики"</string>
+    <string name="shortcuts_menu_description" msgid="406159963824238648">"Ярликів для додатка <xliff:g id="APP_NAME">%2$s</xliff:g>: <xliff:g id="NUMBER_OF_SHORTCUTS">%1$d</xliff:g>"</string>
+    <string name="shortcuts_menu_with_notifications_description" msgid="8985659504915468840">"Ярлики (<xliff:g id="NUMBER_OF_SHORTCUTS">%1$d</xliff:g>) і сповіщення (<xliff:g id="NUMBER_OF_NOTIFICATIONS">%2$d</xliff:g>) додатка <xliff:g id="APP_NAME">%3$s</xliff:g>"</string>
+    <string name="action_dismiss_notification" msgid="5909461085055959187">"Закрити"</string>
+    <string name="notification_dismissed" msgid="6002233469409822874">"Сповіщення закрито"</string>
+
+
+    <string name="smartspace_preferences">Налаштування</string>
+    <string name="label_search">Пошук</string>
+    <string name="label_voice_search">Голосовий пошук</string>
+    <string name="state_loading">Застосування…</string>
+    <string name="smartspace_preferences_in_settings">Віджет \"Коротко\"</string>
+    <string name="smartspace_customize_in_settings">Налаштувати віджет</string>
+    <string name="smartspace_disable">Відключити \"Коротко\"</string>
+    <string name="smartspace_time">Додати годинник</string>
+    <string name="smartspace_launchclock_sum">При довгому натисненні</string>
+    <string name="smartspace_launchclock">Запустити годинник</string>
+    <string name="smartspace_preferences_in_settings_desc">Налаштування віджету в верхній частині екрану, в котрому відображаються різні події</string>
+    <string name="title_show_google_app">Показувати %1$s</string>
+    <string name="msg_minus_one_on_left">Зліва від головного екрану</string>
+    <string name="about">Про програму</string>
+    <string name="title_google_app">стрічку новин Google</string>
+    <string name="title_app_suggestions">Часто використовувані додатки</string>
+    <string name="summary_app_suggestions">Відображення часто використовуваних додатків у верхньому рядку</string>
+    <string name="title_disable_suggestions_prompt">Не показувати часто використовувані додатки?</string>
+    <string name="msg_disable_suggestions_prompt">Часто використовувані додатки не будуть показуватися на початку спискк. Дані, пов\'язані з цією функцією, будуть видалені.</string>
+    <string name="label_turn_off_suggestions">Відключити</string>
+    <string name="icon_badging_sum">Налаштувати значки сповіщень</string>
+    <string name="hide_app">Сховати додатки</string>
+    <string name="hide_app_popup_show">Відображати додатки</string>
+    <string name="hide_app_popup_hide">Сховати додаток</string>
+    <string name="hide_app_popup_show_toast">Додаток відображається</string>
+    <string name="hide_app_popup_hide_toast">Додаток приховано</string>
+    <string name="hide_app_sum">Приховати додатки з меню додатків</string>
+    <string name="hide_app_selected">&#160;обрано</string>
+    <string name="hidden_app">Усі додатки</string>
+    <string name="reset_hidden_apps">Скинути все</string>
+    <string name="reset_hidden_apps_hint_no_apps">Немає прихованих додатків</string>
+    <string name="reset_hidden_apps_hint">Приховані додатки відображаються</string>
+    <string name="hide_widgets_too">Приховати віджети</string>
+    <string name="hide_widgets_too_sum">Приховати віджети прихованих додатків</string>
+    <string name="show_hidden_pref_title">Показувати приховані додатки</string>
+    <string name="show_hidden_pref_on">Відображаються приховані додатки для змінення налаштувань видимості</string>
+    <string name="show_hidden_pref_off">Приховані додатки не будуть відображатися</string>
+    <string name="custom_theme">Тема</string>
+    <string name="custom_theme_summary">Налаштувати тему і значки</string>
+    <string name="white_theme">Світла</string>
+    <string name="white_withdarktext_theme">Світла з темним текстом</string>
+    <string name="dark_withdarktext_theme">Темна з темним текстом</string>
+    <string name="black_withdarktext_theme">Чорна з темним текстом</string>
+    <string name="dark_theme">Темна</string>
+    <string name="black_theme">Чорна</string>
+    <string name="auto_theme">Авто-тема</string>
+    <string name="auto_theme_summary">Обрання теми за встановленими шпалерами</string>
+    <string name="apply_settings_theme">Застосувати тему до налаштувань</string>
+    <string name="custom_dockbar">Док-бар</string>
+    <string name="custom_dockbar_summary">Налаштувати док-бар</string>
+    <string name="num_hotseat_icons_pref_title">Кількість значків</string>
+    <string name="force_mic">Мікрофон в рядку пошуку</string>
+    <string name="use_assistant">Google Асистент</string>
+    <string name="use_assistant_sum">Замість мікрофона в рядку пошуку в док-барі</string>
+    <string name="use_assistant_drawer_sum">Замість мікрофона в рядку пошуку</string>
+    <string name="force_colour_logo">Кольоровий логотип Google</string>
+    <string name="transparentqsb">Прозорий рядок пошуку</string>
+    <string name="hotseatShowArrow">Відображати стрілку</string>
+    <string name="hotseat_show_page_indicator">Відображати індикатор сторінок</string>
+    <string name="gradient_size">Розмір градієнта</string>
+    <string name="remove_gradient">Відключити градієнт</string>
+    <string name="custom_qsb_in_dock">Налаштування рядка пошуку</string>
+    <string name="qsb_in_dock_show">Відображати рядок пошуку</string>
+    <string name="pdock">Округлений док-бар</string>
+    <string name="pdock_settings">Налаштування округленого док-бару</string>
+    <string name="pdock_radius">Радіус округлення кутів</string>
+    <string name="pdock_shadow">Розмір тіні</string>
+    <string name="dock_height">Висота док-бару</string>
+    <string name="change_grid_size">Змінити розмір сітки</string>
+    <string name="custom_grid_size">Розмір сітки</string>
+    <string name="custom_grid_size_on">Використовувати обраний розмір</string>
+    <string name="custom_grid_size_off">Розмір сітки залежить від DPI пристрою</string>
+    <string name="num_rows">Рядки</string>
+    <string name="num_cols">Стовпці</string>
+    <string name="about_sum">CPL - лаунчер, заснований на AOSP з розширеним функціоналом. Він безкоштовний і не містить реклами.</string>
+    <string name="thanks">Подяки</string>
+    <string name="forgot">Може бути я кого-небудь забув...</string>
+    <string name="date">Дата збірки</string>
+    <string name="sum_aboutapp">Версія, інформація, подяки</string>
+    <string name="about_app_version_wtu">Версія</string>
+    <string name="custom_about_cpl">Про CPL</string>
+    <string name="custom_version">Версія</string>
+    <string name="translators">Перекладачі</string>
+    <string name="custom_allapp">Меню програм</string>
+    <string name="custom_allapp_summary">Налаштувати меню програм</string>
+    <string name="smallallaps">Зменшити рядок пошуку</string>
+    <string name="smallallaps_sum">Тільки для рядка пошуку за замовчуванням</string>
+    <string name="googleinappmenu">Рядок пошуку Google</string>
+    <string name="drawer_transparent_background">Прозорий фон</string>
+    <string name="custom_ico">Значки</string>
+    <string name="icon_size">Розмір значка</string>
+    <string name="text_size">Розмір шрифту підписів</string>
+    <string name="label_font">Шрифт підписів</string>
+    <string name="reboot">Перезапустити</string>
+    <string name="reboot_sum">Якщо деякі налаштування не застосувалися</string>
+    <string name="custom_hs">Робочий стіл</string>
+    <string name="custom_hs_summary">Налаштувати робочий стіл і віджет \"Коротко\"</string>
+    <string name="edgemarginstock">Стандартні</string>
+    <string name="edgemarginsmall">Зменшені</string>
+    <string name="diabledgemargin">Відключити</string>
+    <string name="diabledgemargin_sum">Відступи по горизонталі</string>
+    <string name="settings_edit_allow_title">Дозволити редагування</string>
+    <string name="settings_edit_allow_question">Дозволити редагування?</string>
+    <string name="settings_edit_allow_summary_on">Значки і віджети можуть бути додані, видалені або переміщені</string>
+    <string name="settings_edit_allow_summary_off">Значки і віджети не можуть бути додані, видалені або переміщені</string>
+    <string name="settings_edit_widgets_error">Неможливо додати віджет</string>
+    <string name="fade_out_animation">Анімація зникнення</string>
+    <string name="fade_out_animation_sum">При зміні сторінки робочого столу</string>
+    <string name="system_font_for_smartspace">Системний шрифт</string>
+    <string name="system_font_for_smartspace_sum">Для віджета \"Коротко\"</string>
+    <string name="smartspace_font">Шрифт віджета \"Коротко\"</string>
+    <string name="smartspace_launch_clock">Встановити будильник</string>
+    <string name="smartspace_launch_timer">Встановити таймер</string>
+    <string name="smartspace_launch_keep">Google Keep</string>
+    <string name="smartspace_launch_tasks">Google Завдання</string>
+    <string name="smartspace_launch_calendar">Календар</string>
+    <string name="smartspace_show_popup">Меню дій</string>
+    <string name="smartspace_show_popup_sum">Показувати меню швидких дій при натисненні на віджет</string>
+    <string name="show_top_shadow_title">Тінь у верхній частині екрану</string>
+    <string name="full_width_width_widgets_pref_title">Віджети займають увесь розмір</string>
+    <string name="full_width_widgets_pref_summary">Дозволити віджетам займати місце без відступів (відступи робочого стола будуть відключені)</string>
+    <string name="desktop_show_labels">Підписи значків</string>
+    <string name="drawer_show_labels">Підписи значків</string>
+    <string name="custom_folders">Теки</string>
+    <string name="custom_folders_summary">Налаштувати теки</string>
+    <string name="folder_show_labels">Підписи значків</string>
+    <string name="old_folder_animation">Стара анімація відкриття теки</string>
+    <string name="date_format">Формат дати</string>
+    <string name="clock_format">Формат годин</string>
+    <string name="date_format_1">Понеділок, 7 квіт.</string>
+    <string name="date_format_2">Понеділок</string>
+    <string name="date_format_3">Пн, 7 квітня</string>
+    <string name="date_format_4">Пн, 7.04</string>
+    <string name="date_format_5">Понеділок, 7</string>
+    <string name="date_format_6">Понеділок, 7 квітня</string>
+    <string name="use_custom_label_color">Змінити колір підпису значків</string>
+    <string name="custom_label_color">Колір підпису значків</string>
+    <string name="use_qsb_label_color">Змінити колір рядка пошуку</string>
+    <string name="custom_qsb_color">Колір рядка пошуку</string>
+    <string name="custom_qsb_text_color">Колір тексту у рядку пошуку</string>
+    <string name="behavior_pref_title">Поведінка</string>
+    <string name="behavior_pref_summary">Налаштувати поведінку</string>
+    <string name="allow_vibration">Вібрація</string>
+    <string name="allow_vibration_sum">При натисненні на деякі елементи інтерфейсу</string>
+    <string name="vibrationduration">Тривалість вібрації</string>
+    <string name="vibrationdurationtest">Тест вібрації</string>
+    <string name="textinbadge">Не просто точка</string>
+    <string name="textinbadge_sum">Показувати кількість сповіщень у значку (числа можуть бути неточними)</string>
+    <string name="badge_place">Розташування значка</string>
+    <string name="badge_place_1">Справа вгорі</string>
+    <string name="badge_place_2">Справа внизу</string>
+    <string name="badge_place_3">Зліва вгорі</string>
+    <string name="badge_place_4">Зліва внизу</string>
+    <string name="double_tap_to_lock_method_null">Спосіб блокування екрану не задано, перевірте налаштування: Поведінка - Спосіб блокування екрану</string>
+    <string name="double_tap_to_lock_method_not_set">Не обрано</string>
+    <string name="double_tap_to_lock_method">Спосіб блокування екрану</string>
+    <string name="double_tap_to_lock_title">Подвійний тап для блокування екрану</string>
+    <string name="double_tap_to_lock_title_with_admin">Через адміністратора пристрою</string>
+    <string name="double_tap_to_lock_title_with_timeout">Через чорний екран</string>
+    <string name="double_tap_to_lock_title_with_root">Використовувати root-права</string>
+    <string name="double_tap_to_lock_no_root">Root-доступ заборонений або відсутній</string>
+    <string name="double_tap_to_lock_summary_with_root">Для розблокування пристрою з допомогою сканера відбитку пальців</string>
+    <string name="double_tap_to_lock_summary">На робочому столі</string>
+    <string name="double_tap_to_lock_hint">Для можливості блокування екрану, додатку необхідно надати права адміністратора. Це безпечне блокування, для увімкнення екрану вам буде потрібно ввести ПІН-код або накреслити графічний ключ, якщо такі методи захисту встановлені. Розблокування з допомогою відбитку пальця буде неможливим.</string>
+    <string name="double_tap_to_lock_disable_warning">Для роботи функції блокування екрану додатку необхідні права адміністратора.</string>
+    <string name="action_edit">Редагувати</string>
+    <string name="use_custom_badge_color">Змінити кольори значка</string>
+    <string name="custom_badge_color">Колір значка</string>
+    <string name="custom_badge_text_color">Колір тексту значка</string>
+    <string name="bage_size">Розмір значка</string>
+    <string name="statusbar_expand">Показувати сповіщення</string>
+    <string name="statusbar_expand_sum">При проведенні одним пальцем вниз по головному екрану</string>
+    <string name="pinch_to_overview_pref_title">Щипок для огляду</string>
+    <string name="animate_overview_pref_title">Ефект прокрутки на екрані огляду</string>
+    <string name="pinch_to_overview_pref_summary">Щипок на головному екрані для відкриття огляду</string>
+    <string name="keep_scroll_state_pref_title">Зберегти позицію прокрутки</string>
+    <string name="keep_scroll_state_pref_summary">Зберігає додаток прокрутки у меню додатків</string>
+    <string name="home_opens_drawer_pref_title">Кнопка «Додому» відкриває меню додатків</string>
+    <string name="home_opens_drawer_pref_summary">Натиснення кнопки «Додому» на головному екрані відкриває меню додатків</string>
+    <string name="pixel_search_layout">Екран пошуку Pixel</string>
+    <string name="pixel_search_layout_sum">Може бути недоступним на деяких пристроях</string>
+    <string name="default_launcher_title">Змінити головний додаток</string>
+    <string name="default_launcher_message">Ця дія дозволить обрати інший головний додаток і призначити його за замовчуванням. Ви впевнені, що хочете продовжити?</string>
+    <string name="default_iconpack" translatable="false">Системний (за замовчуванням)</string>
+    <string name="default_iconpack_title">За замовчуванням</string>
+    <string name="icons_pack_name">Набір значків</string>
+    <string name="edit_app">Змінити значок</string>
+    <string name="all_icons">Усі значки</string>
+    <string name="similar_icons">Пропозиції</string>
+    <string name="ok">Застосувати</string>
+    <string name="icon_chooser">Вибір значка</string>
+    <string name="icon_search">Пошук значків</string>
+    <string name="use_background_from_iconpack">Задній фон значка з набору</string>
+    <string name="alt_gen_iconpack">Альтернативний метод обрізки</string>
+    <string name="custom_gen_iconpack">Опції генерації значків</string>
+    <string name="icon_pack_updated">Використовуваний набір значків був оновлений, можливо у ньому містяться нові значки. Усі нові значки будуть відображені після переприйняття набору.</string>
+    <string name="generate_adaptive_icons_title">Адаптивний задній фон</string>
+    <string name="generate_adaptive_icons_summary">Для додатків, які не мають власного заднього фону</string>
+    <string name="generate_adaptive_background_title">Витягти колір заднього фону з значка</string>
+    <string name="generate_adaptive_background_summary">Для генерації заднього фону значка</string>
+    <string name="generate_random">Випадковий колір</string>
+    <string name="generate_random_brightness">Максимальна яскравість випадкового кольору</string>
+    <string name="background_color">Колір заднього фону значка</string>
+    <string name="custom_generate_new">Згенерувати нові значки</string>
+    <string name="custom_generate_new_one">Створити новий значок</string>
+    <string name="reset_icon">Скинути</string>
+    <string name="custom_generate_new_sum">Очистити кеш значків і згенерувати новий з обраними налаштуваннями</string>
+    <string name="use_dynamic_icons">Динамічні іконки</string>
+    <string name="use_dynamic_clock">Динамічна іконка годинника</string>
+    <string name="use_dynamic_calendar">Динамічна іконка календаря</string>
+    <string name="show_seconds">Секундна стрілка</string>
+    <string name="save_close">Зберегти</string>
+    <string name="springanim">Анімація пружини</string>
+    <string name="springcoef">Коефіцієнт жорсткості пружини</string>
+    <string name="use_spring_sum">У меню додатків</string>
+    <string name="favorite_assigned">Обраний додаток призначено</string>
+    <string name="make_favorite">Зробити обраним</string>
+    <string name="favorite_not_found">Обраний додаток не знайдено</string>
+    <string name="launch_favorite_app_title">Запустити обраний додаток</string>
+    <string name="launch_favorite_app_summary">При проведенні двома пальцями вниз по головному екрану</string>
+    <string name="backup_and_restore_pref_title">Резервне копіювання</string>
+    <string name="backup_and_restore_pref_sum">Резеврне копіювання і відновлення налаштувань і бази даних значків</string>
+    <string name="backup_pref_title">Зберегти резервну копію</string>
+    <string name="restore_pref_title">Відновити резервну копію</string>
+    <string name="restore_settings_title">Відновити налаштування</string>
+    <string name="restore_icons_title">Відновити базу даних значків</string>
+    <string name="restore_layout_title">Відновити макет головного екрану</string>
+    <string name="settings_export_success">Налаштування збереженні успішно</string>
+    <string name="settings_import_success">Налаштування відновленні успішно</string>
+    <string name="icon_import_success">База даних значків відновлена успішно</string>
+    <string name="layout_import_success">Макет робочого стола відновлений успішно</string>
+    <string name="export_error">Не вдалося створити резервну копію</string>
+    <string name="import_error">Не вдалося відновити резервну копію</string>
+    <string name="permission_ok">Доступ дозволено</string>
+    <string name="permission_not_ok">Доступ заборонено</string>
+    <string name="permission_sum">Доступ до внутрішнього накопичувача</string>
+    <string name="backup_slot">Резервний слот</string>
+    <string name="backup_perm">Контроль дозволів</string>
+    <string name="backup_not_found">Резервну копію не знайдено</string>
+    <string name="backup_date">Дата створення резервної копії</string>
+    <string name="backup_location_message">Місцезнаходження резервної копії не може бути зміненим</string>
+    <string name="backup_location_note">Розташування резервної копії:</string>
+    <string name="perform_backup">Виконати резервне копіювання?</string>
+    <string name="perform_restore">Виконати відновлення резервної копії?</string>
+    <string name="current">Поточна:</string>
+    <string name="empty">Пусто</string>
+    <string name="delete_mode">Видалити резервну копію</string>
+    <string name="delete_selected">Видалити обрану копію</string>
+    <string name="delete_success">Резервна копія видалена</string>
+    <string name="empty_slot">Поточний резервний слот пустий</string>
+    <string name="donation_title">Пожертвувати</string>
+    <string name="donation_thanks">Додаткові функції активні</string>
+    <string name="attention">Увага!</string>
+    <string name="action_canceled">Дія скасована користувачем</string>
+    <string name="clean_all_settings_title">Скинути налаштування</string>
+    <string name="clean_all_settings_sum">Скинути усі налаштування до значень за замовчуванням</string>
+    <string name="clean_all_settings">Скинути усі налаштування до значень за замовчуванням?</string>
+    <string name="debug">Відлагоджувати</string>
+    <string name="debug_sum">Перезавантажити або скинути налаштування</string>
+    <string name="xda_tread">Тема на XDA</string>
+    <string name="chetyrepda_tread">Тема на 4PDA</string>
+    <string name="additional_options">Додаткові опції</string>
+    <string name="more">Ще</string>
+    <string name="find_in_store">Знайти в Play Маркеті</string>
+    <string name="share">Поділитися</string>
+    <string name="drawer_buttons">Кнопки в рядку пошуку</string>
+    <string name="drawer_buttons_select">Кнопки</string>
+    <string name="drawer_button_settings">Налаштування CPL</string>
+    <string name="drawer_button_settings_sum">При утриманні - системні налаштування</string>
+    <string name="drawer_button_market">Play Маркет</string>
+    <string name="drawer_button_visibility">Видимість прихованих додатків</string>
+    <string name="drawer_button_visibility_sum">При утриманні - меню прихованих додатків</string>
+    <string name="drawer_button_mic">Мікрофон</string>
+    <string name="qsb_text">Текст в рядку пошуку</string>
+    <string name="qsb_text_sans">Шрифт Google Sans для тексту</string>
+    <string name="qsb_center_text">Текст в центрі рядка пошуку</string>
+    <string name="say_ok_google">Скажіть “OK Google”</string>
+    <string name="extra_bottom_padding_title">Додатковий відступ рядка пошуку</string>
+    <string name="extra_bottom_padding_summary">Увімкніть, якщо значки розташовані занадто близько до рядку пошуку</string>
+    <string name="more_info">Більше інформації</string>
+    <string name="dock_opacity">Прозорість док-бару</string>
+    <string name="drawer_opacity">Прозорість фону</string>
+    <string name="folder_opacity">Прозорість фону теки</string>
+    <string name="default_color">За замовчуванням</string>
+    <string name="arrow_and_line_color">Колір стрілки та індикатора сторінок</string>
+    <string name="folder_prewiew_color">Колір значка теки</string>
+    <string name="folder_background_color">Колір фону теки</string>
+    <string name="transparent_nav_bar">Прозора панель навігації</string>
+    <string name="white_status_bar_icons">Білі значки у рядку стану</string>
+    <string name="text_divider">Роздільник з текстом</string>
+    <string name="disable_dock">Відключити док-бар</string>
+    <string name="accent_drawer">Колір акцента елементів</string>
+    <string name="rounded_corners">Закруглені кути</string>
+    <string name="left_swipe">Слайд вліво</string>
+    <string name="right_swipe">Слайд вправо</string>
+    <string name="swipe_up">Слайд вгору</string>
+    <string name="fade">Поява</string>
+    <string name="zoom">Збільшення</string>
+    <string name="fall_down">Падіння</string>
+    <string name="from_middle">З центру</string>
+    <string name="transition_effect">Ефект прокрутки</string>
+    <string name="zoom_in">Збільшення</string>
+    <string name="zoom_out">Зменшення</string>
+    <string name="rotate_up">Поворот вгору</string>
+    <string name="rotate_down">Поворот вниз</string>
+    <string name="cube_in">Усередині куба</string>
+    <string name="cube_out">Зовні куба</string>
+    <string name="stack">Стопка</string>
+    <string name="accordion">Стиснення</string>
+    <string name="flip">Переворот</string>
+    <string name="spin">Обертання</string>
+    <string name="cylinder_in">Усередині циліндра</string>
+    <string name="cylinder_out">Зовні циліндра</string>
+    <string name="overview">Огляд</string>
+    <string name="accent_color_sum">Колір полоси прокрутки, кнопок і рядка пошуку за замовчуванням</string>
+    <string name="wallpaper_scroll_title">Прокрутка шпалер</string>
+    <string name="def">За замовчуванням</string>
+    <string name="default_home">За замовчуванням</string>
+    <string name="all_apps">Усі додатки</string>
+    <string name="delete">Видалити</string>
+    <string name="lock">Заблокувати</string>
+    <string name="unlock">Розблокувати</string>
+    <string name="page_not_empty">Ця сторінка не пуста. Ви дійсно хочете її видалити?</string>
+    <string name="pref_open_source_licenses_title">Ліцензії відкритого ПЗ</string>
+    <string name="two_finger_up">Два пальця угору</string>
+    <string name="two_finger_down">Два пальця вниз</string>
+    <string name="action_nothing">Нічого</string>
+    <string name="action_quick_search">Швидкий пошук</string>
+    <string name="action_voice_search">Голосовий пошук</string>
+    <string name="action_app_drawer">Відкрити меню додатків</string>
+    <string name="action_app_search">Пошук додатків</string>
+    <string name="action_overview">Режим огляду</string>
+    <string name="action_lock">Заблокувати екран</string>
+    <string name="action_default_screen">Перейти до сторінки за замовчуванням</string>
+    <string name="action_first_screen">Перейти до першої сторінки</string>
+    <string name="action_last_screen">Перейти до останньої сторінки</string>
+    <string name="gestures">Жести</string>
+    <string name="gestures_sum">Налаштувати жести на робочому столі</string>
+    <string name="action_settings">Налаштування пристрою</string>
+    <string name="infinite_scroll">Безкінечне перелистування</string>
+    <string name="double_tap">Подвійне натиснення</string>
+    <string name="long_tap">Довге натиснення</string>
+    <string name="home_button">Кнопка «Додому»</string>
+    <string name="one_finger_down">Один палець вниз</string>
+    <string name="one_finger_up">Один палець угору</string>
+    <string name="action_notifications">Відкрити панель сповіщень</string>
+    <string name="action_notifications_with_settings">Відкрити панель сповіщень з швидкими налаштуваннями</string>
+    <string name="lock_screen_method_1">Негайно блокує пристрій, розблокування за допомогою відбитка пальця недоступне - потрібно буде ввести PIN або графічного ключа</string>
+    <string name="lock_screen_method_2">Показує чорний екран протягом 5 секунд, а потім екран гасне, можливе розблокування за допомогою відбитка пальця</string>
+    <string name="lock_screen_method_3">Емулює натискання кнопки вимикання пристрою, швидкість відключення екрану залежить від швидкості обробки команди пристроєм, можливе розблокування за допомогою відбитка пальця</string>
+    <string name="parallax_scrolling">Зворотня прокрутка шпалер</string>
+    <string name="elastic_scrolling">Еластичне перелистування</string>
+    <string name="elastic_scrolling_coeff">Коефіцієнт еластичності</string>
+    <string name="gradient_dock">Градієнт</string>
+    <string name="search_bar">Рядок пошуку</string>
+    <string name="date_format_long">Повний</string>
+    <string name="date_format_normal">Звичайний</string>
+    <string name="date_format_short">Скорочений</string>
+    <string name="app_installing_progress">Показувати прогрес встановлення додатків</string>
+    <string name="home_screen_notification_bar">Показувати панель сповіщень</string>
+    <string name="not_set">Не выбрано</string>
+    <string name="hotseat_drag_indicator">Індикатор підйому</string>
+    <string name="dock_show_labels">Підписи значків</string>
+    <string name="gallery">Галерея</string>
+    <string name="app_open_animation">Анімація додатків</string>
+    <string name="app_open_animation_sum">При відкритті додатків і при поверненні на робочий стіл</string>
+    <string name="disable">Відключити</string>
+    <string name="style_1">Стиль 1</string>
+    <string name="style_2">Стиль 2</string>
+    <string name="show_dock_on_home_screen">Док-бар відображається</string>
+    <string name="hide_dock_from_home_screen">Док-бар приховано</string>
+    <string name="scrolling">Прокрутка</string>
+    <string name="warning_cpl_not_default">Не встановлено за замовчуванням</string>
+    <string name="warning_cpl_not_default_sum">CPL не встановлений як головний додаток за замовчуванням. Натисніть, щоб встановити.</string>
+    <string name="resize_any_widget_sum">Дозволити змінювати розмір усім віджетам</string>
+    <string name="resize_any_widget_title">Змінювати розмір усіх віджетів</string>
+    <string name="widgets_in_dock_title">Віджети у док-барі</string>
+    <string name="widgets_in_dock_sum">Дозволити додавання віджетів у док-бар</string>
+    <string name="widget_padding_title">Поля віджетів</string>
+    <string name="vertical_only">Тільки по вертикалі</string>
+    <string name="horizontal_only">Тільки по горизонталі</string>
+    <string name="folder_animation">Анімація відкриття</string>
+    <string name="scale">Масштаб</string>
+    <string name="circle">Коло</string>
+    <string name="hideapp">Приховати з меню</string>
+    <string name="clean_user_icons">Скинути призначенні значки і підписи додатків?</string>
+    <string name="reset_user_icon">Скинути користувацький значок</string>
+    <string name="morepack">Більше значків</string>
+    <string name="hidden_apps_tint">Сірий відтінок для прихованих додатків</string>
+    <string name="developer_mode">Режим розробника</string>
+    <string name="icon_shape_cylinder">Циліндр</string>
+    <string name="icon_shape_rounded_square">Квадрат із закругленими кутами</string>
+    <string name="icon_shape_super_ellipse">Квадрат з трохи округленими кутами</string>
+    <string name="icon_shape_lemon">Лимон</string>
+    <string name="icon_shape_cloud">Хмара</string>
+    <string name="restore_user_icons_title">Восстановить пользовательские значки и подписи приложений</string>
+    <string name="getplugin">Загрузить плагин Новостей Google и Погоды</string>
+    <string name="hidedonationbutton">Скрыть кнопку</string>
+    <string name="buyapp">Купить приложение поддержки</string>
+    <string name="shortcuts">Шорткаты</string>
+    <string name="show_folder_name">Отображать имя папки при открытии</string>
+    <string name="folder_adaptive_icon">Адаптивный значок папки</string>
+    <string name="donation_sum">CPL бесплатен и не содержит рекламы. Если вам нравится CPL и вы хотие поддержать дальнейшую разработку, вы можете сделать пожертвование разработчику, купив приложение поддержки. Вы так же можете сделать пожетрование через PayPal.</string>
+    <string name="add_translation">Добавить или исправить перевод</string>
+</resources>

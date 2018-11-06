@@ -1,0 +1,535 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/*
+* Copyright (C) 2008 The Android Open Source Project
+*
+* Licensed under the Apache License, Version 2.0 (the "License");
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+*
+*      http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+*/
+ -->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="work_folder_name" msgid="3753320833950115786">"Работа"</string>
+    <string name="activity_not_found" msgid="8071924732094499514">"Приложение удалено"</string>
+    <string name="activity_not_available" msgid="7456344436509528827">"Приложение недоступно"</string>
+    <string name="safemode_shortcut_error" msgid="9160126848219158407">"Скачанное приложение отключено в безопасном режиме"</string>
+    <string name="safemode_widget_error" msgid="4863470563535682004">"Виджеты отключены в безопасном режиме"</string>
+    <string name="shortcut_not_available" msgid="2536503539825726397">"Ярлык недоступен"</string>
+    <string name="home_screen" msgid="806512411299847073">"Главный экран"</string>
+    <string name="custom_actions" msgid="3747508247759093328">"Специальные действия"</string>
+    <string name="long_press_widget_to_add" msgid="7699152356777458215">"Чтобы выбрать виджет, нажмите на значок и удерживайте его."</string>
+    <string name="long_accessible_way_to_add" msgid="4289502106628154155">"Чтобы выбрать виджет или использовать специальные действия, нажмите на него дважды и не отпускайте."</string>
+    <string name="widget_dims_format" msgid="2370757736025621599">"%1$d x %2$d"</string>
+    <string name="widget_accessible_dims_format" msgid="3640149169885301790">"Ширина %1$d, высота %2$d"</string>
+    <string name="add_item_request_drag_hint" msgid="5899764264480397019">"Нажмите и удерживайте, чтобы добавить вручную"</string>
+    <string name="place_automatically" msgid="8064208734425456485">"Добавить автоматически"</string>
+    <string name="all_apps_search_bar_hint" msgid="1390553134053255246">"Поиск приложений"</string>
+    <string name="all_apps_loading_message" msgid="5813968043155271636">"Загрузка приложений…"</string>
+    <string name="all_apps_no_search_results" msgid="3200346862396363786">"По запросу \"<xliff:g id="QUERY">%1$s</xliff:g>\" ничего не найдено"</string>
+    <string name="all_apps_search_market_message" msgid="1366263386197059176">"Искать другие приложения"</string>
+    <string name="notifications_header" msgid="1404149926117359025">"Уведомления"</string>
+    <string name="out_of_space" msgid="4691004494942118364">"На этом экране все занято"</string>
+    <string name="hotseat_out_of_space" msgid="7448809638125333693">"В разделе \"Избранное\" больше нет места"</string>
+    <string name="all_apps_button_label" msgid="8130441508702294465">"Список приложений"</string>
+    <string name="all_apps_home_button_label" msgid="252062713717058851">"Главный экран"</string>
+    <string name="remove_drop_target_label" msgid="7812859488053230776">"Убрать"</string>
+    <string name="uninstall_drop_target_label" msgid="4722034217958379417">"Удалить"</string>
+    <string name="app_info_drop_target_label" msgid="692894985365717661">"О приложении"</string>
+    <string name="permlab_install_shortcut" msgid="5632423390354674437">"Создание ярлыков"</string>
+    <string name="permdesc_install_shortcut" msgid="923466509822011139">"Приложение сможет самостоятельно добавлять ярлыки."</string>
+    <string name="permlab_read_settings" msgid="1941457408239617576">"Доступ к настройкам и ярлыкам главного экрана"</string>
+    <string name="permdesc_read_settings" msgid="5833423719057558387">"Приложение получит доступ к данным о настройках и ярлыках на главном экране."</string>
+    <string name="permlab_write_settings" msgid="3574213698004620587">"Изменение настроек и ярлыков главного экрана"</string>
+    <string name="permdesc_write_settings" msgid="5440712911516509985">"Приложение сможет изменять настройки и ярлыки на главном экране."</string>
+    <string name="msg_no_phone_permission" msgid="9208659281529857371">"Приложение <xliff:g id="APP_NAME">%1$s</xliff:g> не может делать телефонные звонки"</string>
+    <string name="gadget_error_text" msgid="6081085226050792095">"Не удалось загрузить виджет"</string>
+    <string name="gadget_setup_text" msgid="8274003207686040488">"Настройка"</string>
+    <string name="uninstall_system_app_text" msgid="4172046090762920660">"Это системное приложение, его нельзя удалить."</string>
+    <string name="folder_hint_text" msgid="6617836969016293992">"Папка без названия"</string>
+    <string name="disabled_app_label" msgid="6673129024321402780">"Приложение <xliff:g id="APP_NAME">%1$s</xliff:g> отключено"</string>
+    <string name="default_scroll_format" msgid="7475544710230993317">"Стр. %1$d из %2$d"</string>
+    <string name="workspace_scroll_format" msgid="8458889198184077399">"Главные экран %1$d из %2$d"</string>
+    <string name="workspace_new_page" msgid="257366611030256142">"Новый экран"</string>
+    <string name="folder_opened" msgid="94695026776264709">"Папка открыта, <xliff:g id="WIDTH">%1$d</xliff:g> x <xliff:g id="HEIGHT">%2$d</xliff:g>"</string>
+    <string name="folder_tap_to_close" msgid="4625795376335528256">"Нажмите, чтобы закрыть папку"</string>
+    <string name="folder_tap_to_rename" msgid="4017685068016979677">"Нажмите, чтобы подтвердить переименование"</string>
+    <string name="folder_closed" msgid="4100806530910930934">"Папка закрыта"</string>
+    <string name="folder_renamed" msgid="1794088362165669656">"Папка переименована в \"<xliff:g id="NAME">%1$s</xliff:g>\""</string>
+    <string name="folder_name_format" msgid="6629239338071103179">"Папка: <xliff:g id="NAME">%1$s</xliff:g>"</string>
+    <string name="widget_button_text" msgid="2880537293434387943">"Виджеты"</string>
+    <string name="wallpaper_button_text" msgid="8404103075899945851">"Обои"</string>
+    <string name="settings_button_text" msgid="8873672322605444408">"Настройки главного экрана"</string>
+    <string name="msg_disabled_by_admin" msgid="6898038085516271325">"Функция отключена администратором"</string>
+    <string name="accessibility_action_overview" msgid="6257665857640347026">"Обзор"</string>
+    <string name="allow_rotation_title" msgid="7728578836261442095">"Поворачивать главный экран"</string>
+    <string name="allow_rotation_desc" msgid="8662546029078692509">"Когда телефон повернут"</string>
+    <string name="allow_rotation_blocked_desc" msgid="3212602545192996253">"В настройках отключен поворот экрана"</string>
+    <string name="icon_badging_title" msgid="874121399231955394">"Значки уведомлений"</string>
+    <string name="icon_badging_desc_on" msgid="2627952638544674079">"Отображаются"</string>
+    <string name="icon_badging_desc_off" msgid="5503319969924580241">"Не отображаются"</string>
+    <string name="title_missing_notification_access" msgid="7503287056163941064">"Нет доступа к уведомлениям"</string>
+    <string name="msg_missing_notification_access" msgid="281113995110910548">"Чтобы показывать значки уведомлений, включите уведомления в приложении \"<xliff:g id="NAME">%1$s</xliff:g>\""</string>
+    <string name="title_change_settings" msgid="1376365968844349552">"Изменить настройки"</string>
+    <string name="auto_add_shortcuts_label" msgid="8222286205987725611">"Добавлять значки"</string>
+    <string name="auto_add_shortcuts_description" msgid="7117251166066978730">"Добавлять значки установленных приложений на главный экран"</string>
+    <string name="icon_shape_override_label" msgid="2977264953998281004">"Форма значков"</string>
+    <string name="icon_shape_system_default" msgid="1709762974822753030">"Использовать системные настройки по умолчанию"</string>
+    <string name="icon_shape_square" msgid="633575066111622774">"Квадрат"</string>
+    <string name="icon_shape_circle" msgid="6550072265930144217">"Круг"</string>
+    <string name="icon_shape_teardrop" msgid="4525869388200835463">"Слеза"</string>
+    <string name="icon_shape_squircle" msgid="5658049910802669495">"Скругленный квадрат"</string>
+    <string name="icon_shape_override_progress" msgid="3461735694970239908">"Применение изменений…"</string>
+    <string name="package_state_unknown" msgid="7592128424511031410">"Неизвестно"</string>
+    <string name="abandoned_clean_this" msgid="7610119707847920412">"Удалить"</string>
+    <string name="abandoned_search" msgid="891119232568284442">"Найти"</string>
+    <string name="abandoned_promises_title" msgid="7096178467971716750">"Приложение не установлено"</string>
+    <string name="abandoned_promise_explanation" msgid="3990027586878167529">"Приложение не установлено. Вы можете удалить значок или найти приложение и установить его вручную."</string>
+    <string name="app_downloading_title" msgid="8336702962104482644">"Скачивается \"<xliff:g id="NAME">%1$s</xliff:g>\" (<xliff:g id="PROGRESS">%2$s</xliff:g>)"</string>
+    <string name="app_waiting_download_title" msgid="7053938513995617849">"Ожидание установки \"<xliff:g id="NAME">%1$s</xliff:g>\""</string>
+    <string name="widgets_bottom_sheet_title" msgid="2904559530954183366">"<xliff:g id="NAME">%1$s</xliff:g>: виджеты"</string>
+    <string name="action_add_to_workspace" msgid="8902165848117513641">"Добавить на главный экран"</string>
+    <string name="action_move_here" msgid="2170188780612570250">"Переместить элемент сюда"</string>
+    <string name="item_added_to_workspace" msgid="4211073925752213539">"Элемент добавлен на главный экран"</string>
+    <string name="item_removed" msgid="851119963877842327">"Элемент удален"</string>
+    <string name="action_move" msgid="4339390619886385032">"Переместить элемент"</string>
+    <string name="move_to_empty_cell" msgid="2833711483015685619">"Переместить в ячейку <xliff:g id="NUMBER_0">%1$s</xliff:g> <xliff:g id="NUMBER_1">%2$s</xliff:g>"</string>
+    <string name="move_to_position" msgid="6750008980455459790">"Переместить в позицию <xliff:g id="NUMBER">%1$s</xliff:g>"</string>
+    <string name="move_to_hotseat_position" msgid="6295412897075147808">"Переместить в Избранное (<xliff:g id="NUMBER">%1$s</xliff:g>)"</string>
+    <string name="item_moved" msgid="4606538322571412879">"Элемент перемещен."</string>
+    <string name="add_to_folder" msgid="9040534766770853243">"Добавить в папку <xliff:g id="NAME">%1$s</xliff:g>."</string>
+    <string name="add_to_folder_with_app" msgid="4534929978967147231">"Добавить в папку с приложением \"<xliff:g id="NAME">%1$s</xliff:g>\""</string>
+    <string name="added_to_folder" msgid="4793259502305558003">"Элемент добавлен в папку."</string>
+    <string name="create_folder_with" msgid="4050141361160214248">"Создать папку с элементом <xliff:g id="NAME">%1$s</xliff:g>."</string>
+    <string name="folder_created" msgid="6409794597405184510">"Папка создана."</string>
+    <string name="action_move_to_workspace" msgid="1603837886334246317">"Переместить на главный экран"</string>
+    <string name="action_move_screen_left" msgid="8854216831569401665">"Переместить экран влево"</string>
+    <string name="action_move_screen_right" msgid="329334910274311123">"Переместить экран вправо"</string>
+    <string name="screen_moved" msgid="266230079505650577">"Экран перемещен"</string>
+    <string name="action_resize" msgid="1802976324781771067">"Изменить размер"</string>
+    <string name="action_increase_width" msgid="8773715375078513326">"Увеличить ширину"</string>
+    <string name="action_increase_height" msgid="459390020612501122">"Увеличить высоту"</string>
+    <string name="action_decrease_width" msgid="1374549771083094654">"Уменьшить ширину"</string>
+    <string name="action_decrease_height" msgid="282377193880900022">"Уменьшить высоту"</string>
+    <string name="widget_resized" msgid="9130327887929620">"Изменен размер виджета: до <xliff:g id="NUMBER_0">%1$s</xliff:g> в ширину и <xliff:g id="NUMBER_1">%2$s</xliff:g> в высоту"</string>
+    <string name="action_deep_shortcut" msgid="2864038805849372848">"Ярлыки"</string>
+    <string name="shortcuts_menu_description" msgid="406159963824238648">"Количество ярлыков для приложения \"<xliff:g id="APP_NAME">%2$s</xliff:g>\": <xliff:g id="NUMBER_OF_SHORTCUTS">%1$d</xliff:g>"</string>
+    <string name="shortcuts_menu_with_notifications_description" msgid="8985659504915468840">"Количество ярлыков для приложения \"<xliff:g id="APP_NAME">%3$s</xliff:g>\": <xliff:g id="NUMBER_OF_SHORTCUTS">%1$d</xliff:g>. Количество уведомлений: <xliff:g id="NUMBER_OF_NOTIFICATIONS">%2$d</xliff:g>."</string>
+    <string name="action_dismiss_notification" msgid="5909461085055959187">"Закрыть"</string>
+    <string name="notification_dismissed" msgid="6002233469409822874">"Уведомление закрыто"</string>
+    <string name="smartspace_preferences">Настройки</string>
+    <string name="label_search">Поиск</string>
+    <string name="label_voice_search">Голосовой поиск</string>
+    <string name="state_loading">Применение…</string>
+    <string name="smartspace_preferences_in_settings">Виджет \"Самое главное\"</string>
+    <string name="smartspace_customize_in_settings">Настроить виджет</string>
+    <string name="smartspace_disable">Отключить \"Самое главное\"</string>
+    <string name="smartspace_time">Добавить часы</string>
+    <string name="smartspace_launchclock_sum">При долгом нажатии</string>
+    <string name="smartspace_launchclock">Запустить часы</string>
+    <string name="smartspace_preferences_in_settings_desc">Настройки виджета в верхней части экрана, в котором отображаются различные события</string>
+    <string name="title_show_google_app">Показывать %1$s</string>
+    <string name="msg_minus_one_on_left">Слева от главного экрана</string>
+    <string name="about">О приложении</string>
+    <string name="title_google_app">ленту новостей Google</string>
+    <string name="title_app_suggestions">Часто используемые приложения</string>
+    <string name="summary_app_suggestions">Отображение часто используемых приложений в верхней строке</string>
+    <string name="title_disable_suggestions_prompt">Не показывать часто используемые приложения?</string>
+    <string name="msg_disable_suggestions_prompt">Часто используемыее приложения не будут показываться в начале списка. Данные, связанные с этой функцией, будут удалены.</string>
+    <string name="label_turn_off_suggestions">Отключить</string>
+    <string name="icon_badging_sum">Настроить значки уведомлений</string>
+    <string name="hide_app">Скрыть приложения</string>
+    <string name="hide_app_popup_show">Отображать приложение</string>
+    <string name="hide_app_popup_hide">Скрыть приложение</string>
+    <string name="hide_app_popup_show_toast">Приложение отображается</string>
+    <string name="hide_app_popup_hide_toast">Приложение скрыто</string>
+    <string name="hide_app_sum">Скрыть приложения из меню приложений</string>
+    <string name="hide_app_selected">&#160;выбрано</string>
+    <string name="hidden_app">Все приложения</string>
+    <string name="reset_hidden_apps">Сбросить всё</string>
+    <string name="reset_hidden_apps_hint_no_apps">Нет скрытых приложений</string>
+    <string name="reset_hidden_apps_hint">Скрытые приложения отображаются</string>
+    <string name="hide_widgets_too">Скрыть виджеты</string>
+    <string name="hide_widgets_too_sum">Скрыть виджеты скрытых приложений</string>
+    <string name="show_hidden_pref_title">Показывать скрытые приложения</string>
+    <string name="show_hidden_pref_on">Отображаются скрытые приложения для изменения настроек видимости</string>
+    <string name="show_hidden_pref_off">Скрытые приложения не будут отображаться</string>
+    <string name="custom_theme">Тема</string>
+    <string name="custom_theme_summary">Настроить тему и значки</string>
+    <string name="white_theme">Светлая</string>
+    <string name="white_withdarktext_theme">Светлая с темным текстом</string>
+    <string name="dark_withdarktext_theme">Тёмная с темным текстом</string>
+    <string name="black_withdarktext_theme">Чёрная с темным текстом</string>
+    <string name="dark_theme">Тёмная</string>
+    <string name="black_theme">Чёрная</string>
+    <string name="auto_theme">Авто-тема</string>
+    <string name="auto_theme_summary">Выбор темы по установленным обоям</string>
+    <string name="apply_settings_theme">Применить тему к настройкам</string>
+    <string name="custom_dockbar">Док-бар</string>
+    <string name="custom_dockbar_summary">Настроить док-бар</string>
+    <string name="num_hotseat_icons_pref_title">Количество значков</string>
+    <string name="force_mic">Микрофон в строке поиска</string>
+    <string name="use_assistant">Google Ассистент</string>
+    <string name="use_assistant_sum">Вместо микрофона в строке поиска в док-баре</string>
+    <string name="use_assistant_drawer_sum">Вместо микрофона в строке поиска</string>
+    <string name="force_colour_logo">Цветной логотип Google</string>
+    <string name="transparentqsb">Прозрачная строка поиска</string>
+    <string name="hotseatShowArrow">Отображать стрелку</string>
+    <string name="hotseat_show_page_indicator">Отображать индикатор страниц</string>
+    <string name="gradient_size">Размер градиента</string>
+    <string name="remove_gradient">Отключить градиент</string>
+    <string name="custom_qsb_in_dock">Настройки строки поиска</string>
+    <string name="qsb_in_dock_show">Отображать строку поиска</string>
+    <string name="pdock">Скругленный док-бар</string>
+    <string name="pdock_settings">Настройки скругленного док-бара</string>
+    <string name="pdock_radius">Радиус скругления углов</string>
+    <string name="pdock_shadow">Размер тени</string>
+    <string name="dock_height">Высота док-бара</string>
+    <string name="change_grid_size">Изменить размер сетки</string>
+    <string name="custom_grid_size">Размер сетки</string>
+    <string name="custom_grid_size_on">Использовать выбранный размер</string>
+    <string name="custom_grid_size_off">Размер сетки зависит от DPI устройства</string>
+    <string name="num_rows">Строки</string>
+    <string name="num_cols">Столбцы</string>
+    <string name="about_sum">CPL - лаунчер, основанный на AOSP с расширенным функционалом. Он бесплатен и не содержит рекламы.</string>
+    <string name="thanks">Благодарности</string>
+    <string name="forgot">Может быть я кого-нибудь забыл …</string>
+    <string name="date">Дата сборки</string>
+    <string name="sum_aboutapp">Версия, информация, благодарности</string>
+    <string name="about_app_version_wtu">Версия</string>
+    <string name="custom_about_cpl">О CPL</string>
+    <string name="custom_version">Версия</string>
+    <string name="translators">Переводчики</string>
+    <string name="custom_allapp">Меню приложений</string>
+    <string name="custom_allapp_summary">Настроить меню приложений</string>
+    <string name="smallallaps">Уменьшить строку поиска</string>
+    <string name="smallallaps_sum">Только для строки поиска по умолчанию</string>
+    <string name="googleinappmenu">Cтрока поиска Google</string>
+    <string name="drawer_transparent_background">Прозрачный фон</string>
+    <string name="custom_ico">Значки</string>
+    <string name="icon_size">Размер значка</string>
+    <string name="text_size">Размер шрифта подписей</string>
+    <string name="label_font">Шрифт подписей</string>
+    <string name="reboot">Перезапустить</string>
+    <string name="reboot_sum">Если некоторые настройки не применились</string>
+    <string name="custom_hs">Рабочий стол</string>
+    <string name="custom_hs_summary">Настроить рабочий стол и виджет \"Самое главное\"</string>
+    <string name="edgemarginstock">Стандартные</string>
+    <string name="edgemarginsmall">Уменьшеные</string>
+    <string name="diabledgemargin">Отключить</string>
+    <string name="diabledgemargin_sum">Отступы по горизонтали</string>
+    <string name="settings_edit_allow_title">Разрешить редактирование</string>
+    <string name="settings_edit_allow_question">Разрешить редактирование?</string>
+    <string name="settings_edit_allow_summary_on">Значки и виджеты могут быть добавлены, удалены или перемещены</string>
+    <string name="settings_edit_allow_summary_off">Значки и виджеты могут не могут быть добавленны, удалены или перемещены</string>
+    <string name="settings_edit_widgets_error">Невозожно добавить виджет</string>
+    <string name="fade_out_animation">Анимация исчезновения</string>
+    <string name="fade_out_animation_sum">При смене страницы рабочего стола</string>
+    <string name="system_font_for_smartspace">Системный шрифт</string>
+    <string name="system_font_for_smartspace_sum">Для виджета \"Самое главное\"</string>
+    <string name="smartspace_font">Шрифт виджета \"Самое главное\"</string>
+    <string name="smartspace_launch_clock">Установить будильник</string>
+    <string name="smartspace_launch_timer">Установить таймер</string>
+    <string name="smartspace_launch_keep">Google Keep</string>
+    <string name="smartspace_launch_tasks">Google Задачи</string>
+    <string name="smartspace_launch_calendar">Календарь</string>
+    <string name="smartspace_show_popup">Меню действий</string>
+    <string name="smartspace_show_popup_sum">Показывать меню быстрых действий при нажатии на виджет</string>
+    <string name="show_top_shadow_title">Тень в верхней части экрана</string>
+    <string name="full_width_width_widgets_pref_title">Виджеты занимают весь размер</string>
+    <string name="full_width_widgets_pref_summary">Разрешить виджетам занимать место без отступов (отступы рабочего стола будут отключены)</string>
+    <string name="desktop_show_labels">Подписи значков</string>
+    <string name="drawer_show_labels">Подписи значков</string>
+    <string name="custom_folders">Папки</string>
+    <string name="custom_folders_summary">Настроить папки</string>
+    <string name="folder_show_labels">Подписи значков</string>
+    <string name="old_folder_animation">Старая анимация открытия папки</string>
+    <string name="date_format">Формат даты</string>
+    <string name="clock_format">Формат часов</string>
+    <string name="date_format_1">Понедельник, 7 апр.</string>
+    <string name="date_format_2">Понедельник</string>
+    <string name="date_format_3">Пн, 7 апреля</string>
+    <string name="date_format_4">Пн, 7.04</string>
+    <string name="date_format_5">Понедельник, 7</string>
+    <string name="date_format_6">Понедельник, 7 апреля</string>
+    <string name="use_custom_label_color">Изменить цвет подписи значков</string>
+    <string name="custom_label_color">Цвет подписи значков</string>
+    <string name="use_qsb_label_color">Изменить цвет строки поиска</string>
+    <string name="custom_qsb_color">Цвет строки поиска</string>
+    <string name="custom_qsb_text_color">Цвет текста в строке поиска</string>
+    <string name="behavior_pref_title">Поведение</string>
+    <string name="behavior_pref_summary">Настроить поведение</string>
+    <string name="allow_vibration">Вибрация</string>
+    <string name="allow_vibration_sum">При нажатии на некоторые элементы интерфейса</string>
+    <string name="vibrationduration">Продолжительность вибрации</string>
+    <string name="vibrationdurationtest">Тест вибрации</string>
+    <string name="textinbadge">Не просто точка</string>
+    <string name="textinbadge_sum">Показывать количество уведомлений в значке (числа могут быть неточными)</string>
+    <string name="badge_place">Расположение значка</string>
+    <string name="badge_place_1">Справа вверху</string>
+    <string name="badge_place_2">Справа внизу</string>
+    <string name="badge_place_3">Слева вверху</string>
+    <string name="badge_place_4">Слева внизу</string>
+    <string name="double_tap_to_lock_method_null">Способ блокировки экрана не задан, проверьте настройки: Поведение - Способ блокировки экрана</string>
+    <string name="double_tap_to_lock_method_not_set">Не выбран</string>
+    <string name="double_tap_to_lock_method">Способ блокировки экрана</string>
+    <string name="double_tap_to_lock_title">Двойной тап для блокировки экрана</string>
+    <string name="double_tap_to_lock_title_with_admin">Через администратора устройства</string>
+    <string name="double_tap_to_lock_title_with_timeout">Через чёрный экран</string>
+    <string name="double_tap_to_lock_title_with_root">Использовать root-права</string>
+    <string name="double_tap_to_lock_no_root">Root-доступ запрещен или отсутствует</string>
+    <string name="double_tap_to_lock_summary_with_root">Для разблокировки устройства с помощью сканера отпечатка пальцев</string>
+    <string name="double_tap_to_lock_summary">На рабочем столе</string>
+    <string name="double_tap_to_lock_hint">Для возможности блокировки экрана, приложению необходимо предоставить права администратора. Это безопасная блокировка, для включения экрана вам потребуется ввести ПИН-код или начертить графический ключ, если таковые методы защиты установлены. Разблокировка с помощью отпечатка пальца будет невозможна.</string>
+    <string name="double_tap_to_lock_disable_warning">Для работы функции блокировки экрана приложению необходимы права администратора.</string>
+    <string name="action_edit">Редактировать</string>
+    <string name="use_custom_badge_color">Изменить цвета значка</string>
+    <string name="custom_badge_color">Цвет значка</string>
+    <string name="custom_badge_text_color">Цвет текста значка</string>
+    <string name="bage_size">Размер значка</string>
+    <string name="statusbar_expand">Показать уведомления</string>
+    <string name="statusbar_expand_sum">При проведении одним пальцем вниз по главному экрану</string>
+    <string name="pinch_to_overview_pref_title">Щипок для обзора</string>
+    <string name="animate_overview_pref_title">Эффект прокрутки на экране обзора</string>
+    <string name="pinch_to_overview_pref_summary">Щипок на главном экране для открытия обзора</string>
+    <string name="keep_scroll_state_pref_title">Сохранять позицию прокрутки</string>
+    <string name="keep_scroll_state_pref_summary">Сохраняет положение прокрутки в меню приложений</string>
+    <string name="home_opens_drawer_pref_title">Кнопка «Домой» открывает меню приложений</string>
+    <string name="home_opens_drawer_pref_summary">Нажатие кнопки «Домой» на главном экране откроет меню приложений</string>
+    <string name="pixel_search_layout">Экран поиска Pixel</string>
+    <string name="pixel_search_layout_sum">Может быть недоступен на некоторых устройствах</string>
+    <string name="default_launcher_title">Изменить главное приложение</string>
+    <string name="default_launcher_message">Это действие позволит выбрать друое главное приложение и назначить его по умолчанию. Вы уверены, что хотите продолжить?</string>
+    <string name="default_iconpack" translatable="false">Системный (по умолчанию)</string>
+    <string name="default_iconpack_title">По умолчанию</string>
+    <string name="icons_pack_name">Набор значков</string>
+    <string name="edit_app">Изменить значок</string>
+    <string name="all_icons">Все значки</string>
+    <string name="similar_icons">Предложения</string>
+    <string name="ok">Применить</string>
+    <string name="icon_chooser">Выбор значка</string>
+    <string name="icon_search">Поиск значков</string>
+    <string name="use_background_from_iconpack">Задний фон значка из набора</string>
+    <string name="alt_gen_iconpack">Альтернативный метод обрезки</string>
+    <string name="custom_gen_iconpack">Опции генерации значков</string>
+    <string name="icon_pack_updated">Используемый набор значков был обновлен, вожможно в нем содержаться новые значки. Все новые значки будут отображены после переприменения набора.</string>
+    <string name="generate_adaptive_icons_title">Адаптивный задний фон</string>
+    <string name="generate_adaptive_icons_summary">Для приложений, которые не имеют собсвенного заднего фона</string>
+    <string name="generate_adaptive_background_title">Извлечь цвет заднего фона из значка</string>
+    <string name="generate_adaptive_background_summary">Для генерации заднего фона значка</string>
+    <string name="generate_random">Случайный цвет</string>
+    <string name="generate_random_brightness">Максимальная яркость случайного цвета</string>
+    <string name="background_color">Цвет заднего фона значка</string>
+    <string name="custom_generate_new">Сгенерировать новые значки</string>
+    <string name="custom_generate_new_one">Создать новый значок</string>
+    <string name="reset_icon">Сбросить</string>
+    <string name="custom_generate_new_sum">Очистить кеш значков и сгенерировать новый с выбранными настройками</string>
+    <string name="use_dynamic_icons">Динамические иконки</string>
+    <string name="use_dynamic_clock">Динамическая иконка часов</string>
+    <string name="use_dynamic_calendar">Динамическая иконка календаря</string>
+    <string name="show_seconds">Секундная стрелка</string>
+    <string name="save_close">Сохранить</string>
+    <string name="springanim">Анимация пружины</string>
+    <string name="springcoef">Коэффициент жесткости пружины</string>
+    <string name="use_spring_sum">В меню приложений</string>
+    <string name="favorite_assigned">Избранное приложение назначено</string>
+    <string name="make_favorite">Сделать избранным</string>
+    <string name="favorite_not_found">Избранное приложение не найдено</string>
+    <string name="launch_favorite_app_title">Запустить избранное приложение</string>
+    <string name="launch_favorite_app_summary">При проведении двумя пальцами вниз по главному экрану</string>
+    <string name="backup_and_restore_pref_title">Резервное копирование</string>
+    <string name="backup_and_restore_pref_sum">Резеврное копирование и востановление настроек и базы данных значков</string>
+    <string name="backup_pref_title">Сохранить резервную копию</string>
+    <string name="restore_pref_title">Восстановить резервную копию</string>
+    <string name="restore_settings_title">Восстановить настройки</string>
+    <string name="restore_icons_title">Восстановить базу данных значков</string>
+    <string name="restore_layout_title">Восстановить макет главного экрана</string>
+    <string name="settings_export_success">Настройки сохранены успешно</string>
+    <string name="settings_import_success">Настройки восстановлены успешно</string>
+    <string name="icon_import_success">База данных значков восстановлена успешно</string>
+    <string name="layout_import_success">Макет рабочего стола восстановлен успешно</string>
+    <string name="export_error">Не удалось создать резервную копию</string>
+    <string name="import_error">Не удалось восстановить резервную копию</string>
+    <string name="permission_ok">Доступ разрешен</string>
+    <string name="permission_not_ok">Доступ запрещён</string>
+    <string name="permission_sum">Доступ к внутреннему накопителю</string>
+    <string name="backup_slot">Ячейка сохранения</string>
+    <string name="backup_perm">Контроль разрешений</string>
+    <string name="backup_not_found">Резервная копия не обнаружена</string>
+    <string name="backup_date">Дата создания резервной копии</string>
+    <string name="backup_location_message">Местоположение резервной копии не может быть изменено</string>
+    <string name="backup_location_note">Расположение резервной копии:</string>
+    <string name="perform_backup">Выполнить резервное копирование?</string>
+    <string name="perform_restore">Выполнить восстановление резервной копии?</string>
+    <string name="current">Текущая:</string>
+    <string name="empty">Пусто</string>
+    <string name="delete_mode">Удалить резервную копию</string>
+    <string name="delete_selected">Удалить выбраную копию</string>
+    <string name="delete_success">Резервная копия удалена</string>
+    <string name="empty_slot">Текущая ячейка сохранения пуста</string>
+    <string name="donation_title">Пожертвовать</string>
+    <string name="donation_sum">CPL бесплатен и не содержит рекламы. Если вам нравится CPL и вы хотие поддержать дальнейшую разработку, вы можете сделать пожертвование разработчику, купив приложение поддержки. Вы так же можете сделать пожетрование через PayPal.</string>
+    <string name="donation_thanks">Дополнительные функции активны</string>
+    <string name="attention">Внимание!</string>
+    <string name="action_canceled">Действие отменено пользователем</string>
+    <string name="clean_all_settings_title">Сбросить настройки</string>
+    <string name="clean_all_settings_sum">Сбросить все настройки к значениям по умолчанию</string>
+    <string name="clean_all_settings">Сбросить все настройки к значениям по умолчанию?</string>
+    <string name="debug">Отладка</string>
+    <string name="debug_sum">Перезагрузить или сбросить настройки</string>
+    <string name="xda_tread">Тема на XDA</string>
+    <string name="chetyrepda_tread">Тема на 4PDA</string>
+    <string name="additional_options">Дополнительные опции</string>
+    <string name="more">Еще</string>
+    <string name="find_in_store">Найти в Play Маркет</string>
+    <string name="share">Поделиться</string>
+    <string name="drawer_buttons">Кнопки в строке поиска</string>
+    <string name="drawer_buttons_select">Кнопки</string>
+    <string name="drawer_button_settings">Настройки CPL</string>
+    <string name="drawer_button_settings_sum">При удержании - системные настройки</string>
+    <string name="drawer_button_market">Play Маркет</string>
+    <string name="drawer_button_visibility">Видимость скрытых приложений</string>
+    <string name="drawer_button_visibility_sum">При удержании - меню скрытых приложений</string>
+    <string name="drawer_button_mic">Микрофон</string>
+    <string name="qsb_text">Текст в строке поиска</string>
+    <string name="qsb_text_sans">Шрифт Google Sans для текста</string>
+    <string name="qsb_center_text">Текст в центре строки поиска</string>
+    <string name="say_ok_google">Скажите “OK Google”</string>
+    <string name="extra_bottom_padding_title">Дополнительный отступ строки поиска</string>
+    <string name="extra_bottom_padding_summary">Включите, если значки расположены слишком близко к строке поиска</string>
+    <string name="more_info">Больше информации</string>
+    <string name="dock_opacity">Прозрачность док-бара</string>
+    <string name="drawer_opacity">Прозрачность фона</string>
+    <string name="folder_opacity">Прозрачность фона папки</string>
+    <string name="default_color">По умолчанию</string>
+    <string name="arrow_and_line_color">Цвет стрелки и индикатора страниц</string>
+    <string name="folder_prewiew_color">Цвет значка папки</string>
+    <string name="folder_background_color">Цвет фона папки</string>
+    <string name="transparent_nav_bar">Прозрачная панель навигации</string>
+    <string name="white_status_bar_icons">Белые значки в строке состояния</string>
+    <string name="text_divider">Разделитель с текстом</string>
+    <string name="disable_dock">Отключить док-бар</string>
+    <string name="accent_drawer">Цвет акцента элеметов</string>
+    <string name="rounded_corners">Закругленные углы</string>
+    <string name="left_swipe">Слайд влево</string>
+    <string name="right_swipe">Слайд вправо</string>
+    <string name="swipe_up">Слайд вверх</string>
+    <string name="fade">Появление</string>
+    <string name="zoom">Увеличение</string>
+    <string name="fall_down">Падение</string>
+    <string name="from_middle">Из центра</string>
+    <string name="transition_effect">Эффект прокрутки</string>
+    <string name="zoom_in">Увеличение</string>
+    <string name="zoom_out">Уменьшение</string>
+    <string name="rotate_up">Поворот вверх</string>
+    <string name="rotate_down">Поворот вниз</string>
+    <string name="cube_in">Внутри куба</string>
+    <string name="cube_out">Снаружи куба</string>
+    <string name="stack">Стопка</string>
+    <string name="accordion">Сжатие</string>
+    <string name="flip">Переворот</string>
+    <string name="spin">Вращение</string>
+    <string name="cylinder_in">Внутри цилиндра</string>
+    <string name="cylinder_out">Снаружи цилиндра</string>
+    <string name="overview">Обзор</string>
+    <string name="accent_color_sum">Цвет полосы прокрутки, кнопок и строки поиска по умолчанию</string>
+    <string name="wallpaper_scroll_title">Прокрутка обоев</string>
+    <string name="def">По умолчанию</string>
+    <string name="default_home">По умолчанию</string>
+    <string name="all_apps">Все приложения</string>
+    <string name="delete">Удалить</string>
+    <string name="lock">Заблокировать</string>
+    <string name="unlock">Разблокировать</string>
+    <string name="page_not_empty">Эта страница не пуста. Вы действительно хотите ее удалить?</string>
+    <string name="pref_open_source_licenses_title">Лицензии открытого ПО</string>
+    <string name="two_finger_up">Два пальца вверх</string>
+    <string name="two_finger_down">Два пальца вниз</string>
+    <string name="action_nothing">Ничего</string>
+    <string name="action_quick_search">Быстрый поиск</string>
+    <string name="action_voice_search">Голосовой поиск</string>
+    <string name="action_app_drawer">Открыть меню приложений</string>
+    <string name="action_app_search">Поиск приложений</string>
+    <string name="action_overview">Режим обзора</string>
+    <string name="action_lock">Заблокировать экран</string>
+    <string name="action_default_screen">Перейти к странице по умолчанию</string>
+    <string name="action_first_screen">Перейти к первой странице</string>
+    <string name="action_last_screen">Перейти к последней странице</string>
+    <string name="gestures">Жесты</string>
+    <string name="gestures_sum">Настроить жесты на рабочем столе</string>
+    <string name="action_settings">Настройки устройства</string>
+    <string name="infinite_scroll">Бесконечное перелистывание</string>
+    <string name="double_tap">Двойное нажатие</string>
+    <string name="long_tap">Долгое нажатие</string>
+    <string name="home_button">Кнопка «Домой»</string>
+    <string name="one_finger_down">Один палец вниз</string>
+    <string name="one_finger_up">Один палец вверх</string>
+    <string name="action_notifications">Открыть панель уведомлений</string>
+    <string name="action_notifications_with_settings">Открыть панель уведомлений с быстрыми настройками</string>
+    <string name="lock_screen_method_1">Незамедлительно блокирует устройство, разблокировка с помощью отпечатка пальца недоступна - требуется ввод PIN или графического ключа</string>
+    <string name="lock_screen_method_2">"Показывает чёрный экран в течении 5 секунд, а затем экран гаснет, возможна разблокировка с помощью отпечатка пальца</string>
+    <string name="lock_screen_method_3">Эмулирует нажатие кнопки выключения устройства, скорость отключения экрана зависит от скорости обработки команды устройством, возможна разблокировка с помощью отпечатка пальца</string>
+    <string name="parallax_scrolling">Обратная прокрутка обоев</string>
+    <string name="elastic_scrolling">Эластичное перелистывание</string>
+    <string name="elastic_scrolling_coeff">Коэффициент эластичности</string>
+    <string name="gradient_dock">Градиент</string>
+    <string name="search_bar">Строка поиска</string>
+    <string name="date_format_long">Полный</string>
+    <string name="date_format_normal">Обычный</string>
+    <string name="date_format_short">Сокращённый</string>
+    <string name="app_installing_progress">Показывать прогресс установки приложений</string>
+    <string name="home_screen_notification_bar">Показывать панель уведомлений</string>
+    <string name="not_set">Не выбрано</string>
+    <string name="hotseat_drag_indicator">Индикатор подъема</string>
+    <string name="dock_show_labels">Подписи значков</string>
+    <string name="gallery">Галерея</string>
+    <string name="app_open_animation">Анимация приложений</string>
+    <string name="app_open_animation_sum">При открытии приложений и при возврате на рабочий стол</string>
+    <string name="disable">Отключить</string>
+    <string name="style_1">Стиль 1</string>
+    <string name="style_2">Стиль 2</string>
+    <string name="show_dock_on_home_screen">Док-бар отображается</string>
+    <string name="hide_dock_from_home_screen">Док-бар скрыт</string>
+    <string name="scrolling">Прокрутка</string>
+    <string name="warning_cpl_not_default">Не установлен по умолчанию</string>
+    <string name="warning_cpl_not_default_sum">CPL не установлен как главное приложение по умолчанию. Нажмите, чтобы установить.</string>
+    <string name="resize_any_widget_sum">Разрешить изменять размер всем виджетам</string>
+    <string name="resize_any_widget_title">Изменять размер всех виджетов</string>
+    <string name="widgets_in_dock_title">Виджеты в док-баре</string>
+    <string name="widgets_in_dock_sum">Разрешить добавление виджетов в док-бар</string>
+    <string name="widget_padding_title">Поля виджетов</string>
+    <string name="vertical_only">Только по вертикали</string>
+    <string name="horizontal_only">Только по горизонтали</string>
+    <string name="folder_animation">Анимация открытия</string>
+    <string name="scale">Масштаб</string>
+    <string name="circle">Круг</string>
+    <string name="hideapp">Скрыть из меню</string>
+    <string name="clean_user_icons">Сбросить назначенные значки и подписи приложений?</string>
+    <string name="reset_user_icon">Сбросить пользовательский значок</string>
+    <string name="morepack">Больше значков</string>
+    <string name="hidden_apps_tint">Серый оттенок для скрытых приложений</string>
+    <string name="developer_mode">Режим разработчика</string>
+    <string name="icon_shape_cylinder">Цилиндр</string>
+    <string name="icon_shape_rounded_square">Квадрат с закругленными углами</string>
+    <string name="icon_shape_super_ellipse">Квадрат с немного скругленными углами</string>
+    <string name="icon_shape_lemon">Лимон</string>
+    <string name="icon_shape_cloud">Облако</string>
+    <string name="restore_user_icons_title">Восстановить пользовательские значки и подписи приложений</string>
+    <string name="getplugin">Загрузить плагин Новостей Google и Погоды</string>
+    <string name="hidedonationbutton">Скрыть кнопку</string>
+    <string name="buyapp">Купить приложение поддержки</string>
+    <string name="shortcuts">Шорткаты</string>
+    <string name="show_folder_name">Отображать имя папки при открытии</string>
+    <string name="folder_adaptive_icon">Адаптивный значок папки</string>
+    <string name="extract_shortcut_color">Окрашивать шорткаты</string>
+    <string name="extract_shortcut_color_sum">Извлечь цвет шортката из значка приложения</string>
+    <string name="add_translation">Добавить или исправить перевод</string>
+</resources>
