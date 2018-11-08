@@ -432,50 +432,50 @@
     <string name="label_font">标签字体</string>
 
     <!-- Home screen -->
-    <string name="custom_hs">Home screen</string>
-    <string name="custom_hs_summary">Customize your Home screen &amp; \"At a Glance\" widget</string>
+    <string name="custom_hs">主屏幕</string>
+    <string name="custom_hs_summary">自定义主屏幕&amp; \"一目了然\"微件</string>
     <string name="edgemarginstock">Stock</string>
     <string name="edgemarginsmall">Small</string>
     <string name="diabledgemargin">Disable</string>
     <string name="diabledgemargin_sum">Horizontal screen padding</string>
-    <string name="settings_edit_allow_title">Allow Home screen editing</string>
-    <string name="settings_edit_allow_question">Allow Home screen editing</string>
+    <string name="settings_edit_allow_title">允许编辑主屏幕</string>
+    <string name="settings_edit_allow_question">允许编辑主屏幕</string>
     <string name="settings_edit_allow_summary_on">Icons and widgets can be added, removed and moved on the Home screen</string>
     <string name="settings_edit_allow_summary_off">Icons and widgets can\'t be added, removed and moved on the Home screen</string>
     <string name="fade_out_animation">Fade out animation</string>
     <string name="fade_out_animation_sum">When switching pages</string>
-    <string name="system_font_for_smartspace">Use system font</string>
-    <string name="system_font_for_smartspace_sum">For \"At a Glance\" widget</string>
-    <string name="smartspace_font">\"At a Glance\" widget font</string>
-    <string name="smartspace_time">Add clock</string>
-    <string name="smartspace_customize_in_settings">Customize widget</string>
-    <string name="smartspace_launchclock">Launch Clock app</string>
-    <string name="smartspace_disable">Disable \"At a Glance\" widget</string>
-    <string name="smartspace_launchclock_sum">On long pressing the widget</string>
-    <string name="smartspace_launch_clock">Set alarm</string>
-    <string name="smartspace_launch_timer">Set timer</string>
+    <string name="system_font_for_smartspace">使用系统字体</string>
+    <string name="system_font_for_smartspace_sum">针对 \"一目了然\" 微件</string>
+    <string name="smartspace_font">\"一目了然\"格式</string>
+    <string name="smartspace_time">添加时钟</string>
+    <string name="smartspace_customize_in_settings">自定义微件</string>
+    <string name="smartspace_launchclock">启用时钟</string>
+    <string name="smartspace_disable">禁用\"一目了然\"</string>
+    <string name="smartspace_launchclock_sum">长按打开时钟</string>
+    <string name="smartspace_launch_clock">设置闹钟</string>
+    <string name="smartspace_launch_timer">设置倒计时</string>
     <string name="smartspace_launch_keep">Google Keep</string>
     <string name="smartspace_launch_tasks">Google Tasks</string>
-    <string name="smartspace_launch_calendar">Calendar</string>
-    <string name="smartspace_show_popup">Actions menu</string>
-    <string name="smartspace_show_popup_sum">Show popup with quick actions on tap on the widget</string>
-    <string name="show_top_shadow_title">Top shadow</string>
+    <string name="smartspace_launch_calendar">日历</string>
+    <string name="smartspace_show_popup">操作菜单</string>
+    <string name="smartspace_show_popup_sum">长按微件弹出快捷操作</string>
+    <string name="show_top_shadow_title">点击特效</string>
     <string name="full_width_width_widgets_pref_title">Full width widgets</string>
     <string name="full_width_widgets_pref_summary">Allow widgets to span over the whole width without padding</string>
 
     <!-- Hide labels -->
-    <string name="desktop_show_labels">Icon labels on the Home screen</string>
-    <string name="drawer_show_labels">Icon labels in the app drawer</string>
+    <string name="desktop_show_labels">在主屏幕显示应用名称</string>
+    <string name="drawer_show_labels">在应用抽屉显示应用名称</string>
 
     <!-- Folders -->
-    <string name="custom_folders">Folders</string>
-    <string name="custom_folders_summary">Customize folders</string>
-    <string name="folder_show_labels">Icon labels in folders</string>
+    <string name="custom_folders">文件夹</string>
+    <string name="custom_folders_summary">自定义文件夹</string>
+    <string name="folder_show_labels">在文件夹中显示应用名称</string>
     <string name="old_folder_animation">Old folder animation</string>
 
     <!-- Date formats -->
-    <string name="date_format">Date format</string>
-    <string name="clock_format">Clock format</string>
+    <string name="date_format">日期格式</string>
+    <string name="clock_format">时钟格式</string>
     <string name="date_format_1">Tuesday, Feb 13</string>
     <string name="date_format_2">Tuesday</string>
     <string name="date_format_3">Tue, February 13</string>
@@ -484,11 +484,11 @@
     <string name="date_format_6">Tuesday, February 13</string>
 
     <!-- Color Changing -->
-    <string name="use_custom_label_color">Custom label color</string>
-    <string name="use_qsb_label_color">Custom search bar background color</string>
-    <string name="custom_label_color">Label color</string>
-    <string name="custom_qsb_color">Search bar background color</string>
-    <string name="custom_qsb_text_color">Search bar text color</string>
+    <string name="use_custom_label_color">自定义字体颜色</string>
+    <string name="use_qsb_label_color">自定义搜索条背景颜色</string>
+    <string name="custom_label_color">字体颜色</string>
+    <string name="custom_qsb_color">搜索条背景颜色</string>
+    <string name="custom_qsb_text_color">搜索条文字颜色</string>
 
     <!-- Behavior -->
     <string name="behavior_pref_title">Behavior</string>
@@ -537,35 +537,35 @@
     <string name="default_launcher_message">This action will change your default launcher. Are you sure you\'d like to proceed?</string>
 
     <!-- Icon pack -->
-    <string name="default_iconpack" translatable="false">Use system default</string>
-    <string name="default_iconpack_title">Use system default</string>
-    <string name="icons_pack_name">Icon pack</string>
-    <string name="edit_app">Edit icon</string>
-    <string name="all_icons">All icons</string>
-    <string name="similar_icons">Similar icons</string>
+    <string name="default_iconpack" translatable="false">使用系统默认</string>
+    <string name="default_iconpack_title">使用系统默认</string>
+    <string name="icons_pack_name">图标包</string>
+    <string name="edit_app">E编辑图标</string>
+    <string name="all_icons">所有图标</string>
+    <string name="similar_icons">小图标</string>
     <string name="ok">Ok</string>
     <string name="icon_chooser">Icon chooser</string>
-    <string name="icon_search">Search for icons</string>
-    <string name="use_background_from_iconpack">Use the background from the icon pack</string>
+    <string name="icon_search">搜索图标</string>
+    <string name="use_background_from_iconpack">使用图标包背景</string>
     <string name="alt_gen_iconpack">Alternative icon cropping</string>
     <string name="custom_gen_iconpack">Icons generation options</string>
-    <string name="icon_pack_updated">Your currently applied icon pack has been updated, new icons for your apps might be available. It is recommended to go into Settings and re-apply the icon pack.</string>
+    <string name="icon_pack_updated">当前使用的图标包有更新,可能有新图标可用.建议进入设置重新应用图标包.</string>
     <string name="generate_adaptive_icons_title">Generate adaptive icon background</string>
     <string name="generate_adaptive_icons_summary">For apps without adaptive icons</string>
     <string name="generate_adaptive_background_title">Extract color from legacy icon</string>
     <string name="generate_adaptive_background_summary">For generated adaptive icon backgrounds</string>
-    <string name="generate_random">Random color</string>
-    <string name="generate_random_brightness">Max brightness of random color</string>
-    <string name="background_color">Background color</string>
-    <string name="custom_generate_new">Generate new icons</string>
-    <string name="custom_generate_new_one">Generate new icon</string>
-    <string name="reset_icon">Reset icon</string>
-    <string name="custom_generate_new_sum">Clear icon cache and generate new icons with selected options</string>
+    <string name="generate_random">随机颜色</string>
+    <string name="generate_random_brightness">随机颜色最大亮度</string>
+    <string name="background_color">背景颜色</string>
+    <string name="custom_generate_new">生成新图标</string>
+    <string name="custom_generate_new_one">生成新图标</string>
+    <string name="reset_icon">重置图标</string>
+    <string name="custom_generate_new_sum">清楚缓存并根据当前设置重新生成图标</string>
     <string name="use_dynamic_icons">Dynamic icons</string>
     <string name="use_dynamic_clock">Dynamic clock icon</string>
     <string name="use_dynamic_calendar">Dynamic calendar icon</string>
-    <string name="show_seconds">Show seconds</string>
-    <string name="save_close">Save &amp; close</string>
+    <string name="show_seconds">显示秒</string>
+    <string name="save_close">保存且关闭</string>
 
     <!-- Spring -->
     <string name="springanim">Spring animation</string>
@@ -573,39 +573,39 @@
     <string name="use_spring_sum">In the app drawer</string>
 
     <!-- Favorite app -->
-    <string name="favorite_assigned">Favorite app assigned</string>
-    <string name="make_favorite">Make favorite</string>
-    <string name="favorite_not_found">Favorite app not found</string>
-    <string name="launch_favorite_app_title">Open favorite app</string>
-    <string name="launch_favorite_app_summary">When swiping down with two fingers</string>
+    <string name="favorite_assigned">已设置喜爱应用</string>
+    <string name="make_favorite">标记为喜爱应用</string>
+    <string name="favorite_not_found">没有设置喜爱应用</string>
+    <string name="launch_favorite_app_title">打开喜爱应用</string>
+    <string name="launch_favorite_app_summary">双指下滑</string>
     <string name="bage_size">Badge size</string>
 
     <!-- Telegram -->
 
     <!-- Backup -->
-    <string name="backup_and_restore_pref_title">Backup &amp; Restore</string>
-    <string name="backup_and_restore_pref_sum">Backup &amp; restore your settings &amp; database</string>
-    <string name="backup_pref_title">Backup</string>
-    <string name="restore_pref_title">Restore</string>
-    <string name="restore_settings_title">Restore settings</string>
-    <string name="restore_icons_title">Restore icons database</string>
-    <string name="restore_layout_title">Restore Home screen layout</string>
-    <string name="settings_export_success">Settings backed up successfully</string>
-    <string name="settings_import_success">Settings restored successfully</string>
-    <string name="icon_import_success">Icons database restored successfully</string>
-    <string name="layout_import_success">Home screen layout restored successfully</string>
-    <string name="export_error">Couldn\'t backup</string>
-    <string name="import_error">Couldn\'t restore</string>
-    <string name="permission_ok">Permission granted</string>
-    <string name="permission_not_ok">Permission denied</string>
-    <string name="permission_sum">Access to internal storage</string>
-    <string name="backup_slot">Backup slot</string>
-    <string name="backup_perm">Permissions</string>
-    <string name="backup_not_found">Backup not found!</string>
+    <string name="backup_and_restore_pref_title">备份 &amp;恢复</string>
+    <string name="backup_and_restore_pref_sum">备份 &amp;恢复用户设置&amp;数据库</string>
+    <string name="backup_pref_title">备份</string>
+    <string name="restore_pref_title">恢复</string>
+    <string name="restore_settings_title">恢复设置</string>
+    <string name="restore_icons_title">恢复鱼鳔数据库</string>
+    <string name="restore_layout_title">恢复桌面布局</string>
+    <string name="settings_export_success">备份成功</string>
+    <string name="settings_import_success">恢复成功</string>
+    <string name="icon_import_success">图标数据库恢复成功</string>
+    <string name="layout_import_success">桌面布局恢复成功</string>
+    <string name="export_error">无法备份</string>
+    <string name="import_error">无法恢复</string>
+    <string name="permission_ok">已获取权限</string>
+    <string name="permission_not_ok">获取权限失败</string>
+    <string name="permission_sum">访问内部储存</string>
+    <string name="backup_slot">备份位</string>
+    <string name="backup_perm">权限</string>
+    <string name="backup_not_found">没有发现备份</string>
     <string name="backup_date">Backup creation date</string>
-    <string name="backup_location_message">Backup location can\'t be changed</string>
-    <string name="backup_location_note">Backup location</string>
-    <string name="backup_location_sum">Internal memory\\Documents\\CPL\\</string>
+    <string name="backup_location_message">无法更改备份位置</string>
+    <string name="backup_location_note">备份位置</string>
+    <string name="backup_location_sum">内部储存\\Documents\\CPL\\</string>
     <string name="perform_backup">Perform backup?</string>
     <string name="perform_restore">Perform restore?</string>
     <string name="current">Current:</string>
@@ -616,14 +616,14 @@
     <string name="empty_slot">Current backup slot is empty</string>
 
     <!-- Donation -->
-    <string name="donation_title">Donate to the developer</string>
-    <string name="donation_sum">CPL free and contains no ads. If you like CPL and want to support future development, you can donate to me by purchasing my donation app, also you can donate via PayPal.</string>
-    <string name="donation_thanks">Additional functions are active</string>
+    <string name="donation_title">捐赠开发者</string>
+    <string name="donation_sum">CPL是一个免费应用并且没有广告，如果喜欢CPL并且想赞助以后的开发，可以购买作者的收费应用(Google Play)或者直接通过PayPal赞助</string>
+    <string name="donation_thanks">额外功能已启用</string>
 
 
     <!-- Misc -->
-    <string name="attention">Attention!</string>
-    <string name="action_canceled">Action canceled by user</string>
+    <string name="attention">注意!</string>
+    <string name="action_canceled">用户取消</string>
     <string name="debug">Debug</string>
     <string name="clean_all_settings_title">Reset to defaults</string>
     <string name="clean_all_settings_sum">Reset CPL settings to default</string>
