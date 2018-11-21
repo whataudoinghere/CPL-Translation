@@ -1,148 +1,575 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!-- 
-/*
-* Copyright (C) 2008 The Android Open Source Project
-*
-* Licensed under the Apache License, Version 2.0 (the "License");
-* you may not use this file except in compliance with the License.
-* You may obtain a copy of the License at
-*
-*      http://www.apache.org/licenses/LICENSE-2.0
-*
-* Unless required by applicable law or agreed to in writing, software
-* distributed under the License is distributed on an "AS IS" BASIS,
-* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-* See the License for the specific language governing permissions and
-* limitations under the License.
-*/
- -->
 
-<resources xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="app_name" msgid="649227358658669779">"Launcher3"</string>
-    <string name="folder_name" msgid="7371454440695724752"></string>
-    <string name="work_folder_name" msgid="3753320833950115786">"العمل"</string>
-    <string name="activity_not_found" msgid="8071924732094499514">"لم يتم تثبيت التطبيق."</string>
-    <string name="activity_not_available" msgid="7456344436509528827">"التطبيق ليس متاحًا"</string>
-    <string name="safemode_shortcut_error" msgid="9160126848219158407">"تم تعطيل التطبيق الذي تم تنزيله في الوضع الآمن"</string>
-    <string name="safemode_widget_error" msgid="4863470563535682004">"الأدوات معطلة في الوضع الآمن"</string>
-    <string name="shortcut_not_available" msgid="2536503539825726397">"الاختصار غير متاح"</string>
-    <string name="home_screen" msgid="806512411299847073">"الشاشة الرئيسية"</string>
-    <string name="custom_actions" msgid="3747508247759093328">"الإجراءات المخصّصة"</string>
-    <string name="long_press_widget_to_add" msgid="7699152356777458215">"المس مع الاستمرار لاختيار إحدى الأدوات."</string>
-    <string name="long_accessible_way_to_add" msgid="4289502106628154155">"انقر نقرًا مزدوجًا مع الاستمرار لاختيار أداة أو استخدم الإجراءات المخصصة."</string>
-    <string name="widget_dims_format" msgid="2370757736025621599">"%1$d × %2$d"</string>
-    <string name="widget_accessible_dims_format" msgid="3640149169885301790">"‏العرض %1$d الطول %2$d"</string>
-    <string name="add_item_request_drag_hint" msgid="5899764264480397019">"المس مع الاستمرار للإضافة يدويًا"</string>
-    <string name="place_automatically" msgid="8064208734425456485">"إضافة تلقائيًا"</string>
-    <string name="all_apps_search_bar_hint" msgid="1390553134053255246">"بحث في التطبيقات"</string>
-    <string name="all_apps_loading_message" msgid="5813968043155271636">"جارٍ تحميل التطبيقات…"</string>
-    <string name="all_apps_no_search_results" msgid="3200346862396363786">"لم يتم العثور على أي تطبيقات تتطابق مع \"<xliff:g id="QUERY">%1$s</xliff:g>\""</string>
-    <string name="all_apps_search_market_message" msgid="1366263386197059176">"البحث عن مزيد من التطبيقات"</string>
-    <string name="notifications_header" msgid="1404149926117359025">"الإشعارات"</string>
-    <string name="out_of_space" msgid="4691004494942118364">"ليس هناك مساحة أخرى في هذه الشاشة الرئيسية."</string>
-    <string name="hotseat_out_of_space" msgid="7448809638125333693">"لا يوجد المزيد من الحقول في علبة المفضلة"</string>
-    <string name="all_apps_button_label" msgid="8130441508702294465">"قائمة التطبيقات"</string>
-    <string name="all_apps_home_button_label" msgid="252062713717058851">"الرئيسية"</string>
-    <string name="remove_drop_target_label" msgid="7812859488053230776">"إزالة"</string>
-    <string name="uninstall_drop_target_label" msgid="4722034217958379417">"إلغاء التثبيت"</string>
-    <string name="app_info_drop_target_label" msgid="692894985365717661">"معلومات عن التطبيق"</string>
-    <string name="permlab_install_shortcut" msgid="5632423390354674437">"تثبيت اختصارات"</string>
-    <string name="permdesc_install_shortcut" msgid="923466509822011139">"للسماح لتطبيق ما بإضافة اختصارات بدون تدخل المستخدم."</string>
-    <string name="permlab_read_settings" msgid="1941457408239617576">"قراءة إعدادات واختصارات الشاشة الرئيسية"</string>
-    <string name="permdesc_read_settings" msgid="5833423719057558387">"للسماح للتطبيق بقراءة الإعدادات والاختصارات في الشاشة الرئيسية."</string>
-    <string name="permlab_write_settings" msgid="3574213698004620587">"كتابة إعدادات واختصارات الشاشة الرئيسية"</string>
-    <string name="permdesc_write_settings" msgid="5440712911516509985">"للسماح للتطبيق بتغيير الإعدادات والاختصارات في الشاشة الرئيسية."</string>
-    <string name="msg_no_phone_permission" msgid="9208659281529857371">"<xliff:g id="APP_NAME">%1$s</xliff:g> غير مسموح به لإجراء مكالمات هاتفية"</string>
-    <string name="gadget_error_text" msgid="6081085226050792095">"حدثت مشكلة أثناء تحميل الأداة"</string>
-    <string name="gadget_setup_text" msgid="8274003207686040488">"الإعداد"</string>
-    <string name="uninstall_system_app_text" msgid="4172046090762920660">"هذا تطبيق نظام وتتعذر إزالته."</string>
-    <string name="folder_hint_text" msgid="6617836969016293992">"مجلد بدون اسم"</string>
-    <string name="disabled_app_label" msgid="6673129024321402780">"تم تعطيل <xliff:g id="APP_NAME">%1$s</xliff:g>"</string>
-    <string name="default_scroll_format" msgid="7475544710230993317">"‏الصفحة %1$d من %2$d"</string>
-    <string name="workspace_scroll_format" msgid="8458889198184077399">"‏الشاشة الرئيسية %1$d من %2$d"</string>
-    <string name="workspace_new_page" msgid="257366611030256142">"صفحة الشاشة الرئيسية الجديدة"</string>
-    <string name="folder_opened" msgid="94695026776264709">"تم فتح المجلد، بمقاس <xliff:g id="WIDTH">%1$d</xliff:g> في <xliff:g id="HEIGHT">%2$d</xliff:g>"</string>
-    <string name="folder_tap_to_close" msgid="4625795376335528256">"انقر لإغلاق المجلد"</string>
-    <string name="folder_tap_to_rename" msgid="4017685068016979677">"انقر لحفظ الاسم الجديد"</string>
-    <string name="folder_closed" msgid="4100806530910930934">"تم إغلاق المجلد"</string>
-    <string name="folder_renamed" msgid="1794088362165669656">"تمت إعادة تسمية المجلد إلى <xliff:g id="NAME">%1$s</xliff:g>"</string>
-    <string name="folder_name_format" msgid="6629239338071103179">"المجلد: <xliff:g id="NAME">%1$s</xliff:g>"</string>
-    <string name="widget_button_text" msgid="2880537293434387943">"الأدوات"</string>
-    <string name="wallpaper_button_text" msgid="8404103075899945851">"الخلفيات"</string>
-    <string name="settings_button_text" msgid="8873672322605444408">"إعدادات الصفحة الرئيسية"</string>
-    <string name="msg_disabled_by_admin" msgid="6898038085516271325">"عطَّل المشرف هذه الميزة"</string>
-    <string name="accessibility_action_overview" msgid="6257665857640347026">"نظرة عامة"</string>
-    <string name="allow_rotation_title" msgid="7728578836261442095">"السماح بتدوير الشاشة الرئيسية"</string>
-    <string name="allow_rotation_desc" msgid="8662546029078692509">"عند تدوير الهاتف"</string>
-    <string name="allow_rotation_blocked_desc" msgid="3212602545192996253">"لا يسمح إعداد العرض الحالي بالتدوير"</string>
-    <string name="icon_badging_title" msgid="874121399231955394">"نقاط الإشعارات"</string>
-    <string name="icon_badging_desc_on" msgid="2627952638544674079">"قيد التشغيل"</string>
-    <string name="icon_badging_desc_off" msgid="5503319969924580241">"قيد الإيقاف"</string>
-    <string name="title_missing_notification_access" msgid="7503287056163941064">"يلزم تمكين الوصول إلى الإشعارات"</string>
-    <string name="msg_missing_notification_access" msgid="281113995110910548">"لعرض نقاط الإشعارات، يجب تشغيل إشعارات التطبيق في <xliff:g id="NAME">%1$s</xliff:g>"</string>
-    <string name="title_change_settings" msgid="1376365968844349552">"تغيير الإعدادات"</string>
-    <string name="auto_add_shortcuts_label" msgid="8222286205987725611">"إضافة رمز إلى الشاشة الرئيسية"</string>
-    <string name="auto_add_shortcuts_description" msgid="7117251166066978730">"للتطبيقات الجديدة"</string>
-    <string name="icon_shape_override_label" msgid="2977264953998281004">"تغيير شكل الرمز"</string>
-    <string name="icon_shape_system_default" msgid="1709762974822753030">"استخدام الإعداد الافتراضي للنظام"</string>
-    <string name="icon_shape_square" msgid="633575066111622774">"مربّع"</string>
-    <string name="icon_shape_squircle" msgid="5658049910802669495">"رمز دائري مربّع"</string>
-    <string name="icon_shape_circle" msgid="6550072265930144217">"دائرة"</string>
-    <string name="icon_shape_teardrop" msgid="4525869388200835463">"رمز على شكل دمعة"</string>
-    <string name="icon_shape_override_progress" msgid="3461735694970239908">"جارٍ تطبيق تغييرات شكل الرمز"</string>
-    <string name="package_state_unknown" msgid="7592128424511031410">"غير معروفة"</string>
-    <string name="abandoned_clean_this" msgid="7610119707847920412">"إزالة"</string>
-    <string name="abandoned_search" msgid="891119232568284442">"بحث"</string>
-    <string name="abandoned_promises_title" msgid="7096178467971716750">"لم يتم تثبيت هذا التطبيق"</string>
-    <string name="abandoned_promise_explanation" msgid="3990027586878167529">"لم يتم تثبيت تطبيق لهذا الرمز. يمكنك إزالته أو البحث عن التطبيق وتثبيته يدويًا."</string>
-    <string name="app_downloading_title" msgid="8336702962104482644">"جارٍ تنزيل <xliff:g id="NAME">%1$s</xliff:g>، اكتمل <xliff:g id="PROGRESS">%2$s</xliff:g>"</string>
-    <string name="app_waiting_download_title" msgid="7053938513995617849">"<xliff:g id="NAME">%1$s</xliff:g> في انتظار التثبيت"</string>
-    <string name="widgets_bottom_sheet_title" msgid="2904559530954183366">"أدوات <xliff:g id="NAME">%1$s</xliff:g>"</string>
-    <string name="action_add_to_workspace" msgid="8902165848117513641">"إضافة إلى الشاشة الرئيسية"</string>
-    <string name="action_move_here" msgid="2170188780612570250">"نقل العنصر إلى هنا"</string>
-    <string name="item_added_to_workspace" msgid="4211073925752213539">"تمت إضافة العنصر إلى الشاشة الرئيسية"</string>
-    <string name="item_removed" msgid="851119963877842327">"تم حذف العنصر"</string>
-    <string name="action_move" msgid="4339390619886385032">"نقل العنصر"</string>
-    <string name="move_to_empty_cell" msgid="2833711483015685619">"نقل إلى الصف <xliff:g id="NUMBER_0">%1$s</xliff:g> العمود <xliff:g id="NUMBER_1">%2$s</xliff:g>"</string>
-    <string name="move_to_position" msgid="6750008980455459790">"نقل إلى الموضع <xliff:g id="NUMBER">%1$s</xliff:g>"</string>
-    <string name="move_to_hotseat_position" msgid="6295412897075147808">"نقل إلى الموضع المفضل <xliff:g id="NUMBER">%1$s</xliff:g>"</string>
-    <string name="item_moved" msgid="4606538322571412879">"تم نقل العنصر"</string>
-    <string name="add_to_folder" msgid="9040534766770853243">"إضافة إلى المجلد: <xliff:g id="NAME">%1$s</xliff:g>"</string>
-    <string name="add_to_folder_with_app" msgid="4534929978967147231">"إضافة إلى المجلد الذي به <xliff:g id="NAME">%1$s</xliff:g>"</string>
-    <string name="added_to_folder" msgid="4793259502305558003">"تمت إضافة العنصر إلى المجلد"</string>
-    <string name="create_folder_with" msgid="4050141361160214248">"إنشاء مجلد يتضمن: <xliff:g id="NAME">%1$s</xliff:g>"</string>
-    <string name="folder_created" msgid="6409794597405184510">"تم إنشاء المجلد"</string>
-    <string name="action_move_to_workspace" msgid="1603837886334246317">"نقل إلى الشاشة الرئيسية"</string>
-    <string name="action_move_screen_left" msgid="8854216831569401665">"نقل الشاشة إلى اليسار"</string>
-    <string name="action_move_screen_right" msgid="329334910274311123">"نقل الشاشة إلى اليمين"</string>
-    <string name="screen_moved" msgid="266230079505650577">"تم نقل الشاشة"</string>
-    <string name="action_resize" msgid="1802976324781771067">"تغيير حجم"</string>
-    <string name="action_increase_width" msgid="8773715375078513326">"زيادة العرض"</string>
-    <string name="action_increase_height" msgid="459390020612501122">"زيادة الارتفاع"</string>
-    <string name="action_decrease_width" msgid="1374549771083094654">"تقليل العرض"</string>
-    <string name="action_decrease_height" msgid="282377193880900022">"تقليل الارتفاع"</string>
-    <string name="widget_resized" msgid="9130327887929620">"تم تغيير حجم الأداة إلى العرض <xliff:g id="NUMBER_0">%1$s</xliff:g> والارتفاع <xliff:g id="NUMBER_1">%2$s</xliff:g>"</string>
-    <string name="action_deep_shortcut" msgid="2864038805849372848">"الاختصارات"</string>
-    <string name="shortcuts_menu_description" msgid="406159963824238648">"<xliff:g id="NUMBER_OF_SHORTCUTS">%1$d</xliff:g> اختصار لتطبيق <xliff:g id="APP_NAME">%2$s</xliff:g>"</string>
-    <string name="shortcuts_menu_with_notifications_description" msgid="8985659504915468840">"هناك <xliff:g id="NUMBER_OF_SHORTCUTS">%1$d</xliff:g> اختصار و<xliff:g id="NUMBER_OF_NOTIFICATIONS">%2$d</xliff:g> إشعار عن <xliff:g id="APP_NAME">%3$s</xliff:g>"</string>
-    <string name="action_dismiss_notification" msgid="5909461085055959187">"تجاهل"</string>
-    <string name="notification_dismissed" msgid="6002233469409822874">"تم تجاهل الإشعار"</string>
-    <string name="smartspace_preferences">التفضيلات</string>
-    <string name="label_search">بحث</string>
-    <string name="label_voice_search">بحث صوتي</string>
-    <string name="pref_icon_pack">حزمة الرموز</string>
-    <string name="state_loading">تطبيق...</string>
-    <string name="smartspace_preferences_in_settings">نظرة سريعة</string>
-    <string name="smartspace_preferences_in_settings_desc">بأعلى شاشتك الرئيسية</string>
-    <string name="title_show_google_app">عرض %1$s</string>
-    <string name="msg_minus_one_on_left">على يمين الشاشة الرئيسية</string>
-    <string name="about">لمحة</string>
-    <string name="title_google_app">‏تطبيق Google</string>
-    <string name="title_app_suggestions">عرض اقتراحات التطبيق</string>
-    <string name="summary_app_suggestions">في صدارة قائمة \"كل التطبيقات\"</string>
-    <string name="about_app_version">الإصدار</string>
-    <string name="title_disable_suggestions_prompt">هل تريد إيقاف تشغيل اقتراحات التطبيقات؟</string>
-    <string name="msg_disable_suggestions_prompt">لن تظهر الاقتراحات في أعلى قائمة التطبيقات، وسيتم محو بيانات الاستخدام المستخدمة لإنشائها نهائيًا.</string>
-    <string name="label_turn_off_suggestions">إيقاف</string>
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string name="abandoned_clean_this">إزالة</string>
+<string name="abandoned_promise_explanation">لم يتم تثبيت تطبيق لهذا الرمز. يمكنك إزالته أو البحث عن التطبيق وتثبيته يدويًا.</string>
+<string name="abandoned_promises_title">لم يتم تثبيت هذا التطبيق</string>
+<string name="abandoned_search">بحث</string>
+<string name="abc_action_bar_home_description">التنقل إلى الشاشة الرئيسية</string>
+<string name="abc_action_bar_up_description">التنقل إلى أعلى</string>
+<string name="abc_action_menu_overflow_description">خيارات إضافية</string>
+<string name="abc_action_mode_done">تم</string>
+<string name="abc_activity_chooser_view_see_all">عرض الكل</string>
+<string name="abc_activitychooserview_choose_application">اختيار تطبيق</string>
+<string name="abc_capital_off">إيقاف</string>
+<string name="abc_capital_on">تشغيل</string>
+<string name="abc_search_hint">بحث…</string>
+<string name="abc_searchview_description_clear">محو طلب البحث</string>
+<string name="abc_searchview_description_query">طلب البحث</string>
+<string name="abc_searchview_description_search">بحث</string>
+<string name="abc_searchview_description_submit">إرسال طلب البحث</string>
+<string name="abc_searchview_description_voice">البحث الصوتي</string>
+<string name="abc_shareactionprovider_share_with">مشاركة مع</string>
+<string name="abc_shareactionprovider_share_with_application">مشاركة مع %s</string>
+<string name="abc_toolbar_collapse_description">تصغير</string>
+<string name="about">لمحة</string>
+<string name="accessibility_action_overview">نظرة عامة</string>
+<string name="action_add_to_workspace">إضافة إلى الشاشة الرئيسية</string>
+<string name="action_decrease_height">تقليل الارتفاع</string>
+<string name="action_decrease_width">تقليل العرض</string>
+<string name="action_deep_shortcut">الاختصارات</string>
+<string name="action_dismiss_notification">تجاهل</string>
+<string name="action_increase_height">زيادة الارتفاع</string>
+<string name="action_increase_width">زيادة العرض</string>
+<string name="action_move">نقل العنصر</string>
+<string name="action_move_here">نقل العنصر إلى هنا</string>
+<string name="action_move_screen_left">نقل الشاشة إلى اليسار</string>
+<string name="action_move_screen_right">نقل الشاشة إلى اليمين</string>
+<string name="action_move_to_workspace">نقل إلى الشاشة الرئيسية</string>
+<string name="action_resize">تغيير حجم</string>
+<string name="activity_not_available">التطبيق ليس متاحًا</string>
+<string name="activity_not_found">لم يتم تثبيت التطبيق.</string>
+<string name="add_item_request_drag_hint">المس مع الاستمرار للإضافة يدويًا</string>
+<string name="add_to_folder">إضافة إلى المجلد: %1$s</string>
+<string name="add_to_folder_with_app">إضافة إلى المجلد الذي به %1$s</string>
+<string name="added_to_folder">تمت إضافة العنصر إلى المجلد</string>
+<string name="all_apps_button_label">قائمة التطبيقات</string>
+<string name="all_apps_home_button_label">الرئيسية</string>
+<string name="all_apps_loading_message">جارٍ تحميل التطبيقات…</string>
+<string name="all_apps_no_search_results">لم يتم العثور على أي تطبيقات تتطابق مع \"%1$s\"</string>
+<string name="all_apps_search_bar_hint">بحث في التطبيقات</string>
+<string name="all_apps_search_market_message">البحث عن مزيد من التطبيقات</string>
+<string name="allow_rotation_blocked_desc">لا يسمح إعداد العرض الحالي بالتدوير</string>
+<string name="allow_rotation_desc">عند تدوير الهاتف</string>
+<string name="allow_rotation_title">السماح بتدوير الشاشة الرئيسية</string>
+<string name="app_downloading_title">جارٍ تنزيل %1$s، اكتمل %2$s</string>
+<string name="app_info_drop_target_label">معلومات عن التطبيق</string>
+<string name="app_waiting_download_title">%1$s في انتظار التثبيت</string>
+<string name="auto_add_shortcuts_description">للتطبيقات الجديدة</string>
+<string name="auto_add_shortcuts_label">إضافة رمز إلى الشاشة الرئيسية</string>
+<string name="create_folder_with">إنشاء مجلد يتضمن: %1$s</string>
+<string name="custom_actions">الإجراءات المخصّصة</string>
+<string name="default_scroll_format">‏الصفحة %1$d من %2$d</string>
+<string name="disabled_app_label">تم تعطيل %1$s</string>
+<string name="folder_closed">تم إغلاق المجلد</string>
+<string name="folder_created">تم إنشاء المجلد</string>
+<string name="folder_hint_text">مجلد بدون اسم</string>
+<string name="folder_name" />
+<string name="folder_name_format">المجلد: %1$s</string>
+<string name="folder_opened">تم فتح المجلد، بمقاس %1$d في %2$d</string>
+<string name="folder_renamed">تمت إعادة تسمية المجلد إلى %1$s</string>
+<string name="folder_tap_to_close">انقر لإغلاق المجلد</string>
+<string name="folder_tap_to_rename">انقر لحفظ الاسم الجديد</string>
+<string name="gadget_error_text">حدثت مشكلة أثناء تحميل الأداة</string>
+<string name="gadget_setup_text">الإعداد</string>
+<string name="home_screen">الشاشة الرئيسية</string>
+<string name="hotseat_out_of_space">لا يوجد المزيد من الحقول في علبة المفضلة</string>
+<string name="icon_badging_desc_off">قيد الإيقاف</string>
+<string name="icon_badging_desc_on">قيد التشغيل</string>
+<string name="icon_badging_title">نقاط الإشعارات</string>
+<string name="icon_shape_circle">دائرة</string>
+<string name="icon_shape_override_label">تغيير شكل الرمز</string>
+<string name="icon_shape_override_progress">جارٍ تطبيق تغييرات شكل الرمز</string>
+<string name="icon_shape_square">مربّع</string>
+<string name="icon_shape_squircle">رمز دائري مربّع</string>
+<string name="icon_shape_system_default">استخدام الإعداد الافتراضي للنظام</string>
+<string name="icon_shape_teardrop">رمز على شكل دمعة</string>
+<string name="item_added_to_workspace">تمت إضافة العنصر إلى الشاشة الرئيسية</string>
+<string name="item_moved">تم نقل العنصر</string>
+<string name="item_removed">تم حذف العنصر</string>
+<string name="label_search">بحث</string>
+<string name="label_turn_off_suggestions">إيقاف</string>
+<string name="label_voice_search">بحث صوتي</string>
+<string name="long_accessible_way_to_add">انقر نقرًا مزدوجًا مع الاستمرار لاختيار أداة أو استخدم الإجراءات المخصصة.</string>
+<string name="long_press_widget_to_add">المس مع الاستمرار لاختيار إحدى الأدوات.</string>
+<string name="move_to_empty_cell">نقل إلى الصف %1$s العمود %2$s</string>
+<string name="move_to_hotseat_position">نقل إلى الموضع المفضل %1$s</string>
+<string name="move_to_position">نقل إلى الموضع %1$s</string>
+<string name="msg_disable_suggestions_prompt">لن تظهر الاقتراحات في أعلى قائمة التطبيقات، وسيتم محو بيانات الاستخدام المستخدمة لإنشائها نهائيًا.</string>
+<string name="msg_disabled_by_admin">عطَّل المشرف هذه الميزة</string>
+<string name="msg_minus_one_on_left">على يمين الشاشة الرئيسية</string>
+<string name="msg_missing_notification_access">لعرض نقاط الإشعارات، يجب تشغيل إشعارات التطبيق في %1$s</string>
+<string name="msg_no_phone_permission">%1$s غير مسموح به لإجراء مكالمات هاتفية</string>
+<string name="notification_dismissed">تم تجاهل الإشعار</string>
+<string name="notifications_header">الإشعارات</string>
+<string name="out_of_space">ليس هناك مساحة أخرى في هذه الشاشة الرئيسية.</string>
+<string name="package_state_unknown">غير معروفة</string>
+<string name="permdesc_install_shortcut">للسماح لتطبيق ما بإضافة اختصارات بدون تدخل المستخدم.</string>
+<string name="permdesc_read_settings">للسماح للتطبيق بقراءة الإعدادات والاختصارات في الشاشة الرئيسية.</string>
+<string name="permdesc_write_settings">للسماح للتطبيق بتغيير الإعدادات والاختصارات في الشاشة الرئيسية.</string>
+<string name="permlab_install_shortcut">تثبيت اختصارات</string>
+<string name="permlab_read_settings">قراءة إعدادات واختصارات الشاشة الرئيسية</string>
+<string name="permlab_write_settings">كتابة إعدادات واختصارات الشاشة الرئيسية</string>
+<string name="place_automatically">إضافة تلقائيًا</string>
+<string name="remove_drop_target_label">إزالة</string>
+<string name="safemode_shortcut_error">تم تعطيل التطبيق الذي تم تنزيله في الوضع الآمن</string>
+<string name="safemode_widget_error">الأدوات معطلة في الوضع الآمن</string>
+<string name="screen_moved">تم نقل الشاشة</string>
+<string name="search_menu_title">البحث</string>
+<string name="settings_button_text">إعدادات الصفحة الرئيسية</string>
+<string name="shortcut_not_available">الاختصار غير متاح</string>
+<string name="shortcuts_menu_description">%1$d اختصار لتطبيق %2$s</string>
+<string name="shortcuts_menu_with_notifications_description">هناك %1$d اختصار و%2$d إشعار عن %3$s</string>
+<string name="smartspace_preferences">التفضيلات</string>
+<string name="smartspace_preferences_in_settings">نظرة سريعة</string>
+<string name="smartspace_preferences_in_settings_desc">بأعلى شاشتك الرئيسية</string>
+<string name="status_bar_notification_info_overflow">+999</string>
+<string name="summary_app_suggestions">في صدارة قائمة \"كل التطبيقات\"</string>
+<string name="title_app_suggestions">عرض اقتراحات التطبيق</string>
+<string name="title_change_settings">تغيير الإعدادات</string>
+<string name="title_disable_suggestions_prompt">هل تريد إيقاف تشغيل اقتراحات التطبيقات؟</string>
+<string name="title_google_app">‏تطبيق Google</string>
+<string name="title_missing_notification_access">يلزم تمكين الوصول إلى الإشعارات</string>
+<string name="title_show_google_app">عرض %1$s</string>
+<string name="uninstall_drop_target_label">إلغاء التثبيت</string>
+<string name="uninstall_system_app_text">هذا تطبيق نظام وتتعذر إزالته.</string>
+<string name="wallpaper_button_text">الخلفيات</string>
+<string name="widget_accessible_dims_format">‏العرض %1$d الطول %2$d</string>
+<string name="widget_button_text">الأدوات</string>
+<string name="widget_dims_format">%1$d × %2$d</string>
+<string name="widget_resized">تم تغيير حجم الأداة إلى العرض %1$s والارتفاع %2$s</string>
+<string name="widgets_bottom_sheet_title">أدوات %1$s</string>
+<string name="work_folder_name">العمل</string>
+<string name="workspace_new_page">صفحة الشاشة الرئيسية الجديدة</string>
+<string name="workspace_scroll_format">‏الشاشة الرئيسية %1$d من %2$d</string>
+<string name="state_loading">تطبيق...</string>
+<string name="about_app_version_wtu">الاصدار</string>
+<string name="about_sum">مشغل CPL مبني على Aosp مع خصائص موسعة. إنه مجاني ولا يحتوي على إعلانات.</string>
+<string name="action_edit">تعديل</string>
+<string name="all_icons">كل الأيقونات</string>
+<string name="allow_vibration">الاهتزاز</string>
+<string name="allow_vibration_sum">عند النقر على عناصر الواجهة</string>
+<string name="alt_gen_iconpack">تقليم رمز الأيقونة البديل</string>
+<string name="apply_settings_theme">تطبيق السمة على الإعدادات</string>
+<string name="auto_theme">السمة التلقائية</string>
+<string name="auto_theme_summary">السمة تعتمد على الخلفية المختارة</string>
+<string name="backup_and_restore_pref_sum">النسخ الاحتياطي والاستعادة للإعدادات وقاعدة البيانات الخاصة بك</string>
+<string name="backup_and_restore_pref_title">نسخ إحتياطي وإستعادة</string>
+<string name="backup_date">تاريخ إنشاء النسخ الاحتياطي</string>
+<string name="backup_location_message">لا يمكن تغيير موقع النسخ الاحتياطي</string>
+<string name="backup_location_note">موقع النسخ الاحتياطي</string>
+<string name="backup_not_found">النسخ الاحتياطي غير موجود!</string>
+<string name="backup_perm">الأذونات</string>
+<string name="backup_pref_title">نسخ احتياطي</string>
+<string name="backup_slot">فتحة النسخ الاحتياطي</string>
+<string name="bage_size">حجم الشارة</string>
+<string name="behavior_pref_summary">تغيير سلوك التطبيق</string>
+<string name="behavior_pref_title">السلوك</string>
+<string name="black_theme">أسود</string>
+<string name="change_grid_size">تغيير حجم الشبكة</string>
+<string name="custom_about_cpl">حول التطبيق</string>
+<string name="custom_allapp">كل التطبيقات</string>
+<string name="custom_allapp_summary">تخصيص درج التطبيقات الخاص بك</string>
+<string name="custom_badge_color">لون خلفية الشارة</string>
+<string name="custom_badge_text_color">لون نص الشارة</string>
+<string name="custom_dockbar">الشريط السفلي</string>
+<string name="custom_dockbar_summary">تخصيص الشريط السفلي</string>
+<string name="custom_folders">المجلدات</string>
+<string name="custom_folders_summary">تخصيص المجلدات</string>
+<string name="custom_generate_new">توليد إيقونات جديدة</string>
+<string name="custom_generate_new_sum">مسح ذاكرة التخزين المؤقت للأيقونة وإنشاء أيقونات جديدة مع الخيارات المحددة</string>
+<string name="custom_grid_size">حجم الشبكة</string>
+<string name="custom_grid_size_off">حجم الشبكة يعتمد على DPI</string>
+<string name="custom_grid_size_on">استخدم الحجم المحدد</string>
+<string name="custom_hs">الشاشة الرئيسية</string>
+<string name="custom_hs_summary">قم بتخصيص شاشتك الرئيسية و \"أداة النظرة السريعة\"</string>
+<string name="custom_ico">الأيقونات</string>
+<string name="custom_label_color">لون التسمية</string>
+<string name="custom_qsb_color">لون خلفية شريط البحث</string>
+<string name="custom_qsb_in_dock">إعدادات شريط البحث</string>
+<string name="custom_theme">إعداد السمة</string>
+<string name="custom_theme_summary">تخصيص الموضوع والأيقونات</string>
+<string name="custom_version">الإصدار</string>
+<string name="dark_theme">داكن</string>
+<string name="date">تاريخ البناء</string>
+<string name="date_format">تنسيق التاريخ</string>
+<string name="date_format_1">الثلاثاء، 13 فبر</string>
+<string name="date_format_2">الثلاثاء</string>
+<string name="date_format_3">ثلا، 13 فبراير</string>
+<string name="date_format_4">ثلا، 02/13</string>
+<string name="date_format_5">13 الثلاثاء</string>
+<string name="date_format_6">الثلاثاء، 13 فبراير</string>
+<string name="default_iconpack">استخدم النظام الافتراضي</string>
+<string name="default_iconpack_title">استخدم النظام الافتراضي</string>
+<string name="desktop_show_labels">تسميات الأيقونات على الشاشة الرئيسية</string>
+<string name="diabledgemargin">تعطيل</string>
+<string name="diabledgemargin_sum">تبطين الشاشة الأفقية</string>
+<string name="donation_title">تبرع للمطور</string>
+<string name="double_tap_to_lock_disable_warning">من خلال تعطيل وصول المشرف ، لن تتمكن من قفل الشاشة الرئيسية باستخدام الإيماءات.</string>
+<string name="double_tap_to_lock_hint">لتتمكن من القفل ، يتعين عليك تمكين وصول المشرف لـمشغل CPL. هذا هو قفل آمن ، مما يعني أنه يجب عليك إدخال رقم PIN عند إلغاء القفل التالي ، إذا كان لديك أي قفل.</string>
+<string name="double_tap_to_lock_no_root">الوصول إلى الجذر غير متوفر أو مرفوض</string>
+<string name="double_tap_to_lock_summary">على الشاشة الرئيسية</string>
+<string name="double_tap_to_lock_summary_with_root">لإلغاء قفل بصمة الجهاز</string>
+<string name="double_tap_to_lock_title">ضغط مزدوج للقفل</string>
+<string name="double_tap_to_lock_title_with_root">مع صلاحيات الجذر</string>
+<string name="drawer_show_labels">تسميات الأيقونات في درج التطبيق</string>
+<string name="drawer_transparent_background">خلفية شفافة</string>
+<string name="edgemarginsmall">صغير</string>
+<string name="edgemarginstock">الاصلي</string>
+<string name="edit_app">تحرير الأيقونة</string>
+<string name="export_error">لا يمكن النسخ الاحتياطي</string>
+<string name="fade_out_animation">تأثير حركة التلاشي</string>
+<string name="fade_out_animation_sum">عند تبديل الصفحات</string>
+<string name="favorite_assigned">التطبيق المفضل المعيّن</string>
+<string name="favorite_not_found">التطبيق المفضل غير موجود</string>
+<string name="folder_show_labels">تسميات الأيقونات في المجلدات</string>
+<string name="force_colour_logo">شعار Google الملون</string>
+<string name="force_mic">إظهار الميكروفون</string>
+<string name="forgot">ربما نسيت شخص ما ...</string>
+<string name="generate_adaptive_background_summary">لخلفيات الأيقونة المتكيفة المتولدة</string>
+<string name="generate_adaptive_background_title">استخراج اللون من الايقونة القديمة</string>
+<string name="generate_adaptive_icons_summary">للتطبيقات من دون الأيقونات التكيفية</string>
+<string name="generate_adaptive_icons_title">توليد خلفية للأيقونة المتكيفة</string>
+<string name="googleinappmenu">شريط بحث Google</string>
+<string name="gradient_size">حجم التدرج</string>
+<string name="hidden_app">التطبيق المخفي</string>
+<string name="hide_app">إخفاء التطبيقات</string>
+<string name="hide_app_selected"> المحدد</string>
+<string name="hide_app_sum">إخفاء التطبيقات من درج التطبيق</string>
+<string name="hide_widgets_too">إخفاء الأدوات</string>
+<string name="hide_widgets_too_sum">لا تظهر الأدوات من التطبيقات المخفية</string>
+<string name="home_opens_drawer_pref_summary">يؤدي الضغط على زر الرئيسية عندما تكون على الشاشة الرئيسية إلى فتح درج التطبيق</string>
+<string name="home_opens_drawer_pref_title">زر الصفحة الرئيسية يفتح درج التطبيق</string>
+<string name="hotseatShowArrow">إظهار السهم</string>
+<string name="hotseat_show_page_indicator">عرض مؤشر الصفحة</string>
+<string name="icon_badging_sum">تخصيص نقاط الإشعار</string>
+<string name="icon_chooser">الأيقونة المختارة</string>
+<string name="icon_pack_updated">تم تحديث حزمة الايقونات المطبقة حالياً، وقد تتوفر أيقونات جديدة لتطبيقاتك. من المستحسن الذهاب إلى الإعدادات وإعادة تطبيق حزمة الايقونات.</string>
+<string name="icon_search">بحث عن أيقونات</string>
+<string name="icon_shape_rounded_square">مربع مدور</string>
+<string name="icon_shape_super_ellipse">بيضوي سوبر</string>
+<string name="icon_size">حجم الأيقونة</string>
+<string name="icons_pack_name">حزمة الأيقونات</string>
+<string name="import_error">تعذر الاستعادة</string>
+<string name="keep_scroll_state_pref_summary">حفظ موضع التمرير في الدرج</string>
+<string name="keep_scroll_state_pref_title">حفظ موضع التمرير</string>
+<string name="label_font">خط التسمية</string>
+<string name="launch_favorite_app_summary">عند التمرير لأسفل بإصبعين</string>
+<string name="make_favorite">جعله مفضل</string>
+<string name="num_cols">عدد الأعمدة</string>
+<string name="num_hotseat_icons_pref_title">عدد أيقونات الشريط السفلي</string>
+<string name="num_rows">عدد الصفوف</string>
+<string name="ok">حسناً</string>
+<string name="old_folder_animation">تأثير حركة المجلد القديم</string>
+<string name="pdock">شريط سفلي دائري</string>
+<string name="permission_not_ok">الاذن مرفوض</string>
+<string name="permission_ok">تم تأمين التصريح</string>
+<string name="permission_sum">الوصول إلى التخزين الداخلي</string>
+<string name="pinch_to_overview_pref_summary">قرصة على الشاشة الرئيسية لفتح النظرة العامة</string>
+<string name="pinch_to_overview_pref_title">قرصة للنظرة العامة</string>
+<string name="qsb_in_dock_show">إظهار شريط البحث</string>
+<string name="reboot">إعادة تشغيل</string>
+<string name="reboot_sum">أعد التشغيل لإعادة تطبيق الإعدادات</string>
+<string name="remove_gradient">تعطيل تدرج الشريط السفلي</string>
+<string name="reset_hidden_apps">إعادة ضبط الكل</string>
+<string name="reset_hidden_apps_hint">التطبيقات المخفية متاحة الآن</string>
+<string name="restore_pref_title">استعادة</string>
+<string name="settings_edit_allow_summary_off">لا يمكن إضافة الرموز والأدوات وإزالتها ونقلها على الشاشة الرئيسية</string>
+<string name="settings_edit_allow_summary_on">يمكن إضافة الرموز والأدوات وإزالتها ونقلها على الشاشة الرئيسية</string>
+<string name="settings_edit_allow_title">السماح بتحرير الشاشة الرئيسية</string>
+<string name="settings_export_success">تم النسخ الاحتياطي للإعدادات بنجاح</string>
+<string name="settings_import_success">تمت استعادة الإعدادات بنجاح</string>
+<string name="similar_icons">الأيقونات المماثلة</string>
+<string name="smallallaps">شريط بحث صغير</string>
+<string name="smartspace_customize_in_settings">تخصيص الأداة</string>
+<string name="smartspace_disable">تعطيل أداة \"النظرة السريعة\"</string>
+<string name="smartspace_font">خط أداة \"النظرة السريعة\"</string>
+<string name="smartspace_launchclock">تشغيل تطبيق الساعة</string>
+<string name="smartspace_launchclock_sum">عند الضغط الطويل على الأداة</string>
+<string name="smartspace_time">أضافة الساعة</string>
+<string name="springanim">تأثير حركة النابض</string>
+<string name="springcoef">مستوى مرونة النابض</string>
+<string name="statusbar_expand">عرض الإشعارات</string>
+<string name="statusbar_expand_sum">عند التمرير لأسفل بإصبعين</string>
+<string name="sum_aboutapp">حول التطبيق، معلومات الإصدار، والائتمانات</string>
+<string name="system_font_for_smartspace">استخدم خط النظام</string>
+<string name="system_font_for_smartspace_sum">لأجل أداة \"النظرة العامة\"</string>
+<string name="text_size">حجم نص التسمية</string>
+<string name="textinbadge">شارات الإشعارات</string>
+<string name="textinbadge_sum">إظهار عدد الإشعارات في الشارة (قد تكون الأرقام غير دقيقة)</string>
+<string name="thanks">شكر إلى</string>
+<string name="translators">المترجمين</string>
+<string name="transparentqsb">شفافية شريط البحث</string>
+<string name="use_background_from_iconpack">إستخدام الخلفية من حزمة الأيقونات</string>
+<string name="use_custom_badge_color">ألوان مخصصة للشارات</string>
+<string name="use_custom_label_color">لون تسمية مخصص</string>
+<string name="use_qsb_label_color">لون مخصص لخلفية شريط البحث</string>
+<string name="use_spring_sum">في درج التطبيق</string>
+<string name="vibrationduration">مدة الاهتزاز</string>
+<string name="vibrationdurationtest">اختبار الاهتزاز</string>
+<string name="white_theme">فاتح</string>
+<string name="white_withdarktext_theme">فاتح مع نص داكن</string>
+<string name="accent_color_sum">لون النافذة المنبثقة للتمرير السريع، الأزرار وشريط البحث الأصلي</string>
+<string name="accent_drawer">لون اللكنة</string>
+<string name="accordion">أكورديون</string>
+<string name="action_app_drawer">فتح درج التطبيق</string>
+<string name="action_app_search">فتح بحث التطبيق</string>
+<string name="action_canceled">الإجراء ألغاه المستخدم</string>
+<string name="action_default_screen">الذهاب إلى الشاشة الافتراضية</string>
+<string name="action_first_screen">الذهاب إلى الشاشة الأولى</string>
+<string name="action_last_screen">الذهاب إلى الشاشة الأخيرة</string>
+<string name="action_lock">قفل</string>
+<string name="action_nothing">لا شيء</string>
+<string name="action_notifications">فتح لوحة الإشعارات</string>
+<string name="action_notifications_with_settings">فتح لوحة الإشعارات مع الإعدادات السريعة</string>
+<string name="action_overview">الدخول إلى النظرة العامة</string>
+<string name="action_quick_search">بحث سريع</string>
+<string name="action_settings">إعدادات الجهاز</string>
+<string name="action_voice_search">بحث صوتي</string>
+<string name="add_translation">إضافة أو تحسين الترجمة</string>
+<string name="additional_options">خيارات اضافية</string>
+<string name="all_apps">قائمة التطبيقات</string>
+<string name="animate_overview_pref_title">تأثير التمرير في النظرة العامة</string>
+<string name="app_installing_progress">عرض تقدم تثبيت التطبيق</string>
+<string name="app_open_animation">تأثير حركة فتح التطبيق</string>
+<string name="app_open_animation_sum">عند فتح تطبيق جديد والعودة إلى الشاشة الرئيسية</string>
+<string name="arrow_and_line_color">لون السهم ومؤشر الصفحة</string>
+<string name="attention">انتباه!</string>
+<string name="background_color">لون الخلفية</string>
+<string name="badge_place">موضع الشارة</string>
+<string name="badge_place_1">أعلى اليمين</string>
+<string name="badge_place_2">أسفل اليمين</string>
+<string name="badge_place_3">أعلى اليسار</string>
+<string name="badge_place_4">أسفل اليسار</string>
+<string name="black_withdarktext_theme">أسود مع نص غامق</string>
+<string name="buyapp">شراء تطبيق التبرع</string>
+<string name="chetyrepda_tread">الموضوع على 4PDA</string>
+<string name="circle">دائرة</string>
+<string name="clean_all_settings">إعادة تعيين جميع الإعدادات إلى القيم الافتراضية؟</string>
+<string name="clean_all_settings_sum">إعادة تعيين إعدادات CPL إلى الافتراضي</string>
+<string name="clean_all_settings_title">إعادة تعيين إلى الافتراضي</string>
+<string name="clean_user_icons">إعادة تعيين الأيقونات والتسميات البديلة لتطبيق المستخدم؟</string>
+<string name="clock_format">تنسيق الساعة</string>
+<string name="cube_in">مكعب للداخل</string>
+<string name="cube_out">مكعب للخارج</string>
+<string name="current">الحالي:</string>
+<string name="custom_gen_iconpack">خيارات توليد الأيقونات</string>
+<string name="custom_generate_new_one">توليد أيقونة جديدة</string>
+<string name="custom_qsb_text_color">لون نص شريط البحث</string>
+<string name="cylinder_in">اسطوانة للداخل</string>
+<string name="cylinder_out">اسطوانة للخارج</string>
+<string name="dark_withdarktext_theme">داكن مع نص غامق</string>
+<string name="date_format_long">طويل</string>
+<string name="date_format_normal">عادي</string>
+<string name="date_format_short">قصير</string>
+<string name="debug">التصحيح</string>
+<string name="debug_sum">إعادة تشغيل أو إعادة ضبط الإعدادات</string>
+<string name="def">افتراضي</string>
+<string name="default_color">اللون الافتراضي</string>
+<string name="default_home">الشاشة الرئيسية الافتراضية</string>
+<string name="default_launcher_message">سيؤدي هذا الإجراء إلى تغيير المشغل الافتراضي. هل تريد بالتأكيد المتابعة؟</string>
+<string name="default_launcher_title">تغيير المشغل الافتراضي</string>
+<string name="delete">حذف</string>
+<string name="delete_mode">حذف النسخ الاحتياطي</string>
+<string name="delete_selected">حذف المحدد</string>
+<string name="delete_success">تم حذف النسخة الاحتياطية</string>
+<string name="developer_mode">وضع المطور</string>
+<string name="disable">معطل</string>
+<string name="disable_dock">تعطيل الشريط السفلي</string>
+<string name="dock_height">ارتفاع الشريط السفلي</string>
+<string name="dock_opacity">عتامة الشريط السفلي</string>
+<string name="dock_show_labels">تسميات الرموز في الشريط السفلي</string>
+<string name="donation_sum">مشغل CPL مجاني ولا يحتوي على إعلانات. إذا أعجبك التطبيق وتريد دعم التطوير المستقبلي، فيمكنك شراء تطبيق التبرع، كما يمكنك الدعم عبر PayPal.</string>
+<string name="donation_thanks">وظائف إضافية نشطة</string>
+<string name="double_tap">ضغط مزدوج</string>
+<string name="double_tap_to_lock_method">طريقة القفل</string>
+<string name="double_tap_to_lock_method_not_set">غير مضبوط</string>
+<string name="double_tap_to_lock_method_null">لم يتم تعيين طريقة قفل الشاشة الافتراضي. تحقق من الإعدادات لاختيارها.</string>
+<string name="double_tap_to_lock_title_with_admin">مع صلاحيات المشرف</string>
+<string name="double_tap_to_lock_title_with_timeout">مع شاشة سوداء</string>
+<string name="drawer_button_market">متجر Play</string>
+<string name="drawer_button_mic">الميكروفون</string>
+<string name="drawer_button_settings">إعدادات CPL</string>
+<string name="drawer_button_settings_sum">بنقرة طويلة - إعدادات النظام</string>
+<string name="drawer_button_visibility">رؤية التطبيقات المخفية</string>
+<string name="drawer_button_visibility_sum">بنقرة طويلة - قائمة التطبيقات المخفية</string>
+<string name="drawer_buttons">أزرار في شريط البحث</string>
+<string name="drawer_buttons_select">الأزرار</string>
+<string name="drawer_opacity">عتامة الدرج</string>
+<string name="elastic_scrolling">التمرير المرن</string>
+<string name="elastic_scrolling_coeff">درجة التمرير المرن</string>
+<string name="empty">فارغ</string>
+<string name="empty_slot">فتحة النسخ الاحتياطي الحالية فارغة</string>
+<string name="extra_bottom_padding_summary">تمكين إذا كانت الأيقونات قريبة جداً من شريط البحث السفلي</string>
+<string name="extra_bottom_padding_title">حشوة سفلية إضافية لشريط البحث</string>
+<string name="extract_shortcut_color">تلوين الاختصارات</string>
+<string name="extract_shortcut_color_sum">إستخراج لون الاختصار من أيقونة التطبيق</string>
+<string name="fade">اختفاء</string>
+<string name="fall_down">سقوط</string>
+<string name="find_in_store">إيجاد على متجر Play</string>
+<string name="flip">قلب</string>
+<string name="folder_adaptive_icon">أيقونة المجلد المتكيف</string>
+<string name="folder_animation">تأثير حركة فتح المجلد</string>
+<string name="folder_background_color">لون الخلفية</string>
+<string name="folder_opacity">عتامة خلفية المجلد</string>
+<string name="folder_prewiew_color">معاينة اللون</string>
+<string name="from_middle">من الوسط</string>
+<string name="full_width_widgets_pref_summary">السماح للأدوات بالامتداد على العرض الكامل بدون الحشو</string>
+<string name="full_width_width_widgets_pref_title">أدوات العرض الكامل</string>
+<string name="gallery">المعرض</string>
+<string name="generate_random">لون عشوائي</string>
+<string name="generate_random_brightness">أقصى سطوع للون العشوائي</string>
+<string name="gestures">الإيماءات</string>
+<string name="gestures_sum">تخصيص إيماءات الشاشة الرئيسية</string>
+<string name="getplugin">الحصول على تغذية Google و مساعد الطقس</string>
+<string name="gradient_dock">شريط سفلي متدرج</string>
+<string name="hidden_apps_tint">لون رمادي للتطبيقات المخفية</string>
+<string name="hide_app_popup_hide">اخفاء التطبيق</string>
+<string name="hide_app_popup_hide_toast">التطبيق المخفي</string>
+<string name="hide_app_popup_show">عرض التطبيق</string>
+<string name="hide_app_popup_show_toast">ظهور التطبيق</string>
+<string name="hide_dock_from_home_screen">إخفاء الشريط السفلي من الشاشة الرئيسية</string>
+<string name="hideapp">إخفاء من درج التطبيق</string>
+<string name="hidedonationbutton">اخفاء الزر</string>
+<string name="home_button">زر الصفحة الرئيسية</string>
+<string name="home_screen_notification_bar">إظهار شريط الإشعار</string>
+<string name="horizontal_only">أفقي فقط</string>
+<string name="hotseat_drag_indicator">سحب المؤشر</string>
+<string name="icon_import_success">تمت استعادة قاعدة البيانات الأيقونات بنجاح</string>
+<string name="icon_shape_cloud">السحابة</string>
+<string name="icon_shape_cylinder">أسطوانة</string>
+<string name="icon_shape_lemon">ليمون</string>
+<string name="infinite_scroll">التمرير اللانهائي</string>
+<string name="launch_favorite_app_title">فتح التطبيق المفضل</string>
+<string name="layout_import_success">تمت استعادة تخطيط الشاشة الرئيسية بنجاح</string>
+<string name="left_swipe">سحبة لليسار</string>
+<string name="lock">قفل</string>
+<string name="lock_screen_method_1">اغلق الجهاز على الفور بشكل كامل ، مع طلب رمز PIN لإلغاء القفل. هذا لن يسمح بإلغاء قفل بصمة الإصبع</string>
+<string name="lock_screen_method_2">عرض شاشة سوداء لمدة 5 ثوانٍ أثناء انقضاء مهلة الشاشة وإيقاف تشغيلها. سيحترم هذا إعدادات الأمان العادية لجهازك عند انتهاء مهلة الشاشة ، مما يسمح بإدخال بصمات الأصابع لإلغاء القفل</string>
+<string name="lock_screen_method_3">محاكاة الضغط على زر الطاقة</string>
+<string name="long_tap">ضغطة طويلة</string>
+<string name="more">المزيد</string>
+<string name="more_info">معلومات اكثر</string>
+<string name="morepack">احصل على المزيد من الأيقونات</string>
+<string name="not_set">غير مضبوط</string>
+<string name="one_finger_down">سحب لأسفل بأصبع واحد</string>
+<string name="one_finger_up">سحب لأعلى بأصبع واحد</string>
+<string name="overview">نظرة عامة</string>
+<string name="page_not_empty">هذه الصفحة ليست فارغة. سيتم أيضا إزالة هذه المواد.</string>
+<string name="parallax_scrolling">عكس تمرير خلفية</string>
+<string name="pdock_radius">تقوس الزاوية</string>
+<string name="pdock_settings">إعدادات الشريط السفلي المدور</string>
+<string name="pdock_shadow">حجم الظل</string>
+<string name="perform_backup">تنفيذ النسخ الاحتياطي؟</string>
+<string name="perform_restore">تنفيذ الاستعادة؟</string>
+<string name="pixel_search_layout">تخطيط بحث بكسل</string>
+<string name="pixel_search_layout_sum">قد يكون غير متاح على بعض الأجهزة</string>
+<string name="pref_open_source_licenses_title">التراخيص المفتوحة المصدر</string>
+<string name="qsb_center_text">محاذاة نص المركز</string>
+<string name="qsb_text">النص في شريط البحث</string>
+<string name="qsb_text_sans">استخدم خط Google Sans للنص</string>
+<string name="reset_hidden_apps_hint_no_apps">لا يوجد تطبيقات مخفية</string>
+<string name="reset_icon">إعادة تعيين الأيقونة</string>
+<string name="reset_user_icon">إعادة تعيين رمز المستخدم</string>
+<string name="resize_any_widget_sum">السماح بتغيير حجم الأدوات التي لا يمكن تغيير حجمها عادةً</string>
+<string name="resize_any_widget_title">تغيير حجم أي أداة</string>
+<string name="restore_icons_title">إستعادة قاعدة بيانات الأيقونات</string>
+<string name="restore_layout_title">إستعادة تخطيط الشاشة الرئيسية</string>
+<string name="restore_settings_title">إستعادة الإعدادات</string>
+<string name="restore_user_icons_title">إستعادة قاعدة بيانات أيقونات المستخدم</string>
+<string name="right_swipe">سحب لليمين</string>
+<string name="rotate_down">تدوير لأسفل</string>
+<string name="rotate_up">تدوير لأعلى</string>
+<string name="rounded_corners">زوايا مدورة</string>
+<string name="save_close">حفظ وإغلاق</string>
+<string name="say_ok_google">قل OK Google</string>
+<string name="scale">مقياس</string>
+<string name="scrolling">التمرير</string>
+<string name="search_bar">شريط البحث</string>
+<string name="settings_edit_allow_question">السماح بتحرير الشاشة الرئيسية</string>
+<string name="share">مشاركة</string>
+<string name="shortcuts">الأختصارات</string>
+<string name="show_dock_on_home_screen">عرض الشريط السفلي على الشاشة الرئيسية</string>
+<string name="show_folder_name">إظهار اسم المجلد</string>
+<string name="show_hidden_pref_off">التطبيقات المخفية لن تكون مرئية</string>
+<string name="show_hidden_pref_on">سيتم عرض التطبيقات المخفية لتغيير إعدادات الرؤية</string>
+<string name="show_hidden_pref_title">إظهار التطبيقات المخفية</string>
+<string name="show_seconds">عرض الثواني</string>
+<string name="show_top_shadow_title">الظل العلوي</string>
+<string name="smallallaps_sum">فقط لشريط البحث الافتراضي</string>
+<string name="smartspace_launch_calendar">التقويم</string>
+<string name="smartspace_launch_clock">ضبط المنبه</string>
+<string name="smartspace_launch_keep">تطبيق Google Keep</string>
+<string name="smartspace_launch_tasks">مهام Google</string>
+<string name="smartspace_launch_timer">ضبط المؤقت</string>
+<string name="smartspace_show_popup">قائمة الإجراءات</string>
+<string name="smartspace_show_popup_sum">إظهار النوافذ المنبثقة مع الإجراءات السريعة عند النقر على الأداة</string>
+<string name="spin">دوران</string>
+<string name="stack">كومة</string>
+<string name="style_1">النمط 1</string>
+<string name="style_2">النمط 2</string>
+<string name="swipe_up">سحب لأعلى</string>
+<string name="text_divider">مقسم النص</string>
+<string name="transition_effect">تأثير التمرير</string>
+<string name="transparent_nav_bar">شريط تنقل شفاف</string>
+<string name="two_finger_down">سحب بأصبعين لأسفل</string>
+<string name="two_finger_up">سحب بأصبعين لأعلى</string>
+<string name="unlock">فتح القفل</string>
+<string name="use_assistant">مساعد Google</string>
+<string name="use_assistant_drawer_sum">بدلاً من الميكروفون في شريط البحث</string>
+<string name="use_assistant_sum">بدلاً من الميكروفون في شريط البحث في الشريط السفلي</string>
+<string name="use_dynamic_calendar">أيقونة التقويم الديناميكية</string>
+<string name="use_dynamic_clock">أيقونة الساعة الديناميكية</string>
+<string name="use_dynamic_icons">الأيقونات الديناميكية</string>
+<string name="vertical_only">عمودي فقط</string>
+<string name="wallpaper_scroll_title">تمرير الخلفية</string>
+<string name="warning_cpl_not_default">لم يتم التعيين كأفتراضي</string>
+<string name="warning_cpl_not_default_sum">لم يتم تعيين CPL كمشغل افتراضي. انقر للتعيين.</string>
+<string name="white_status_bar_icons">أيقونات بيضاء لشريط الحالة</string>
+<string name="widget_padding_title">حشو الأداة</string>
+<string name="widgets_in_dock_sum">السماح بإضافة الأدوات إلى الشريط السفلي</string>
+<string name="widgets_in_dock_title">الأدوات في الشريط السفلي</string>
+<string name="xda_tread">الموضوع على XDA</string>
+<string name="zoom">المكبر</string>
+<string name="zoom_in">تكبير</string>
+<string name="zoom_out">تصغير</string>
+<string name="abc_font_family_body_1_material">sans-serif</string>
+<string name="abc_font_family_body_2_material">sans-serif-medium</string>
+<string name="abc_font_family_button_material">sans-serif-medium</string>
+<string name="abc_font_family_caption_material">sans-serif</string>
+<string name="abc_font_family_display_1_material">sans-serif</string>
+<string name="abc_font_family_display_2_material">sans-serif</string>
+<string name="abc_font_family_display_3_material">sans-serif</string>
+<string name="abc_font_family_display_4_material">sans-serif-light</string>
+<string name="abc_font_family_headline_material">sans-serif</string>
+<string name="abc_font_family_menu_material">sans-serif</string>
+<string name="abc_font_family_subhead_material">sans-serif</string>
+<string name="abc_font_family_title_material">sans-serif-medium</string>
+<string name="allow_two_line_labels_title">السماح بالتسميات ذات السطرين</string>
+<string name="app_name_pixel_launcher">الرئيسية CPL</string>
+<string name="backup_location_sum">Internal memory\\Documents\\CPL\\</string>
+<string name="bridge_install">تثبيت</string>
+<string name="color_extraction_impl_class" />
+<string name="debug_recreate">إعادة تشغيل سريع</string>
+<string name="default_live_wallpaper">com.breel.wallpapers/com.breel.wallpapers.dioramas.lagos.LagosWallpaperService</string>
+<string name="delete_package_intent">\#Intent;action=android.intent.action.DELETE;launchFlags=0x10800000;end</string>
+<string name="derived_app_name">@string/app_name_pixel_launcher</string>
+<string name="drawable_factory_class">com.google.android.apps.nexuslauncher.DynamicDrawableFactory</string>
+<string name="ee">... وبعد يوم واحد تجد أنك قد حصلت على عشر سنوات خلفك</string>
+<string name="fwp_version">1.cpl.fwp</string>
+<string name="home_opens_drawer_any_screen_pref_title">من اي شاشة</string>
+<string name="icon_provider_class">com.android.launcher3.CustomIconProvider</string>
+<string name="icu_abbrev_wday_month_day_no_year">EEEMMMd</string>
+<string name="instant_app_resolver_class" />
+<string name="market_search_intent">market://search?c=apps</string>
+<string name="pdock_sum">نمط أندرويد P</string>
+<string name="pref_show_google_now_summary">@string/msg_minus_one_on_left</string>
+<string name="smartspace_hours_mins">%1$s %2$s</string>
+<string name="sum_thanks">Amir Zaidi And Lawnchair team</string>
+<string name="translators_sum">whataudoinghere, LeandroSB</string>
+<string name="user_event_dispatcher_class">com.google.android.apps.nexuslauncher.CustomAppPredictor</string>
+<string name="wallpaper_picker_package">com.google.android.apps.wallpaper</string>
+<string name="about_app_version">الإصدار</string>
+<string name="app_name">Launcher3</string>
+<string name="pref_icon_pack">حزمة الأيقونات</string>
 </resources>
