@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!-- 
+<?xml version="1.0" encoding="utf-8"?>
+<!--
 /*
 * Copyright (C) 2008 The Android Open Source Project
 *
@@ -15,134 +15,771 @@
 * See the License for the specific language governing permissions and
 * limitations under the License.
 */
- -->
+-->
 
-<resources xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="app_name" msgid="649227358658669779">"Launcher3"</string>
-    <string name="folder_name" msgid="7371454440695724752"></string>
-    <string name="work_folder_name" msgid="3753320833950115786">"İş"</string>
-    <string name="activity_not_found" msgid="8071924732094499514">"Uygulama yüklü değil."</string>
-    <string name="activity_not_available" msgid="7456344436509528827">"Uygulama kullanılamıyor"</string>
-    <string name="safemode_shortcut_error" msgid="9160126848219158407">"İndirilen uygulama Güvenli modda devre dışı bırakıldı"</string>
-    <string name="safemode_widget_error" msgid="4863470563535682004">"Güvenli modda widget\'lar devre dışı"</string>
-    <string name="shortcut_not_available" msgid="2536503539825726397">"Kısayol kullanılamıyor"</string>
-    <string name="home_screen" msgid="806512411299847073">"Ana ekran"</string>
-    <string name="custom_actions" msgid="3747508247759093328">"Özel işlemler"</string>
-    <string name="long_press_widget_to_add" msgid="7699152356777458215">"Widget seçmek için dokunun ve basılı tutun."</string>
-    <string name="long_accessible_way_to_add" msgid="4289502106628154155">"Bir widget\'ı seçmek veya özel işlemleri kullanmak için iki kez dokunun ve basılı tutun."</string>
-    <string name="widget_dims_format" msgid="2370757736025621599">"%1$d × %2$d"</string>
-    <string name="widget_accessible_dims_format" msgid="3640149169885301790">"genişlik: %1$d, yükseklik: %2$d"</string>
-    <string name="add_item_request_drag_hint" msgid="5899764264480397019">"Manuel olarak yerleştirmek için dokunun ve basılı tutun"</string>
-    <string name="place_automatically" msgid="8064208734425456485">"Otomatik olarak ekle"</string>
-    <string name="all_apps_search_bar_hint" msgid="1390553134053255246">"Uygulamalarda ara"</string>
-    <string name="all_apps_loading_message" msgid="5813968043155271636">"Uygulamalar yükleniyor…"</string>
-    <string name="all_apps_no_search_results" msgid="3200346862396363786">"\"<xliff:g id="QUERY">%1$s</xliff:g>\" ile eşleşen uygulama bulunamadı"</string>
-    <string name="all_apps_search_market_message" msgid="1366263386197059176">"Başka uygulamalar ara"</string>
-    <string name="notifications_header" msgid="1404149926117359025">"Bildirimler"</string>
-    <string name="out_of_space" msgid="4691004494942118364">"Bu Ana ekranda yer kalmadı."</string>
-    <string name="hotseat_out_of_space" msgid="7448809638125333693">"Favoriler tepsisinde başka yer kalmadı"</string>
-    <string name="all_apps_button_label" msgid="8130441508702294465">"Uygulamalar listesi"</string>
-    <string name="all_apps_home_button_label" msgid="252062713717058851">"Ana ekran"</string>
-    <string name="remove_drop_target_label" msgid="7812859488053230776">"Kaldır"</string>
-    <string name="uninstall_drop_target_label" msgid="4722034217958379417">"Yüklemeyi kaldır"</string>
-    <string name="app_info_drop_target_label" msgid="692894985365717661">"Uygulama bilgileri"</string>
-    <string name="permlab_install_shortcut" msgid="5632423390354674437">"kısayolları yükle"</string>
-    <string name="permdesc_install_shortcut" msgid="923466509822011139">"Uygulamaya, kullanıcı müdahalesi olmadan kısayol ekleme izni verir."</string>
-    <string name="permlab_read_settings" msgid="1941457408239617576">"Ana ekran ayarlarını ve kısayollarını oku"</string>
-    <string name="permdesc_read_settings" msgid="5833423719057558387">"Uygulamaya, Ana ekrandaki ayarları ve kısayolları okuma izni verir."</string>
-    <string name="permlab_write_settings" msgid="3574213698004620587">"Ana ekran ayarlarını ve kısayollarını yaz"</string>
-    <string name="permdesc_write_settings" msgid="5440712911516509985">"Uygulamaya, Ana ekrandaki ayarları ve kısayolları değiştirme izni verir."</string>
-    <string name="msg_no_phone_permission" msgid="9208659281529857371">"<xliff:g id="APP_NAME">%1$s</xliff:g> uygulamasının telefon etmesine izin verilmiyor"</string>
-    <string name="gadget_error_text" msgid="6081085226050792095">"Widget yüklenirken sorun oluştu"</string>
-    <string name="gadget_setup_text" msgid="8274003207686040488">"Kurulum"</string>
-    <string name="uninstall_system_app_text" msgid="4172046090762920660">"Bu bir sistem uygulamasıdır ve yüklemesi kaldırılamaz."</string>
-    <string name="folder_hint_text" msgid="6617836969016293992">"Adsız Klasör"</string>
-    <string name="disabled_app_label" msgid="6673129024321402780">"<xliff:g id="APP_NAME">%1$s</xliff:g> devre dışı"</string>
-    <string name="default_scroll_format" msgid="7475544710230993317">"Sayfa %1$d / %2$d"</string>
-    <string name="workspace_scroll_format" msgid="8458889198184077399">"Ana ekran %1$d / %2$d"</string>
-    <string name="workspace_new_page" msgid="257366611030256142">"Yeni ana ekran sayfası"</string>
-    <string name="folder_opened" msgid="94695026776264709">"Klasör açıldı, <xliff:g id="WIDTH">%1$d</xliff:g> x <xliff:g id="HEIGHT">%2$d</xliff:g>"</string>
-    <string name="folder_tap_to_close" msgid="4625795376335528256">"Klasörü kapatmak için dokunun"</string>
-    <string name="folder_tap_to_rename" msgid="4017685068016979677">"Yeni adın kaydedilmesi için dokunun"</string>
-    <string name="folder_closed" msgid="4100806530910930934">"Klasör kapatıldı"</string>
-    <string name="folder_renamed" msgid="1794088362165669656">"Klasörün adı <xliff:g id="NAME">%1$s</xliff:g> olarak değiştirildi"</string>
-    <string name="folder_name_format" msgid="6629239338071103179">"Klasör: <xliff:g id="NAME">%1$s</xliff:g>"</string>
-    <string name="widget_button_text" msgid="2880537293434387943">"Widget\'lar"</string>
-    <string name="wallpaper_button_text" msgid="8404103075899945851">"Duvar Kağıtları"</string>
-    <string name="settings_button_text" msgid="8873672322605444408">"Ana ekran ayarları"</string>
-    <string name="msg_disabled_by_admin" msgid="6898038085516271325">"Yöneticiniz tarafından devre dışı bırakıldı"</string>
-    <string name="accessibility_action_overview" msgid="6257665857640347026">"Genel bakış"</string>
-    <string name="allow_rotation_title" msgid="7728578836261442095">"Ana ekranı döndürmeye izin ver"</string>
-    <string name="allow_rotation_desc" msgid="8662546029078692509">"Telefon döndürüldüğünde"</string>
-    <string name="allow_rotation_blocked_desc" msgid="3212602545192996253">"Mevcut Ekran ayarı, döndürmeye izin vermiyor"</string>
-    <string name="icon_badging_title" msgid="874121399231955394">"Bildirim noktaları"</string>
-    <string name="icon_badging_desc_on" msgid="2627952638544674079">"Açık"</string>
-    <string name="icon_badging_desc_off" msgid="5503319969924580241">"Kapalı"</string>
-    <string name="title_missing_notification_access" msgid="7503287056163941064">"Bildirim erişimi gerekli"</string>
-    <string name="msg_missing_notification_access" msgid="281113995110910548">"Bildirim Noktaları\'nı göstermek için <xliff:g id="NAME">%1$s</xliff:g> uygulamasının bildirimlerini açın"</string>
-    <string name="title_change_settings" msgid="1376365968844349552">"Ayarları değiştir"</string>
-    <string name="auto_add_shortcuts_label" msgid="8222286205987725611">"Ana ekrana simge ekle"</string>
-    <string name="auto_add_shortcuts_description" msgid="7117251166066978730">"Yeni uygulamalar için"</string>
-    <string name="icon_shape_override_label" msgid="2977264953998281004">"Simge şeklini değiştir"</string>
-    <string name="icon_shape_system_default" msgid="1709762974822753030">"Sistem varsayılanını kullan"</string>
-    <string name="icon_shape_square" msgid="633575066111622774">"Kare"</string>
-    <string name="icon_shape_squircle" msgid="5658049910802669495">"Kare-daire"</string>
-    <string name="icon_shape_circle" msgid="6550072265930144217">"Daire"</string>
-    <string name="icon_shape_teardrop" msgid="4525869388200835463">"Gözyaşı damlası"</string>
-    <string name="icon_shape_override_progress" msgid="3461735694970239908">"Simge şekli değişiklikleri uygulanıyor"</string>
-    <string name="package_state_unknown" msgid="7592128424511031410">"Bilinmiyor"</string>
-    <string name="abandoned_clean_this" msgid="7610119707847920412">"Kaldır"</string>
-    <string name="abandoned_search" msgid="891119232568284442">"Ara"</string>
-    <string name="abandoned_promises_title" msgid="7096178467971716750">"Bu uygulama yüklü değil"</string>
-    <string name="abandoned_promise_explanation" msgid="3990027586878167529">"Bu simgenin uygulaması yüklü değil. Uygulamayı kaldırabilir veya arayıp manuel olarak yükleyebilirsiniz."</string>
-    <string name="app_downloading_title" msgid="8336702962104482644">"<xliff:g id="NAME">%1$s</xliff:g> indiriliyor, <xliff:g id="PROGRESS">%2$s</xliff:g> tamamlandı"</string>
-    <string name="app_waiting_download_title" msgid="7053938513995617849">"<xliff:g id="NAME">%1$s</xliff:g> uygulaması yüklenmek için bekliyor"</string>
-    <string name="widgets_bottom_sheet_title" msgid="2904559530954183366">"<xliff:g id="NAME">%1$s</xliff:g> widget\'ları"</string>
-    <string name="action_add_to_workspace" msgid="8902165848117513641">"Ana ekrana ekle"</string>
-    <string name="action_move_here" msgid="2170188780612570250">"Öğeyi buraya taşı"</string>
-    <string name="item_added_to_workspace" msgid="4211073925752213539">"Öğe ana ekrana eklendi"</string>
-    <string name="item_removed" msgid="851119963877842327">"Öğe kaldırıldı"</string>
-    <string name="action_move" msgid="4339390619886385032">"Öğeyi taşı"</string>
-    <string name="move_to_empty_cell" msgid="2833711483015685619">"<xliff:g id="NUMBER_0">%1$s</xliff:g>. satır <xliff:g id="NUMBER_1">%2$s</xliff:g>. sütuna taşı"</string>
-    <string name="move_to_position" msgid="6750008980455459790">"<xliff:g id="NUMBER">%1$s</xliff:g>. sıraya taşı"</string>
-    <string name="move_to_hotseat_position" msgid="6295412897075147808">"Favorilerde <xliff:g id="NUMBER">%1$s</xliff:g>. sıraya taşı"</string>
-    <string name="item_moved" msgid="4606538322571412879">"Öğe taşındı"</string>
-    <string name="add_to_folder" msgid="9040534766770853243">"Klasöre ekle: <xliff:g id="NAME">%1$s</xliff:g>"</string>
-    <string name="add_to_folder_with_app" msgid="4534929978967147231">"<xliff:g id="NAME">%1$s</xliff:g> öğesini içeren klasöre ekle"</string>
-    <string name="added_to_folder" msgid="4793259502305558003">"Öğe, klasöre eklendi"</string>
-    <string name="create_folder_with" msgid="4050141361160214248">"Şu öğeyle klasör oluştur: <xliff:g id="NAME">%1$s</xliff:g>"</string>
-    <string name="folder_created" msgid="6409794597405184510">"Klasör oluşturuldu"</string>
-    <string name="action_move_to_workspace" msgid="1603837886334246317">"Ana ekrana taşı"</string>
-    <string name="action_move_screen_left" msgid="8854216831569401665">"Ekranı sola taşı"</string>
-    <string name="action_move_screen_right" msgid="329334910274311123">"Ekranı sağa taşı"</string>
-    <string name="screen_moved" msgid="266230079505650577">"Ekran taşındı"</string>
-    <string name="action_resize" msgid="1802976324781771067">"Yeniden boyutlandır"</string>
-    <string name="action_increase_width" msgid="8773715375078513326">"Genişliği artır"</string>
-    <string name="action_increase_height" msgid="459390020612501122">"Yüksekliği artır"</string>
-    <string name="action_decrease_width" msgid="1374549771083094654">"Genişliği azalt"</string>
-    <string name="action_decrease_height" msgid="282377193880900022">"Yüksekliği azalt"</string>
-    <string name="widget_resized" msgid="9130327887929620">"Widget, <xliff:g id="NUMBER_0">%1$s</xliff:g> genişlik ve <xliff:g id="NUMBER_1">%2$s</xliff:g> yükseklik değerine yeniden boyutlandırıldı"</string>
-    <string name="action_deep_shortcut" msgid="2864038805849372848">"Kısayollar"</string>
-    <string name="shortcuts_menu_description" msgid="406159963824238648">"<xliff:g id="APP_NAME">%2$s</xliff:g> için <xliff:g id="NUMBER_OF_SHORTCUTS">%1$d</xliff:g> kısayol"</string>
-    <string name="shortcuts_menu_with_notifications_description" msgid="8985659504915468840">"<xliff:g id="APP_NAME">%3$s</xliff:g> için <xliff:g id="NUMBER_OF_SHORTCUTS">%1$d</xliff:g> kısayol ve <xliff:g id="NUMBER_OF_NOTIFICATIONS">%2$d</xliff:g> bildirim"</string>
-    <string name="action_dismiss_notification" msgid="5909461085055959187">"Kapat"</string>
-    <string name="notification_dismissed" msgid="6002233469409822874">"Bildirim kapatıldı"</string>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- General -->
+    <skip />
+
+    <!-- Application name -->
+    <!-- Default folder name -->
+    <string name="folder_name"></string>
+    <!-- Work folder name -->
+    <string name="work_folder_name">İş</string>
+    <!-- Displayed when user selects a shortcut for an app that was uninstalled [CHAR_LIMIT=none]-->
+    <string name="activity_not_found">Uygulama yüklü değil</string>
+    <!-- Displayed when user selects a shortcut for an app that is current not available [CHAR_LIMIT=none]-->
+    <string name="activity_not_available">Uygulama kullanılamıyor</string>
+    <!-- SafeMode shortcut error string -->
+    <string name="safemode_shortcut_error">İndirilen uygulama Güvenli modda devre dışı bırakıldı</string>
+    <!-- SafeMode widget error string -->
+    <string name="safemode_widget_error">"Güvenli modda widget'lar devre dışı"</string>
+    <!-- Message shown when a shortcut is not available. It could have been temporarily disabled and may start working again after some time. -->
+    <string name="shortcut_not_available">Kısayol kullanılamıyor</string>
+    <!-- User visible name for the launcher/home screen. [CHAR_LIMIT=30] -->
+    <string name="home_screen">Ana ekran</string>
+    <!-- Label for showing custom action list of a shortcut or widget. [CHAR_LIMIT=30] -->
+    <string name="custom_actions">Özel işlemler</string>
+
+    <!-- Widgets -->
+    <!-- Message to tell the user to press and hold on a widget to add it [CHAR_LIMIT=50] -->
+    <string name="long_press_widget_to_add">Widget seçmek için dokunun ve basılı tutun</string>
+    <!-- Accessibility spoken hint message in widget picker, which allows user to add a widget. Custom action is the label for additional accessibility actions available in this mode [CHAR_LIMIT=100] -->
+    <string name="long_accessible_way_to_add">"Bir widget'ı seçmek veya özel işlemleri kullanmak için iki kez dokunun ve basılı tutun"</string>
+    <!-- The format string for the dimensions of a widget in the drawer -->
+    <!-- There is a special version of this format string for Farsi -->
+    <string name="widget_dims_format">%1$d \u00d7 %2$d</string>
+    <!-- Accessibility spoken message format for the dimensions of a widget in the drawer -->
+    <string name="widget_accessible_dims_format">"genişlik: %1$d, yükseklik: %2$d"</string>
+    <!-- Message to tell the user to press and hold a widget/icon to add it  -->
+    <string name="add_item_request_drag_hint">Elle yerleştirmek için dokunun ve basılı tutun</string>
+    <!-- Button label to automatically add icon on home screen [CHAR_LIMIT=50] -->
+    <string name="place_automatically">Otomatik olarak ekle</string>
+
+    <!-- All Apps -->
+    <!-- Search bar text in the apps view. [CHAR_LIMIT=50] -->
+    <string name="all_apps_search_bar_hint">Uygulamalarda ara</string>
+    <!-- Loading apps text. [CHAR_LIMIT=50] -->
+    <string name="all_apps_loading_message">Uygulamalar yükleniyor&#8230;</string>
+    <!-- No-search-results text. [CHAR_LIMIT=50] -->
+    <string name="all_apps_no_search_results">"\"<xliff:g id="query">%1$s</xliff:g>\" ile eşleşen uygulama bulunamadı"</string>
+    <!-- Label for the button which allows the user to get app search results. [CHAR_LIMIT=50] -->
+    <string name="all_apps_search_market_message">Başka uygulamalar ara</string>
+
+    <!-- Popup items -->
+    <!-- Text to display as the header above notifications. [CHAR_LIMIT=30] -->
+    <string name="notifications_header">Bildirimler</string>
+
+    <!-- Drag and drop -->
+    <skip />
+    <!-- Error message when user has filled a home screen -->
+    <string name="out_of_space">Bu Ana ekranda yer kalmadı</string>
+    <!-- Error message when user has filled the hotseat -->
+    <string name="hotseat_out_of_space">Favoriler tepsisinde başka yer kalmadı</string>
+
+    <!-- All applications label -->
+    <string name="all_apps_button_label">Uygulamalar listesi</string>
+    <!-- Label for button in all applications label to go back home (to the workspace / desktop)
+         for accessibilty (spoken when the button gets focus). -->
+    <string name="all_apps_home_button_label">Ana ekran</string>
+
+    <!-- Label for remove drop target. [CHAR_LIMIT=20] -->
+    <string name="remove_drop_target_label">Sil</string>
+    <!-- Label for uninstall drop target. [CHAR_LIMIT=20]-->
+    <string name="uninstall_drop_target_label">Kaldır</string>
+    <!-- Label for app info drop target. [CHAR_LIMIT=20] -->
+    <string name="app_info_drop_target_label">Uygulama bilgileri</string>
+
+    <!-- Permissions: -->
+    <skip />
+    <!-- Permission short label -->
+    <string name="permlab_install_shortcut">Kısayolları yükle</string>
+    <!-- Permission description -->
+    <string name="permdesc_install_shortcut">Uygulamaya, kullanıcı müdahalesi olmadan kısayol ekleme izni verir</string>
+    <!-- Permission short label -->
+    <string name="permlab_read_settings">Ana ekran ayarlarını ve kısayollarını oku</string>
+    <!-- Permission description -->
+    <string name="permdesc_read_settings">Uygulamaya, Ana ekrandaki ayarları ve kısayolları okuma izni verir</string>
+    <!-- Permission short label -->
+    <string name="permlab_write_settings">Ana ekran ayarlarını ve kısayollarını yaz</string>
+    <!-- Permission description -->
+    <string name="permdesc_write_settings">Uygulamaya, Ana ekrandaki ayarları ve kısayolları değiştirme izni verir</string>
+
+    <!-- Toast shown on clicking a direct call shortcut. [CHAR_LIMIT=80] -->
+    <string name="msg_no_phone_permission"><xliff:g id="app_name" example="Launcher3">%1$s</xliff:g> uygulamasının telefon etmesine izin verilmiyor</string>
+
+    <!-- Widgets: -->
+    <skip />
+
+    <!-- Text to show user in place of a gadget when we can't display it properly -->
+    <string name="gadget_error_text">Widget yüklenirken sorun oluştu</string>
+
+    <!-- Text to show user in place of a gadget when it is not yet initialized. -->
+    <string name="gadget_setup_text">Kurulum</string>
+
+    <!-- Text to inform the user that they can't uninstall a system application -->
+    <string name="uninstall_system_app_text">Bu bir sistem uygulamasıdır ve yüklemesi kaldırılamaz</string>
+
+    <!-- Default folder title -->
+    <string name="folder_hint_text">Adsız klasör</string>
+
+    <!-- Accessibility -->
+    <!-- The format string for when an app is temporarily disabled. -->
+    <string name="disabled_app_label">"<xliff:g id="app_name">%1$s</xliff:g> devre dışı"</string>
+    <skip />
+
+    <!-- The format string for default page scroll text [CHAR_LIMIT=none] -->
+    <string name="default_scroll_format">"Sayfa %1$d / %2$d"</string>
+    <!-- The format string for Workspace page scroll text [CHAR_LIMIT=none] -->
+    <string name="workspace_scroll_format">"Ana ekran %1$d / %2$d"</string>
+    <!-- Description for a new page on homescreen[CHAR_LIMIT=none] -->
+    <string name="workspace_new_page">Yeni ana ekran sayfası</string>
+
+    <!-- Folder accessibility -->
+    <!-- The format string for when a folder is opened, speaks the dimensions -->
+    <string name="folder_opened">Klasör açıldı, <xliff:g id="width" example="5">%1$d</xliff:g> x <xliff:g id="height" example="3">%2$d</xliff:g></string>
+    <!-- Instruction that clicking outside will close folder -->
+    <string name="folder_tap_to_close">Klasörü kapatmak için dokunun</string>
+    <!-- Instruction that clicking outside will commit folder rename -->
+    <string name="folder_tap_to_rename">Yeni adın kaydedilmesi için dokunun</string>
+    <!-- Indication that folder closed -->
+    <string name="folder_closed">Klasör kapatıldı</string>
+    <!-- Folder renamed format -->
+    <string name="folder_renamed">Klasörün adı <xliff:g id="name" example="Games">%1$s</xliff:g> olarak değiştirildi</string>
+    <!-- Folder name format -->
+    <string name="folder_name_format">Klasör: <xliff:g id="name" example="Games">%1$s</xliff:g></string>
+
+    <!-- Strings for the customization mode -->
+    <!-- Text for widget add button -->
+    <string name="widget_button_text">"Widget'lar"</string>
+    <!-- Text for wallpaper change button -->
+    <string name="wallpaper_button_text">Duvar Kağıtları</string>
+    <!-- Text for settings button -->
+    <string name="settings_button_text">Ana ekran ayarları</string>
+    <!-- Message shown when a feature is disabled by the administrator -->
+    <string name="msg_disabled_by_admin">Yöneticiniz tarafından devre dışı bırakıldı</string>
+    <!-- Text for custom accessibility action to go to the overview mode, where users can look and change the overall UI of the launcher. -->
+    <string name="accessibility_action_overview">Genel bakış</string>
+
+    <!-- Strings for settings -->
+    <!-- Title for Allow Rotation setting. [CHAR LIMIT=50] -->
+    <string name="allow_rotation_title">Ana ekranı döndürmeye izin ver</string>
+    <!-- Text explaining when the home screen will get rotated. [CHAR LIMIT=100] -->
+    <string name="allow_rotation_desc">Telefon döndürüldüğünde</string>
+    <!-- Text explaining that rotation is disabled in Display settings. 'Display' refers to the Display section in system settings [CHAR LIMIT=100] -->
+    <string name="allow_rotation_blocked_desc">Mevcut ekran ayarı, döndürmeye izin vermiyor</string>
+    <!-- Title for Notification dots setting. Tapping this will link to the system Notifications settings screen where the user can turn off notification dots globally. [CHAR LIMIT=50] -->
+    <string name="icon_badging_title">Bildirim noktaları</string>
+    <!-- Text to indicate that the system icon badging setting is on [CHAR LIMIT=100] -->
+    <string name="icon_badging_desc_on">Açık</string>
+    <!-- Text to indicate that the system icon badging setting is off [CHAR LIMIT=100] -->
+    <string name="icon_badging_desc_off">Kapalı</string>
+    <!-- Title for the dialog shown when the app does not has notification access, explaining the requirement for notification access [CHAR LIMIT=50] -->
+    <string name="title_missing_notification_access">Bildirim erişimi gerekli</string>
+    <!-- Message explaining to the user that the notification access is required by the app for showing 'Notification dots' [CHAR LIMIT=NONE] -->
+    <string name="msg_missing_notification_access">"Bildirim Noktaları'nı göstermek için <xliff:g id="name" example="My App">%1$s</xliff:g> uygulamasının bildirimlerini açın"</string>
+    <!-- Button text in the confirmation dialog which would take the user to the system settings [CHAR LIMIT=50] -->
+    <string name="title_change_settings">Ayarları değiştir</string>
+
+    <!-- Label for the setting that allows the automatic placement of launcher shortcuts for applications and games installed on the device [CHAR LIMIT=40] -->
+    <string name="auto_add_shortcuts_label">Ana ekrana simge ekle</string>
+    <!-- Text description of the setting that allows the automatic placement of launcher shortcuts for applications and games installed on the device [CHAR LIMIT=NONE] -->
+    <string name="auto_add_shortcuts_description">Yeni uygulamalar için</string>
+
+    <!-- Message shown in the progress dialog when the icon shape override is being applied [CHAR LIMIT=100]-->
+    <string name="icon_shape_override_progress">Simge şekli değişiklikleri uygulanıyor</string>
+
+    <!-- Label on an icon that references an uninstalled package, for which we have no information about when it might be installed. [CHAR_LIMIT=15] -->
+    <string name="package_state_unknown">Bilinmiyor</string>
+
+    <!-- Button for abandoned promises dialog, to removes this abandoned promise icon. -->
+    <string name="abandoned_clean_this">Kaldır</string>
+    <!-- Button for abandoned promise dialog, to search in the market for the missing package. -->
+    <string name="abandoned_search">Ara</string>
+    <!-- Title for abandoned promise dialog. -->
+    <string name="abandoned_promises_title">Bu uygulama yüklü değil</string>
+    <!-- Explanation for abandoned promise dialog. "The first 'it' refers to the shortcut icon.
+    The second "it" refers to the app. -->
+    <string name="abandoned_promise_explanation">Bu simgenin uygulaması yüklü değil.
+        Uygulamayı kaldırabilir veya arayıp elle yükleyebilirsiniz.
+    </string>
+    <!-- Title for an app which is being downloaded. -->
+    <string name="app_downloading_title"><xliff:g id="name" example="Messenger">%1$s</xliff:g> indiriliyor, <xliff:g id="progress" example="30%">%2$s</xliff:g> tamamlandı</string>
+    <!-- Title for an app whose download has been started. -->
+    <string name="app_waiting_download_title"><xliff:g id="name" example="Messenger">%1$s</xliff:g> uygulaması yüklenmek için bekliyor</string>
+
+    <!-- Strings for widgets & more in the popup container/bottom sheet -->
+    <!-- Title for a bottom sheet that shows widgets for a particular app -->
+    <string name="widgets_bottom_sheet_title">"<xliff:g id="name" example="Messenger">%1$s</xliff:g> widget'ları"</string>
+
+    <!-- Strings for accessibility actions -->
+    <!-- Accessibility action to add an app to workspace. [CHAR_LIMIT=30] -->
+    <string name="action_add_to_workspace">Ana ekrana ekle</string>
+
+    <!-- Accessibility action to move item to the current location. [CHAR_LIMIT=30] -->
+    <string name="action_move_here">Öğeyi buraya taşı</string>
+
+    <!-- Accessibility confirmation for item added to workspace. -->
+    <string name="item_added_to_workspace">Öğe ana ekrana eklendi</string>
+
+    <!-- Accessibility confirmation for item removed. -->
+    <string name="item_removed">Öğe kaldırıldı</string>
+
+    <!-- Accessibility action to move an item on the workspace. [CHAR_LIMIT=30] -->
+    <string name="action_move">Öğeyi taşı</string>
+
+    <!-- Accessibility description to move item to empty cell. -->
+    <string name="move_to_empty_cell">"<xliff:g id="NUMBER_0">%1$s</xliff:g>. satır <xliff:g id="NUMBER_1">%2$s</xliff:g>. sütuna taşı"</string>
+
+    <!-- Accessibility description to move item inside a folder. -->
+    <string name="move_to_position">"<xliff:g id="NUMBER">%1$s</xliff:g>. sıraya taşı"</string>
+
+    <!-- Accessibility description to move item to the hotseat. -->
+    <string name="move_to_hotseat_position">"Favorilerde <xliff:g id="NUMBER">%1$s</xliff:g>. sıraya taşı"</string>
+
+    <!-- Accessibility confirmation for item move. -->
+    <string name="item_moved">Öğe taşındı</string>
+
+    <!-- Accessibility description to move item into an existing folder. -->
+    <string name="add_to_folder">Klasöre ekle: <xliff:g id="name" example="Games">%1$s</xliff:g></string>
+
+    <!-- Accessibility description to move item into an existing folder containing an app. -->
+    <string name="add_to_folder_with_app">"<xliff:g id="NAME">%1$s</xliff:g> öğesini içeren klasöre ekle"</string>
+
+    <!-- Accessibility confirmation for item added to folder. -->
+    <string name="added_to_folder">Öğe, klasöre eklendi</string>
+
+    <!-- Accessibility description to create folder with another item. -->
+    <string name="create_folder_with">Şu öğeyle klasör oluştur: <xliff:g id="name" example="Game">%1$s</xliff:g></string>
+
+    <!-- Accessibility confirmation for folder created. -->
+    <string name="folder_created">Klasör oluşturuldu</string>
+
+    <!-- Accessibility action to move an item from folder to workspace. [CHAR_LIMIT=30] -->
+    <string name="action_move_to_workspace">Ana ekrana taşı</string>
+
+    <!-- Accessibility action to move an homescreen to the left. [CHAR_LIMIT=30] -->
+    <string name="action_move_screen_left">Ekranı sola taşı</string>
+
+    <!-- Accessibility action to move an homescreen to the right. [CHAR_LIMIT=30] -->
+    <string name="action_move_screen_right">Ekranı sağa taşı</string>
+
+    <!-- Accessibility confirmation when a screen was moved. -->
+    <string name="screen_moved">Ekran taşındı</string>
+
+    <!-- Accessibility action to resize a widget. [CHAR_LIMIT=30] -->
+    <string name="action_resize">Yeniden boyutlandır</string>
+
+    <!-- Accessibility action to increase width of a widget. [CHAR_LIMIT=30] -->
+    <string name="action_increase_width">Genişliği artır</string>
+
+    <!-- Accessibility action to increase height of a widget. [CHAR_LIMIT=30] -->
+    <string name="action_increase_height">Yüksekliği artır</string>
+
+    <!-- Accessibility action to decrease width of a widget. [CHAR_LIMIT=30] -->
+    <string name="action_decrease_width">Genişliği azalt</string>
+
+    <!-- Accessibility action to decrease height of a widget. [CHAR_LIMIT=30] -->
+    <string name="action_decrease_height">Yüksekliği azalt</string>
+
+    <!-- Accessibility confirmation for widget resize. -->
+    <string name="widget_resized">"Widget, <xliff:g id="NUMBER_0">%1$s</xliff:g> genişlik ve <xliff:g id="NUMBER_1">%2$s</xliff:g> yükseklik değerine yeniden boyutlandırıldı"</string>
+
+    <!-- Accessibility action to show quick actions menu for an icon. [CHAR_LIMIT=30] -->
+    <string name="action_deep_shortcut">Kısayollar</string>
+
+    <!-- Accessibility description for the shortcuts menu shown for an app. -->
+    <string name="shortcuts_menu_description">"<xliff:g id="APP_NAME">%2$s</xliff:g> için <xliff:g id="NUMBER_OF_SHORTCUTS">%1$d</xliff:g> kısayol"</string>
+
+    <!-- Accessibility description when the shortcuts menu has notifications as well as shortcuts. -->
+    <string name="shortcuts_menu_with_notifications_description">"<xliff:g id="APP_NAME">%3$s</xliff:g> için <xliff:g id="NUMBER_OF_SHORTCUTS">%1$d</xliff:g> kısayol ve <xliff:g id="NUMBER_OF_NOTIFICATIONS">%2$d</xliff:g> bildirim"</string>
+
+    <!-- Accessibility action to dismiss a notification in the shortcuts menu for an icon. [CHAR_LIMIT=30] -->
+    <string name="action_dismiss_notification">Kapat</string>
+
+    <string name="ee">…ve bir bakarsın on sene arkanda kalmış</string>
+
+    <!-- Accessibility confirmation for notification being dismissed. -->
+    <string name="notification_dismissed">Bildirim kapatıldı</string>
+    <string name="icon_badging_sum">Bildirim noktalarını özelleştir</string>
+
+
+    <string name="icu_abbrev_wday_month_day_no_year">EEEMMMd</string>
     <string name="smartspace_preferences">Tercihler</string>
     <string name="label_search">Ara</string>
     <string name="label_voice_search">Sesli arama</string>
-    <string name="pref_icon_pack">Simge paketi</string>
+    <string name="default_live_wallpaper">com.breel.wallpapers/com.breel.wallpapers.dioramas.lagos.LagosWallpaperService</string>
     <string name="state_loading">Uygulanıyor…</string>
-    <string name="smartspace_preferences_in_settings">Bir Bakışta</string>
-    <string name="smartspace_preferences_in_settings_desc">Ana ekranınızın üst bölümünde</string>
+    <string name="smartspace_preferences_in_settings">"Bir Bakışta widget'ı"</string>
+    <string name="smartspace_preferences_in_settings_desc">"Widget'ı Ana ekranın üstünde görüntülenecek şekilde yapılandır"</string>
     <string name="title_show_google_app">Şunu göster: %1$s</string>
+    <string name="pref_show_google_now_summary">@string/msg_minus_one_on_left</string>
     <string name="msg_minus_one_on_left">Birincil Ana ekranın soluna</string>
     <string name="about">Hakkında</string>
     <string name="title_google_app">Google uygulaması</string>
     <string name="title_app_suggestions">Uygulama önerileri görüntüle</string>
-    <string name="summary_app_suggestions">Tüm Uygulamalar listenizin en üstünde</string>
-    <string name="about_app_version">Sürüm</string>
+    <string name="summary_app_suggestions">Uygulama çekmecesinin en üstünde</string>
+    <string name="app_name_pixel_launcher">CPL</string>
     <string name="title_disable_suggestions_prompt">Uygulama önerileri kapatılsın mı?</string>
-    <string name="msg_disable_suggestions_prompt">Öneriler, uygulama listenizin üst kısmında görünmeyecek ve bunları oluşturmak için kullanılan kullanım verileri kalıcı olarak silinecek.</string>
+    <string name="msg_disable_suggestions_prompt">"Öneriler, uygulama listenizin üst kısmında görünmeyecek ve bunları oluşturmak için kullanılan kullanım verileri kalıcı olarak silinecek."</string>
     <string name="label_turn_off_suggestions">KAPAT</string>
+    <string name="smartspace_hours_mins">%1$s %2$s</string>
+
+    <!-- Developer setting to change the shape of icons on home screen. [CHAR LIMIT=50] -->
+    <string name="icon_shape_override_label">Simge şekli</string>
+    <string name="icon_shape_system_default">Sistem varsayılanını kullan</string>
+    <string name="icon_shape_square">Kare</string>
+    <string name="icon_shape_rounded_square">Yuvarlak kare</string>
+    <string name="icon_shape_super_ellipse">Süper elips</string>
+    <string name="icon_shape_squircle">Squircle</string>
+    <string name="icon_shape_circle">Daire</string>
+    <string name="icon_shape_teardrop">Gözyaşı damlası</string>
+    <string name="icon_shape_cylinder">Silindir</string>
+    <string name="icon_shape_lemon">Limon</string>
+    <string name="icon_shape_cloud">Bulut</string>
+
+    <!-- Theme -->
+    <string name="custom_theme">Tema</string>
+    <string name="custom_theme_summary">Tema &amp; simgeleri özelleştir</string>
+    <string name="white_theme">Beyaz</string>
+    <string name="white_withdarktext_theme">Koyu metinli beyaz</string>
+    <string name="dark_withdarktext_theme">Koyu metinli koyu</string>
+    <string name="black_withdarktext_theme">Koyu metinli siyah</string>
+    <string name="dark_theme">Koyu</string>
+    <string name="black_theme">Siyah</string>
+    <string name="auto_theme">Otomatik tema</string>
+    <string name="auto_theme_summary">Tema seçilen duvar kağıdına göre değişir</string>
+    <string name="apply_settings_theme">Temayı ayarlara uygula</string>
+
+    <!-- Hidden app -->
+    <string name="hide_app">Uygulamaları gizle</string>
+    <string name="hide_app_popup_hide">Uygulamayı gizle</string>
+    <string name="hide_app_popup_show">Uygulamayı göster</string>
+    <string name="hide_app_popup_show_toast">Uygulama gösteriliyor</string>
+    <string name="hide_app_popup_hide_toast">Uygulama gizlendi</string>
+    <string name="hide_app_sum">Uygulama çekmecesinden uygulamaları gizle</string>
+    <string name="hide_app_selected">&#160;seçildi</string>
+    <string name="hidden_app">Gizli uygulama</string>
+    <string name="reset_hidden_apps">Tümünü sıfırla</string>
+    <string name="reset_hidden_apps_hint_no_apps">Gizli uygulama yok</string>
+    <string name="reset_hidden_apps_hint">Gizli uygulamalar artık kullanılabilir</string>
+    <string name="hide_widgets_too">"
+Widget'ları gizle"</string>
+    <string name="hide_widgets_too_sum">"Gizli uygulamalardaki widget'ları gösterme"</string>
+    <string name="show_hidden_pref_title">Gizli uygulamaları göster</string>
+    <string name="show_hidden_pref_on">Görünürlük ayarlarını değiştirmek için gizli uygulamalar gösterilecek</string>
+    <string name="show_hidden_pref_off">Gizli uygulamalar görünmeyecek</string>
+
+
+    <!-- Dock bar -->
+    <string name="custom_dockbar">Alt panel</string>
+    <string name="custom_dockbar_summary">Alt paneli özelleştir</string>
+    <string name="num_hotseat_icons_pref_title">Alt paneldeki simgelerin sayısı</string>
+    <string name="force_mic">Mikrofonu göster</string>
+    <string name="use_assistant">Google Assistant</string>
+    <string name="use_assistant_sum">Alt paneldeki arama çubuğundaki mikrofon yerine</string>
+    <string name="use_assistant_drawer_sum">Arama çubuğundaki mikrofon yerine</string>
+    <string name="force_colour_logo">Renkli Google logosu</string>
+    <string name="transparentqsb">Arama çubuğu şeffaflığı</string>
+    <string name="hotseatShowArrow">Oku göster</string>
+    <string name="hotseat_show_page_indicator">Sayfa göstergesini göster</string>
+    <string name="gradient_size">Gradyan boyutu</string>
+    <string name="remove_gradient">Alt panelde gradyanı devre dışı bırak</string>
+    <string name="custom_qsb_in_dock">Arama çubuğu ayarları</string>
+    <string name="qsb_in_dock_show">Alt paneldeki arama çubuğu</string>
+    <string name="googleinappmenu">Google arama çubuğu</string>
+    <string name="pdock">Yuvarlatılmış alt panel</string>
+    <string name="pdock_sum">Android P stili</string>
+    <string name="pdock_settings">Yuvarlatılmış alt panel ayarları</string>
+    <string name="pdock_radius">Köşe yarıçapı</string>
+    <string name="pdock_shadow">Gölge boyutu</string>
+    <string name="dock_height">Alt panel yüksekliği</string>
+
+
+    <!-- Rows and Coloumns -->
+    <string name="change_grid_size">Kılavuz boyutunu değiştir</string>
+    <string name="custom_grid_size">Kılavuz boyutu</string>
+    <string name="custom_grid_size_on">Seçilen boyutu kullan</string>
+    <string name="custom_grid_size_off">"Kılavuz boyutu DPI'ya bağlıdır"</string>
+    <string name="num_rows">Satır sayısı</string>
+    <string name="num_cols">Sütun sayısı</string>
+
+    <!-- About -->
+    <string name="about_sum">"CPL, genişletilmiş işlevselliğe sahip AOSP tabanlı bir başlatıcıdır. Ücretsizdir ve hiçbir reklam içermez."</string>
+    <string name="thanks">Teşekkürler:</string>
+    <string name="sum_thanks">Amir Zaidi (amirzaidi), Lawnchair ekibi (deletescape, paphonb, fonix232, divadsn, Rawi666), ezio84, arco, jrizzoli, nebkat, xyyx, Mazda—, chauek, Thecrazyskull, stavros3006, yukuku, hundeva, Naquaduh, martin-stone, materialdesignicons.com, WhiskeyMotel</string>
+    <string name="forgot">Belki birini unuttum…</string>
+    <string name="date">Yapı tarihi</string>
+    <string name="sum_aboutapp">Uygulama hakkında, sürüm bilgileri, katkıda bulunanlar</string>
+    <string name="about_app_version_wtu">Sürüm</string>
+    <string name="custom_about_cpl">CPL hakkında</string>
+    <string name="custom_version">Sürüm</string>
+    <string name="translators">Çevirmenler</string>
+    <string name="translators_sum">whataudoinghere, stavros3006, LeandroSB, zhushman00, Fatih Fırıncı</string>
+
+    <!-- Reboot -->
+    <string name="reboot">Yeniden başlat</string>
+    <string name="reboot_sum">Ayarları uygulamak için yeniden başlat</string>
+
+    <!-- Allapp -->
+    <string name="custom_allapp">Uygulama çekmecesi</string>
+    <string name="custom_allapp_summary">Uygulama çekmecesini özelleştir</string>
+    <string name="smallallaps">Küçük arama çubuğu</string>
+    <string name="smallallaps_sum">Sadece varsayılan arama çubuğu için</string>
+    <string name="drawer_transparent_background">Şeffaf arka plan</string>
+
+    <!-- Icons -->
+    <string name="custom_ico">Simgeler</string>
+    <string name="icon_size">Simge boyutu</string>
+    <string name="text_size">Etiket boyutu</string>
+    <string name="label_font">Etiket yazı tipi</string>
+
+    <!-- Home screen -->
+    <string name="custom_hs">Ana ekran</string>
+    <string name="custom_hs_summary">Ana ekranı &amp; \"Bir Bakışta\" widget\'ını özelleştir</string>
+    <string name="edgemarginstock">Stok</string>
+    <string name="edgemarginsmall">Küçük</string>
+    <string name="diabledgemargin">Devre dışı bırak</string>
+    <string name="diabledgemargin_sum">Yatay ekran doldurma</string>
+    <string name="settings_edit_allow_title">Ana ekranı düzenlemeye izin ver</string>
+    <string name="settings_edit_allow_question">Ana ekranı düzenlemeye izin ver</string>
+    <string name="settings_edit_allow_summary_on">"Simgeler ve widget'lar eklenebilir, kaldırılabilir ve Ana ekranda hareket ettirilebilir"</string>
+    <string name="settings_edit_allow_summary_off">"Simgeler ve widget'lar eklenemez, kaldırılamaz ve Ana ekranda hareket ettirilemez"</string>
+    <string name="fade_out_animation">Karartma animasyonu</string>
+    <string name="fade_out_animation_sum">Sayfa değiştirirken</string>
+    <string name="system_font_for_smartspace">Sistem yazı tipini kullan</string>
+    <string name="system_font_for_smartspace_sum">\"Bir Bakışta\" widget\'ı için</string>
+    <string name="smartspace_font">\"Bir Bakışta\" widget\'ı yazı tipi</string>
+    <string name="smartspace_time">Saat ekle</string>
+    <string name="smartspace_customize_in_settings">Widget\'ı özelleştir</string>
+    <string name="smartspace_launchclock">Saat uygulamasını başlat</string>
+    <string name="smartspace_disable">\"Bir Bakışta\" widget\'ını devre dışı bırak</string>
+    <string name="smartspace_launchclock_sum">Widget\'a uzun basıldığında</string>
+    <string name="smartspace_launch_clock">Alarm ayarla</string>
+    <string name="smartspace_launch_timer">Zamanlayıcı ayarla</string>
+    <string name="smartspace_launch_keep">Google Keep</string>
+    <string name="smartspace_launch_tasks">Google Görevler</string>
+    <string name="smartspace_launch_calendar">Takvim</string>
+    <string name="smartspace_show_popup">Eylem menüsü</string>
+    <string name="smartspace_show_popup_sum">"Widget'a dokunarak hızlı eylemlerle bir pencere göster"</string>
+    <string name="show_top_shadow_title">Üst gölge</string>
+    <string name="full_width_width_widgets_pref_title">Widget\'lara tam genişlik</string>
+    <string name="full_width_widgets_pref_summary">Widget\'ların dolgu olmadan tüm genişlik boyunca yayılmasına izin ver</string>
+
+    <!-- Hide labels -->
+    <string name="desktop_show_labels">Ana ekranda simge etiketleri</string>
+    <string name="drawer_show_labels">Uygulama çekmecesindeki simge etiketleri</string>
+
+    <!-- Folders -->
+    <string name="custom_folders">Klasörler</string>
+    <string name="custom_folders_summary">Klasörleri özelleştir</string>
+    <string name="folder_show_labels">Klasörlerdeki simge etiketleri</string>
+    <string name="old_folder_animation">Eski klasör animasyonu</string>
+
+    <!-- Date formats -->
+    <string name="date_format">Tarih biçimi</string>
+    <string name="clock_format">Saat biçimi</string>
+    <string name="date_format_1">Perşembe, Şub 13</string>
+    <string name="date_format_2">Perşembe</string>
+    <string name="date_format_3">Per, Şubat 13</string>
+    <string name="date_format_4">Per, 02/13</string>
+    <string name="date_format_5">13 Perşembe</string>
+    <string name="date_format_6">Perşembe, Şubat 13</string>
+
+    <!-- Color Changing -->
+    <string name="use_custom_label_color">Özel etiket rengi</string>
+    <string name="use_qsb_label_color">Özel arama çubuğu arka plan rengi</string>
+    <string name="custom_label_color">Etiket rengi</string>
+    <string name="custom_qsb_color">Arama çubuğu arka plan rengi</string>
+    <string name="custom_qsb_text_color">Arama çubuğu metin rengi</string>
+
+    <!-- Behavior -->
+    <string name="behavior_pref_title">Davranış</string>
+    <string name="behavior_pref_summary">Başlatıcının davranışını değiştir</string>
+    <string name="allow_vibration">Titreşim</string>
+    <string name="allow_vibration_sum">Arayüzdeki öğelere tıklandığında</string>
+    <string name="vibrationduration">Titreşim süresi</string>
+    <string name="vibrationdurationtest">Titreşimi test et</string>
+    <string name="textinbadge">Bildirim rozetleri</string>
+    <string name="textinbadge_sum">Rozette bildirimlerin sayısını göster (sayılar yanlış olabilir)</string>
+    <string name="badge_place">Rozet konumu</string>
+    <string name="badge_place_1">Sağ Üst</string>
+    <string name="badge_place_2">Sağ Alt</string>
+    <string name="badge_place_3">Sol Üst</string>
+    <string name="badge_place_4">Sol Alt</string>
+    <string name="double_tap_to_lock_method">Ekran kilitleme yöntemi</string>
+    <string name="double_tap_to_lock_method_null">Varsayılan ekran kilitleme yöntemi ayarlanmamış. Seçmek için ayarları kontrol et.</string>
+    <string name="double_tap_to_lock_method_not_set">Ayarlanmadı</string>
+    <string name="double_tap_to_lock_title">Çift dokunmayla kilitle</string>
+    <string name="double_tap">Çift dokun</string>
+    <string name="double_tap_to_lock_summary">Ana ekranda</string>
+    <string name="double_tap_to_lock_title_with_admin">Yönetici erişimi ile</string>
+    <string name="double_tap_to_lock_title_with_timeout">Siyah ekran ile</string>
+    <string name="double_tap_to_lock_title_with_root">Root erişimi ile</string>
+    <string name="double_tap_to_lock_no_root">Root erişimi mevcut değil veya reddedildi</string>
+    <string name="double_tap_to_lock_summary_with_root">Cihazın parmak izi kilidini açmak için</string>
+    <string name="double_tap_to_lock_hint">"Kilitlenebilmesi için Özelleştirilmiş Pixel Launcher için yönetici erişimini etkinleştirmeniz gerekir. Bu, güvenli bir kilitlemedir, bir sonraki kilit açma denemenizde PIN'inizi girmeniz gerekir."</string>
+    <string name="double_tap_to_lock_disable_warning">Yönetici erişimini devre dışı bırakarak, ana ekranınızı hareketlerle kilitlemek mümkün olmayacaktır.</string>
+    <string name="action_edit">Düzenle</string>
+    <string name="use_custom_badge_color">Özel rozet renkleri</string>
+    <string name="custom_badge_color">Rozet arka plan rengi</string>
+    <string name="custom_badge_text_color">Rozet metin rengi</string>
+    <string name="statusbar_expand">Bildirimleri göster</string>
+    <string name="statusbar_expand_sum">İki parmakla aşağı doğru kaydırırken</string>
+    <string name="pinch_to_overview_pref_title">Genel bakış için sıkıştır</string>
+    <string name="animate_overview_pref_title">Genel bakışta kaydırma efekti</string>
+    <string name="pinch_to_overview_pref_summary">Genel bakışı açmak için ana ekranda sıkıştır</string>
+    <string name="home_opens_drawer_pref_title">Ana ekran, uygulama çekmecesini açsın</string>
+    <string name="home_opens_drawer_any_screen_pref_title">Herhangi bir ekrandan</string>
+    <string name="home_opens_drawer_pref_summary">Ana ekrandayken Ana ekran düğmesine basıldığında uygulama çekmecesi açılır</string>
+    <string name="keep_scroll_state_pref_title">Kaydırma konumunu kaydet</string>
+    <string name="keep_scroll_state_pref_summary">Çekmecedeki kaydırma konumunu kaydeder</string>
+    <string name="pixel_search_layout">Pixel arama düzeni</string>
+    <string name="pixel_search_layout_sum">Bazı cihazlarda kullanılamayabilir</string>
+    <string name="default_launcher_title">Varsayılan başlatıcıyı değiştir</string>
+    <string name="default_launcher_message">Bu işlem varsayılan başlatıcınızı değiştirecek. Devam etmek istediğinize emin misiniz?</string>
+
+    <!-- Icon pack -->
+    <string name="default_iconpack" translatable="false">Sistem varsayılanını kullan</string>
+    <string name="default_iconpack_title">Sistem varsayılanını kullan</string>
+    <string name="icons_pack_name">Simge paketi</string>
+    <string name="edit_app">Simgeyi düzenle</string>
+    <string name="all_icons">Tüm simgeler</string>
+    <string name="similar_icons">Benzer simgeler</string>
+    <string name="ok">Tamam</string>
+    <string name="icon_chooser">Simge seçici</string>
+    <string name="icon_search">Simge ara</string>
+    <string name="use_background_from_iconpack">Simge paketinin arka planını kullan</string>
+    <string name="alt_gen_iconpack">Alternatif simge kırpma</string>
+    <string name="custom_gen_iconpack">Simge oluşturma seçenekleri</string>
+    <string name="icon_pack_updated">Şu anda uygulanan simge paketiniz güncellendi, uygulamalarınız için yeni simgeler kullanılabilir. Ayarlara gitmeniz ve simge paketini yeniden uygulamanız önerilir.</string>
+    <string name="generate_adaptive_icons_title">Uyarlanabilir simge arka planı oluştur</string>
+    <string name="generate_adaptive_icons_summary">Uyarlanabilir simgeleri olmayan uygulamalar için</string>
+    <string name="generate_adaptive_background_title">Eski simgedeki rengi çıkart</string>
+    <string name="generate_adaptive_background_summary">Oluşturulan uyarlanabilir simge arka planları için</string>
+    <string name="generate_random">Rastgele renk</string>
+    <string name="generate_random_brightness">Rastgele renklerin maksimum parlaklığı</string>
+    <string name="background_color">Arka plan rengi</string>
+    <string name="custom_generate_new">Yeni simgeler oluştur</string>
+    <string name="custom_generate_new_one">Yeni simge oluştur</string>
+    <string name="reset_icon">Simgeyi sıfırla</string>
+    <string name="custom_generate_new_sum">Simge önbelleğini temizle ve seçili seçeneklerle yeni simgeler oluştur</string>
+    <string name="use_dynamic_icons">Dinamik simgeler</string>
+    <string name="use_dynamic_clock">Dinamik saat simgesi</string>
+    <string name="use_dynamic_calendar">Dinamik takvim simgesi</string>
+    <string name="show_seconds">Saniyeyi göster</string>
+    <string name="save_close">Kaydet &amp; kapat</string>
+
+    <!-- Spring -->
+    <string name="springanim">Yay animasyonu</string>
+    <string name="springcoef">Yay esneklik seviyesi</string>
+    <string name="use_spring_sum">Uygulama çekmecesinde</string>
+
+    <!-- Favorite app -->
+    <string name="favorite_assigned">Favori uygulama atandı</string>
+    <string name="make_favorite">Favori yap</string>
+    <string name="favorite_not_found">Favori uygulama bulunamadı</string>
+    <string name="launch_favorite_app_title">Favori uygulamayı aç</string>
+    <string name="launch_favorite_app_summary">İki parmakla aşağı doğru kaydırırken</string>
+    <string name="bage_size">Rozet boyutu</string>
+
+    <!-- Telegram -->
+
+    <!-- Backup -->
+    <string name="backup_and_restore_pref_title">Yedekle &amp; Geri yükle</string>
+    <string name="backup_and_restore_pref_sum">Ayarları &amp; veritabanını yedekle &amp; geri yükle</string>
+    <string name="backup_pref_title">Yedekle</string>
+    <string name="restore_pref_title">Geri yükle</string>
+    <string name="restore_settings_title">Ayarları geri yükle</string>
+    <string name="restore_icons_title">Simge veritabanını geri yükle</string>
+    <string name="restore_layout_title">Ana ekran düzenini geri yükle</string>
+    <string name="settings_export_success">Ayarlar başarıyla yedeklendi</string>
+    <string name="settings_import_success">Ayarlar başarıyla geri yüklendi</string>
+    <string name="icon_import_success">Simge veritabanı başarıyla geri yüklendi</string>
+    <string name="layout_import_success">Ana ekran düzeni başarıyla geri yüklendi</string>
+    <string name="export_error">Yedeklenemedi</string>
+    <string name="import_error">Geri yüklenemedi</string>
+    <string name="permission_ok">İzin verildi</string>
+    <string name="permission_not_ok">İzin reddedildi</string>
+    <string name="permission_sum">Dahili depolamaya erişim</string>
+    <string name="backup_slot">Yedek yuvası</string>
+    <string name="backup_perm">İzinler</string>
+    <string name="backup_not_found">Yedek bulunamadı!</string>
+    <string name="backup_date">Yedek oluşturma tarihi</string>
+    <string name="backup_location_message">Yedek konumu değiştirilemiyor</string>
+    <string name="backup_location_note">Yedek konumu</string>
+    <string name="backup_location_sum">Dahili depolama\\Documents\\CPL\\</string>
+    <string name="perform_backup">Yedeklensin mi?</string>
+    <string name="perform_restore">Geri yüklensin mi?</string>
+    <string name="current">Mevcut:</string>
+    <string name="empty">Boş</string>
+    <string name="delete_mode">Yedeği sil</string>
+    <string name="delete_selected">Seçileni sil</string>
+    <string name="delete_success">Yedek silindi</string>
+    <string name="empty_slot">Mevcut yedek yuvası boş</string>
+
+    <!-- Donation -->
+    <string name="donation_title">Geliştiriciye bağış yap</string>
+    <string name="donation_sum">"CPL ücretsiz ve reklamsızdır. CPL'yi beğendiyseniz ve geliştirmeyi desteklemek istiyorsanız, bağış uygulamamı satın alarak ya da PayPal üzerinden bana bağış yapabilirsiniz."</string>
+    <string name="donation_thanks">Ek işlevler etkin</string>
+
+
+    <!-- Misc -->
+    <string name="attention">Dikkat!</string>
+    <string name="action_canceled">İşlem kullanıcı tarafından iptal edildi</string>
+    <string name="debug">Hata ayıklama</string>
+    <string name="clean_all_settings_title">Varsayılanlara sıfırla</string>
+    <string name="clean_all_settings_sum">CPL ayarlarını varsayılanlara sıfırla</string>
+    <string name="clean_all_settings">Tüm ayarlar varsayılan değerlere sıfırlansın mı?</string>
+    <string name="debug_sum">Yeniden başlat ve ayarları sıfırla</string>
+    <string name="debug_recreate">Hızlı yeniden başlat</string>
+    <string name="xda_tread">XDA konusu</string>
+    <string name="chetyrepda_tread">4PDA konusu</string>
+    <string name="allow_two_line_labels_title">İki satır etiketlere izin ver</string>
+
+    <!-- Popup More Options -->
+    <string name="additional_options">Ek seçenekler</string>
+    <string name="more">Diğer</string>
+    <string name="find_in_store">Play Store\'da bul</string>
+    <string name="share">Paylaş</string>
+
+    <string name="drawer_buttons">Arama çubuğunda düğmeler</string>
+    <string name="drawer_buttons_select">Düğmeler</string>
+    <string name="drawer_button_settings">CPL ayarları</string>
+    <string name="drawer_button_settings_sum">Uzun basıldığında - sistem ayarları</string>
+    <string name="drawer_button_market">Play Store</string>
+    <string name="drawer_button_visibility">Gizli uygulamalar görünürlüğü</string>
+    <string name="drawer_button_visibility_sum">Uzun basıldığında - gizli uygulamalar menüsü</string>
+    <string name="drawer_button_mic">Mikrofon</string>
+
+    <string name="qsb_text">Arama çubuğundaki metin</string>
+    <string name="qsb_text_sans">Metin için Google Sans yazı tipini kullan</string>
+    <string name="qsb_center_text">Metni ortaya hizala</string>
+    <string name="say_ok_google">“OK Google” deyin</string>
+
+    <string name="extra_bottom_padding_title">Arama çubuğu için ekstra alt dolgu</string>
+    <string name="extra_bottom_padding_summary">Simgeler alt arama çubuğuna çok yakınsa etkinleştirin</string>
+    <string name="more_info">Daha fazla bilgi</string>
+    <string name="dock_opacity">Alt panel opaklığı</string>
+    <string name="drawer_opacity">Çekmece opaklığı</string>
+    <string name="folder_opacity">Klasör arka plan opaklığı</string>
+
+    <string name="default_color">Varsayılan renk</string>
+    <string name="arrow_and_line_color">Ok ve sayfa göstergesi rengi</string>
+    <string name="folder_prewiew_color">Önizleme rengi</string>
+    <string name="folder_background_color">Arka plan rengi</string>
+    <string name="transparent_nav_bar">Şeffaf gezinti çubuğu</string>
+    <string name="white_status_bar_icons">Beyaz durum çubuğu simgeleri</string>
+    <string name="text_divider">Metin ayırıcı</string>
+    <string name="disable_dock">Alt paneli devre dışı bırak</string>
+    <string name="accent_drawer">Vurgu rengi</string>
+    <string name="accent_color_sum">Hızlı kaydırma penceresi, düğmeler ve stok arama çubuğunun rengi</string>
+    <string name="rounded_corners">Yuvarlatılmış köşeler</string>
+    <string name="app_open_animation">Uygulama açma animasyonu</string>
+    <string name="app_open_animation_sum">Yeni bir uygulama açarken ve Ana Ekrana dönerken</string>
+    <string name="left_swipe">Sola kaydır</string>
+    <string name="right_swipe">Sağa kaydır</string>
+    <string name="swipe_up">Yukarı kaydır</string>
+    <string name="fade">Kaybol</string>
+    <string name="zoom">Yakınlaştır</string>
+    <string name="fall_down">Düşme</string>
+    <string name="from_middle">Ortadan</string>
+    <string name="transition_effect">Kaydırma efekti</string>
+    <string name="zoom_in">Yakınlaştır</string>
+    <string name="zoom_out">Uzaklaştır</string>
+    <string name="rotate_up">Yukarı döndür</string>
+    <string name="rotate_down">Aşağı döndür</string>
+    <string name="cube_in">Küp içeri</string>
+    <string name="cube_out">Küp dışarı</string>
+    <string name="stack">Yığın</string>
+    <string name="accordion">Akordeon</string>
+    <string name="flip">Çevir</string>
+    <string name="spin">Döndür</string>
+    <string name="cylinder_in">Silindir içeri</string>
+    <string name="cylinder_out">Silindir dışarı</string>
+    <string name="overview">Genel bakış</string>
+    <string name="wallpaper_scroll_title">Duvar kağıdı kaydırma</string>
+    <string name="def">Varsayılan</string>
+    <string name="default_home">Varsayılan ana ekran</string>
+    <string name="all_apps">Uygulamalar listesi</string>
+    <string name="delete">Sil</string>
+    <string name="lock">Kilitle</string>
+    <string name="unlock">Kilidi aç</string>
+    <string name="page_not_empty">Bu sayfa boş değil. Bu öğe de kaldırılacak.</string>
+    <string name="pref_open_source_licenses_title">Açık kaynak lisansları</string>
+    <string name="two_finger_up">İki parmakla yukarı kaydır</string>
+    <string name="two_finger_down">İki parmakla aşağı kaydır</string>
+    <string name="action_nothing">Hiçbir şey yapma</string>
+    <string name="action_quick_search">Hızlı arama</string>
+    <string name="action_voice_search">Sesli arama</string>
+    <string name="action_app_drawer">Uygulama çekmecesini aç</string>
+    <string name="action_app_search">Uygulama aramayı aç</string>
+    <string name="action_overview">Genel bakışa gir</string>
+    <string name="action_lock">Ekranı kilitle</string>
+    <string name="action_settings">Cihaz ayarları</string>
+    <string name="action_default_screen">Varsayılan ekrana git</string>
+    <string name="action_first_screen">İlk ekrana git</string>
+    <string name="action_last_screen">Son ekrana git</string>
+    <string name="gestures">Hareketler</string>
+    <string name="gestures_sum">Ana ekran hareketlerini özelleştir</string>
+    <string name="infinite_scroll">Sonsuz kaydırma</string>
+    <string name="long_tap">Uzun bas</string>
+    <string name="home_button">Ana ekran düğmesi</string>
+    <string name="one_finger_down">Tek parmakla aşağı kaydır</string>
+    <string name="one_finger_up">Tek parmakla yukarı kaydır</string>
+    <string name="action_notifications">Bildirim panelini aç</string>
+    <string name="action_notifications_with_settings">Hızlı ayarları aç</string>
+    <string name="lock_screen_method_1">Cihazı hemen tamamen kilitler, kilidi açmak için bir PIN gerektirir. Parmak izi ile kilidi açmaya izin vermez</string>
+    <string name="lock_screen_method_2">"Ekran zaman aşımına uğradığında ve kapanırken 5 saniye boyunca siyah bir ekran gösterir. Cihazın normal güvenlik ayarlarına saygı duyulur ve kilidi açmak için parmak izi tarayıcılarına izin verilir"</string>
+    <string name="lock_screen_method_3">"Güç düğmesine basmayı taklit eder"</string>
+    <string name="parallax_scrolling">Ters duvar kağıdı kaydırma</string>
+    <string name="elastic_scrolling">Elastik kaydırma</string>
+    <string name="elastic_scrolling_coeff">Elastik kaydırma katsayısı</string>
+    <string name="gradient_dock">Gradyan alt panel</string>
+    <string name="search_bar">Arama çubuğu</string>
+    <string name="date_format_long">Uzun</string>
+    <string name="date_format_normal">Normal</string>
+    <string name="date_format_short">Kısa</string>
+    <string name="app_installing_progress">Uygulama yükleme ilerlemesini göster</string>
+    <string name="home_screen_notification_bar">Bildirim çubuğunu göster</string>
+    <string name="not_set">Ayarlanmadı</string>
+    <string name="hotseat_drag_indicator">Sürükleme göstergesi</string>
+    <string name="dock_show_labels">Alt paneldeki simge etiketleri</string>
+    <string name="gallery">Galeri</string>
+    <string name="bridge_install">Yükle</string>
+    <string name="disable">Devre dışı</string>
+    <string name="style_1">1. Stil</string>
+    <string name="style_2">2. Stil</string>
+    <string name="show_dock_on_home_screen">Ana Ekranda alt paneli göster</string>
+    <string name="hide_dock_from_home_screen">Ana Ekrandan alt paneli gizle</string>
+    <string name="scrolling">Kaydırma</string>
+    <string name="warning_cpl_not_default">Varsayılan olarak ayarlı değil</string>
+    <string name="warning_cpl_not_default_sum">CPL varsayılan başlatıcı olarak ayarlı değil. Ayarlamak için dokun.</string>
+    <string name="resize_any_widget_sum">
+Normalde yeniden boyutlandırılamayan widget\'ları yeniden boyutlandırmaya izin ver</string>
+    <string name="resize_any_widget_title">Her widget\'ı yeniden boyutlandır</string>
+    <string name="widgets_in_dock_sum">Alt panele widget eklemeye izin ver</string>
+    <string name="widgets_in_dock_title">Alt panelde widget\'lar</string>
+    <string name="widget_padding_title">Widget dolgusu</string>
+    <string name="vertical_only">Sadece dikey</string>
+    <string name="horizontal_only">Sadece yatay</string>
+    <string name="folder_animation">Klasör açma animasyonu</string>
+    <string name="scale">Ölçek</string>
+    <string name="circle">Daire</string>
+    <string name="hideapp">Uygulama çekmecesinden gizle</string>
+    <string name="clean_user_icons">Alternatif kullanıcı uygulaması simge ve etiketleri sıfırlansın mı?</string>
+    <string name="reset_user_icon">Kullanıcı simgesini sıfırla</string>
+    <string name="morepack">Daha fazla simge edin</string>
+    <string name="hidden_apps_tint">Gizli uygulamalar için gri renk tonu</string>
+    <string name="developer_mode">Geliştirici modu</string>
+    <string name="restore_user_icons_title">Kullanıcı simgeleri veritabanını geri yükle</string>
+    <string name="getplugin">Google Feed ve Hava Durumu Eklentisini edin</string>
+    <string name="hidedonationbutton">Düğmeyi gizle</string>
+    <string name="buyapp">Bağış Uygulamasını Satın Al</string>
+    <string name="shortcuts">Kısayollar</string>
+    <string name="show_folder_name">Klasör adını göster</string>
+    <string name="folder_adaptive_icon">Uyarlanabilir klasör simgesi</string>
+    <string name="extract_shortcut_color">Kısayolları renklendir</string>
+    <string name="extract_shortcut_color_sum">Uygulama simgesinden kısayol rengini çıkart</string>
+    <string name="add_translation">Proje sayfası</string>
 </resources>
