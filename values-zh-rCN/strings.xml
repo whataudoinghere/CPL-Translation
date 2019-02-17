@@ -24,7 +24,7 @@
     <!-- Default folder name -->
     <string name="folder_name"></string>
     <!-- Work folder name -->
-    <string name="work_folder_name">Work</string>
+    <string name="work_folder_name">工作</string>
     <!-- Displayed when user selects a shortcut for an app that was uninstalled [CHAR_LIMIT=none]-->
     <string name="activity_not_found">未安装该应用</string>
     <!-- Displayed when user selects a shortcut for an app that is current not available [CHAR_LIMIT=none]-->
@@ -105,7 +105,7 @@
     <string name="permdesc_write_settings">允许应用修改主屏幕设置和快捷方式</string>
 
     <!-- Toast shown on clicking a direct call shortcut. [CHAR_LIMIT=80] -->
-    <string name="msg_no_phone_permission"><xliff:g id="app_name" example="Launcher3">%1$s</xliff:g> is not allowed to make phone calls</string>
+    <string name="msg_no_phone_permission"><xliff:g id="app_name" example="Launcher3">%1$s</xliff:g> 不被允许拨打电话</string>
 
     <!-- Widgets: -->
     <skip />
@@ -136,7 +136,7 @@
 
     <!-- Folder accessibility -->
     <!-- The format string for when a folder is opened, speaks the dimensions -->
-    <string name="folder_opened">Folder opened, <xliff:g id="width" example="5">%1$d</xliff:g> by <xliff:g id="height" example="3">%2$d</xliff:g></string>
+    <string name="folder_opened">文件夹已打开, <xliff:g id="width" example="5">%1$d</xliff:g> by <xliff:g id="height" example="3">%2$d</xliff:g></string>
     <!-- Instruction that clicking outside will close folder -->
     <string name="folder_tap_to_close">点击关闭文件夹</string>
     <!-- Instruction that clicking outside will commit folder rename -->
@@ -168,7 +168,7 @@
     <!-- Text explaining that rotation is disabled in Display settings. 'Display' refers to the Display section in system settings [CHAR LIMIT=100] -->
     <string name="allow_rotation_blocked_desc">当前的显示设置不允许旋转设备</string>
     <!-- Title for Notification dots setting. Tapping this will link to the system Notifications settings screen where the user can turn off notification dots globally. [CHAR LIMIT=50] -->
-    <string name="icon_badging_title">通知红点</string>
+    <string name="icon_badging_title">通知圆点</string>
     <!-- Text to indicate that the system icon badging setting is on [CHAR LIMIT=100] -->
     <string name="icon_badging_desc_on">开</string>
     <!-- Text to indicate that the system icon badging setting is off [CHAR LIMIT=100] -->
@@ -176,7 +176,7 @@
     <!-- Title for the dialog shown when the app does not has notification access, explaining the requirement for notification access [CHAR LIMIT=50] -->
     <string name="title_missing_notification_access">需要获取通知权限</string>
     <!-- Message explaining to the user that the notification access is required by the app for showing 'Notification dots' [CHAR LIMIT=NONE] -->
-    <string name="msg_missing_notification_access">To show notification dots, turn on app notifications for <xliff:g id="name" example="My App">%1$s</xliff:g></string>
+    <string name="msg_missing_notification_access">为了展示通知圆点，请打开<xliff:g id="name" example="My App">%1$s</xliff:g>的通知权限</string>
     <!-- Button text in the confirmation dialog which would take the user to the system settings [CHAR LIMIT=50] -->
     <string name="title_change_settings">更改设置</string>
 
@@ -290,16 +290,16 @@
     <string name="shortcuts_menu_description"><xliff:g id="number_of_shortcuts" example="3">%1$d</xliff:g> shortcuts for <xliff:g id="app_name" example="Messenger">%2$s</xliff:g></string>
 
     <!-- Accessibility description when the shortcuts menu has notifications as well as shortcuts. -->
-    <string name="shortcuts_menu_with_notifications_description"><xliff:g id="number_of_shortcuts" example="3">%1$d</xliff:g> shortcuts and <xliff:g id="number_of_notifications" example="3">%2$d</xliff:g> notifications for <xliff:g id="app_name" example="Messenger">%3$s</xliff:g></string>
+    <string name="shortcuts_menu_with_notifications_description"><xliff:g id="app_name" example="Messenger">%3$s</xliff:g>应用目前有<xliff:g id="number_of_shortcuts" example="3">%1$d</xliff:g>个快捷图标和<xliff:g id="number_of_notifications" example="3">%2$d</xliff:g>条未读通知</string>
 
     <!-- Accessibility action to dismiss a notification in the shortcuts menu for an icon. [CHAR_LIMIT=30] -->
-    <string name="action_dismiss_notification">Dismiss</string>
+    <string name="action_dismiss_notification">清除</string>
 
     <string name="ee">…and then one day you find ten years have got behind you</string>
 
     <!-- Accessibility confirmation for notification being dismissed. -->
-    <string name="notification_dismissed">Notification dismissed</string>
-    <string name="icon_badging_sum">Customize notification dots</string>
+    <string name="notification_dismissed">通知已清除</string>
+    <string name="icon_badging_sum">自定义通知圆点</string>
 
 
     <string name="icu_abbrev_wday_month_day_no_year">EEEMMMd</string>
@@ -328,11 +328,11 @@
     <string name="icon_shape_system_default">使用系统默认</string>
     <string name="icon_shape_square">方形</string>
     <string name="icon_shape_rounded_square">圆角方形</string>
-    <string name="icon_shape_super_ellipse">圆角方形(角尖一点)</string>
-    <string name="icon_shape_squircle">四条边凸出来的圆角方形</string>
+    <string name="icon_shape_super_ellipse">圆角方形(更少圆角)</string>
+    <string name="icon_shape_squircle">方圆形</string>
     <string name="icon_shape_circle">圆形</string>
     <string name="icon_shape_teardrop">泪珠形</string>
-    <string name="icon_shape_cylinder">上下两条边凸出来的圆角方形</string>
+    <string name="icon_shape_cylinder">圆柱形</string>
     <string name="icon_shape_lemon">柠檬形</string>
     <string name="icon_shape_cloud">云形</string>
 
@@ -341,23 +341,23 @@
     <string name="custom_theme_summary">自定义主题 &amp; 图标</string>
     <string name="white_theme">White</string>
     <string name="white_withdarktext_theme">白底黑字</string>
-    <string name="dark_withdarktext_theme">暗底暗子t</string>
-    <string name="black_withdarktext_theme">黑底暗字</string>
-    <string name="dark_theme">黑</string>
-    <string name="black_theme">暗</string>
+    <string name="dark_withdarktext_theme">暗底黑字t</string>
+    <string name="black_withdarktext_theme">黑底黑字</string>
+    <string name="dark_theme">暗色主题</string>
+    <string name="black_theme">黑色主题</string>
     <string name="auto_theme">自动</string>
-    <string name="auto_theme_summary">依照壁纸变化</string>
+    <string name="auto_theme_summary">依照壁纸颜色变化</string>
     <string name="apply_settings_theme">应用修改</string>
 
     <!-- Hidden app -->
     <string name="hide_app">隐藏应用</string>
     <string name="hide_app_popup_hide">隐藏应用</string>
-    <string name="hide_app_popup_show">Show app</string>
-    <string name="hide_app_popup_show_toast">App showing</string>
-    <string name="hide_app_popup_hide_toast">App hidden</string>
+    <string name="hide_app_popup_show">显示应用</string>
+    <string name="hide_app_popup_show_toast">应用已恢复显示</string>
+    <string name="hide_app_popup_hide_toast">应用已隐藏</string>
     <string name="hide_app_sum">在抽屉中隐藏应用</string>
     <string name="hide_app_selected">&#160;选中</string>
-    <string name="hidden_app">Hidden app</string>
+    <string name="hidden_app">隐藏应用</string>
     <string name="reset_hidden_apps">重置</string>
     <string name="reset_hidden_apps_hint_no_apps">没有隐藏应用</string>
     <string name="reset_hidden_apps_hint">隐藏应用已启用</string>
@@ -369,28 +369,28 @@
 
 
     <!-- Dock bar -->
-    <string name="custom_dockbar">Dock</string>
+    <string name="custom_dockbar">底栏</string>
     <string name="custom_dockbar_summary">自定义dock</string>
-    <string name="num_hotseat_icons_pref_title">Number of dock icons</string>
-    <string name="force_mic">Show microphone</string>
-    <string name="use_assistant">Google Assistant</string>
-    <string name="use_assistant_sum">Instead microphone in search bar in dock</string>
-    <string name="use_assistant_drawer_sum">Instead microphone in search bar</string>
-    <string name="force_colour_logo">Colored Google logo</string>
-    <string name="transparentqsb">Search bar transparency</string>
-    <string name="hotseatShowArrow">Show carret</string>
-    <string name="hotseat_show_page_indicator">Show page indicator</string>
-    <string name="gradient_size">Gradient size</string>
-    <string name="remove_gradient">Disable dock gradient</string>
-    <string name="custom_qsb_in_dock">Search bar settings</string>
-    <string name="qsb_in_dock_show">Search bar in dock</string>
-    <string name="googleinappmenu">Google search bar</string>
-    <string name="pdock">Rounded dock</string>
-    <string name="pdock_sum">Android P style</string>
-    <string name="pdock_settings">Rounded dock settings</string>
-    <string name="pdock_radius">Corner radius</string>
-    <string name="pdock_shadow">Shadow size</string>
-    <string name="dock_height">Dock height</string>
+    <string name="num_hotseat_icons_pref_title">底栏图标数量</string>
+    <string name="force_mic">显示麦克风图标</string>
+    <string name="use_assistant">谷歌助理</string>
+    <string name="use_assistant_sum">替换搜索栏按钮为谷歌助理</string>
+    <string name="use_assistant_drawer_sum">替换搜索栏按钮为谷歌助理</string>
+    <string name="force_colour_logo">色彩化谷歌图标</string>
+    <string name="transparentqsb">搜索栏透明度</string>
+    <string name="hotseatShowArrow"> 显示指示图标</string>
+    <string name="hotseat_show_page_indicator">显示页面指示符</string>
+    <string name="gradient_size">渐变大小</string>
+    <string name="remove_gradient">关闭底栏渐变</string>
+    <string name="custom_qsb_in_dock">搜索栏设置</string>
+    <string name="qsb_in_dock_show">显示搜索栏</string>
+    <string name="googleinappmenu">Google 搜索栏</string>
+    <string name="pdock">底栏圆角</string>
+    <string name="pdock_sum">Android P 风格</string>
+    <string name="pdock_settings">底栏圆角设置</string>
+    <string name="pdock_radius">边角圆度</string>
+    <string name="pdock_shadow">阴影尺寸</string>
+    <string name="dock_height">底栏高度/string>
 
 
     <!-- Rows and Coloumns -->
@@ -402,21 +402,21 @@
     <string name="num_cols">列</string>
 
     <!-- About -->
-    <string name="about_sum">"CPL - AOSP based launcher with expanded functionality. It's free and contains no ads."</string>
-    <string name="thanks">Thanks to</string>
-    <string name="sum_thanks">Amir Zaidi (amirzaidi), Lawnchair team (deletescape, paphonb, fonix232, divadsn, Rawi666), ezio84, arco, jrizzoli, nebkat, xyyx, Mazda—, chauek, Thecrazyskull, stavros3006, yukuku, hundeva, Naquaduh, martin-stone, materialdesignicons.com, WhiskeyMotel</string>
-    <string name="forgot">Maybe I forgot someone…</string>
-    <string name="date">Build date</string>
-    <string name="sum_aboutapp">About the app, version information, credits</string>
-    <string name="about_app_version_wtu">Version</string>
-    <string name="custom_about_cpl">About CPL</string>
-    <string name="custom_version">Version</string>
-    <string name="translators">Translators</string>
+    <string name="about_sum">"CPL - 基于 AOSP ，具有扩展功能的桌面。完全免费，不包含任何广告"</ string>
+    <string name="thanks">鸣谢</string>
+    <string name="sum_thanks">Amir Zaidi (amirzaidi), Lawnchair 团队 (deletescape, paphonb, fonix232, divadsn, Rawi666), ezio84, arco, jrizzoli, nebkat, xyyx, Mazda—, chauek, Thecrazyskull, stavros3006, yukuku, hundeva, Naquaduh, martin-stone, materialdesignicons.com, WhiskeyMotel</string>
+    <string name="forgot">也许我遗漏了其他人...?</string>
+    <string name="date">构建日期</string>
+    <string name="sum_aboutapp">关于应用,版本信息,构建者</string>
+    <string name="about_app_version_wtu">版本号</string>
+    <string name="custom_about_cpl">关于 CPL</string>
+    <string name="custom_version">版本号</string>
+    <string name="translators">翻译者</string>
     <string name="translators_sum">whataudoinghere, stavros3006, LeandroSB, zhushman00</string>
 
     <!-- Reboot -->
     <string name="reboot">重启</string>
-    <string name="reboot_sum">Restart to re-apply settings</string>
+    <string name="reboot_sum">重启来恢复设置</string>
 
     <!-- Allapp -->
     <string name="custom_allapp">所有应用</string>
@@ -433,35 +433,35 @@
 
     <!-- Home screen -->
     <string name="custom_hs">主屏幕</string>
-    <string name="custom_hs_summary">自定义主屏幕&amp; \"一目了然\"微件</string>
-    <string name="edgemarginstock">Stock</string>
-    <string name="edgemarginsmall">Small</string>
-    <string name="diabledgemargin">Disable</string>
-    <string name="diabledgemargin_sum">Horizontal screen padding</string>
+    <string name="custom_hs_summary">自定义主屏幕"一目了然"微件</string>
+    <string name="edgemarginstock">原生</string>
+    <string name="edgemarginsmall">更小</string>
+    <string name="diabledgemargin">关闭</string>
+    <string name="diabledgemargin_sum">填充左右空隙</string>
     <string name="settings_edit_allow_title">允许编辑主屏幕</string>
     <string name="settings_edit_allow_question">允许编辑主屏幕</string>
-    <string name="settings_edit_allow_summary_on">Icons and widgets can be added, removed and moved on the Home screen</string>
-    <string name="settings_edit_allow_summary_off">Icons and widgets can\'t be added, removed and moved on the Home screen</string>
-    <string name="fade_out_animation">Fade out animation</string>
-    <string name="fade_out_animation_sum">When switching pages</string>
+    <string name="settings_edit_allow_summary_on">可以在主屏幕上添加,删除和移动图标和小部件</string>
+    <string name="settings_edit_allow_summary_off">不允许在主屏幕上添加，删除和移动图标和小部件</string>
+    <string name="fade_out_animation">淡出动画</string>
+    <string name="fade_out_animation_sum">当滑动页面时</string>
     <string name="system_font_for_smartspace">使用系统字体</string>
-    <string name="system_font_for_smartspace_sum">针对 \"一目了然\" 微件</string>
+    <string name="system_font_for_smartspace_sum">针对"一目了然"微件</string>
     <string name="smartspace_font">\"一目了然\"格式</string>
     <string name="smartspace_time">添加时钟</string>
     <string name="smartspace_customize_in_settings">自定义微件</string>
     <string name="smartspace_launchclock">启用时钟</string>
-    <string name="smartspace_disable">禁用\"一目了然\"</string>
+    <string name="smartspace_disable">禁用"一目了然"</string>
     <string name="smartspace_launchclock_sum">长按打开时钟</string>
     <string name="smartspace_launch_clock">设置闹钟</string>
     <string name="smartspace_launch_timer">设置倒计时</string>
-    <string name="smartspace_launch_keep">Google Keep</string>
-    <string name="smartspace_launch_tasks">Google Tasks</string>
+    <string name="smartspace_launch_keep">谷歌 Keep</string>
+    <string name="smartspace_launch_tasks">谷歌 Tasks</string>
     <string name="smartspace_launch_calendar">日历</string>
     <string name="smartspace_show_popup">操作菜单</string>
     <string name="smartspace_show_popup_sum">长按微件弹出快捷操作</string>
     <string name="show_top_shadow_title">点击特效</string>
-    <string name="full_width_width_widgets_pref_title">Full width widgets</string>
-    <string name="full_width_widgets_pref_summary">Allow widgets to span over the whole width without padding</string>
+    <string name="full_width_width_widgets_pref_title">全尺寸微件</string>
+    <string name="full_width_widgets_pref_summary"允许小部件占满整个宽度代替填充</string>
 
     <!-- Hide labels -->
     <string name="desktop_show_labels">在主屏幕显示应用名称</string>
@@ -476,12 +476,12 @@
     <!-- Date formats -->
     <string name="date_format">日期格式</string>
     <string name="clock_format">时钟格式</string>
-    <string name="date_format_1">Tuesday, Feb 13</string>
-    <string name="date_format_2">Tuesday</string>
-    <string name="date_format_3">Tue, February 13</string>
-    <string name="date_format_4">Tue, 02/13</string>
-    <string name="date_format_5">13 Tuesday</string>
-    <string name="date_format_6">Tuesday, February 13</string>
+    <string name="date_format_1">星期二, 5月 13</string>
+    <string name="date_format_2">星期二</string>
+    <string name="date_format_3">周二, 五月 13</string>
+    <string name="date_format_4">周二, 02/13</string>
+    <string name="date_format_5">13 星期二</string>
+    <string name="date_format_6">星期二, 五月 13</string>
 
     <!-- Color Changing -->
     <string name="use_custom_label_color">自定义字体颜色</string>
@@ -491,86 +491,86 @@
     <string name="custom_qsb_text_color">搜索条文字颜色</string>
 
     <!-- Behavior -->
-    <string name="behavior_pref_title">Behavior</string>
-    <string name="behavior_pref_summary">Change how the launcher behaves</string>
-    <string name="allow_vibration">Vibration</string>
-    <string name="allow_vibration_sum">When clicking on interface elements</string>
-    <string name="vibrationduration">Vibration duration</string>
-    <string name="vibrationdurationtest">Test vibration</string>
-    <string name="textinbadge">Notification badges</string>
-    <string name="textinbadge_sum">Show the number of notifications in a badge (numbers may be inaccurate)</string>
-    <string name="badge_place">Badge position</string>
-    <string name="badge_place_1">Top Right</string>
-    <string name="badge_place_2">Bottom Right</string>
-    <string name="badge_place_3">Top Left</string>
-    <string name="badge_place_4">Bottom Left</string>
-    <string name="double_tap_to_lock_method">Lock method</string>
-    <string name="double_tap_to_lock_method_null">Default screen lock method not set. Check settings to choose it.</string>
-    <string name="double_tap_to_lock_method_not_set">Not set</string>
-    <string name="double_tap_to_lock_title">Double tap to lock</string>
-    <string name="double_tap">Double tap</string>
-    <string name="double_tap_to_lock_summary">On the Home screen</string>
-    <string name="double_tap_to_lock_title_with_admin">With Admin access</string>
-    <string name="double_tap_to_lock_title_with_timeout">With black screen</string>
-    <string name="double_tap_to_lock_title_with_root">With root access</string>
-    <string name="double_tap_to_lock_no_root">Root access unavailable or denied</string>
-    <string name="double_tap_to_lock_summary_with_root">For fingerprint unlocking the device</string>
-    <string name="double_tap_to_lock_hint">To be able to lock, you have to enable admin access for Customized Pixel Launcher. This is a secure lock, meaning you have to enter your PIN on the next unlock, if you have any.</string>
-    <string name="double_tap_to_lock_disable_warning">By disabling admin access, you will not be able to lock on your home screen with gestures.</string>
-    <string name="action_edit">Edit</string>
-    <string name="use_custom_badge_color">Custom badge colors</string>
-    <string name="custom_badge_color">Badge background color</string>
-    <string name="custom_badge_text_color">Badge text color</string>
-    <string name="statusbar_expand">Show Notifications</string>
-    <string name="statusbar_expand_sum">When swiping down with two fingers</string>
-    <string name="pinch_to_overview_pref_title">Pinch to overview</string>
-    <string name="animate_overview_pref_title">Scroll effect in overview</string>
-    <string name="pinch_to_overview_pref_summary">Pinch on the home screen to open the overview</string>
-    <string name="home_opens_drawer_pref_title">Home button opens the app drawer</string>
-    <string name="home_opens_drawer_any_screen_pref_title">From any screen</string>
-    <string name="home_opens_drawer_pref_summary">Pressing the Home button while on the Home screen will open the app drawer</string>
-    <string name="keep_scroll_state_pref_title">Save scroll position</string>
-    <string name="keep_scroll_state_pref_summary">Saves the scroll position in the drawer</string>
-    <string name="pixel_search_layout">Pixel search layout</string>
-    <string name="pixel_search_layout_sum">May be unavailable on some devices</string>
-    <string name="default_launcher_title">Change default launcher</string>
-    <string name="default_launcher_message">This action will change your default launcher. Are you sure you\'d like to proceed?</string>
+    <string name="behavior_pref_title">习惯</string>
+    <string name="behavior_pref_summary">更改启动器的行为方式</string>
+    <string name="allow_vibration">振动</string>
+    <string name="allow_vibration_sum">单击界面元素时</string>
+    <string name="vibrationduration">振动持续时间</string>
+    <string name="vibrationdurationtest">测试振动</string>
+    <string name="textinbadge">通知计数</string>
+    <string name="textinbadge_sum">显示圆点中的通知数量（数字可能不准确）</string>
+    <string name="badge_place">圆点位置</string>
+    <string name="badge_place_1">右上</string>
+    <string name="badge_place_2">上</string>
+    <string name="badge_place_3">左上</string>
+    <string name="badge_place_4">左下</string>
+    <string name="double_tap_to_lock_method">锁定方式</string>
+    <string name="double_tap_to_lock_method_null">未设置默认的屏幕锁定方式。检查设置并选择方式。</string>
+    <string name="double_tap_to_lock_method_not_set">未设置</string>
+    <string name="double_tap_to_lock_title">双击锁屏</string>
+    <string name="double_tap">双击顶部锁屏</string>
+    <string name="double_tap_to_lock_summary">在主屏幕上</string>
+    <string name="double_tap_to_lock_title_with_admin">设备管理员权限</string>
+    <string name="double_tap_to_lock_title_with_timeout">显示黑色屏幕</string>
+    <string name="double_tap_to_lock_title_with_root">Root权限</string>
+    <string name="double_tap_to_lock_no_root">不支持Root或获取权限失败</string>
+    <string name="double_tap_to_lock_summary_with_root">用于指纹解锁设备</string>
+    <string name="double_tap_to_lock_hint">为了能够锁定屏幕，您必须为Customized Pixel Launcher启用设备管理员权限。 这是一种安全的锁定方式，但你必须在下次解锁时输入你的PIN码（在已设定的情况下）</string>
+    <string name="double_tap_to_lock_disable_warning">禁用设备管理员权限，您将无法使用手势锁定屏幕。</string>
+    <string name="action_edit">编辑</string>
+    <string name="use_custom_badge_color">自定义圆点颜色</string>
+    <string name="custom_badge_color">背景颜色</string>
+    <string name="custom_badge_text_color">文字颜色</string>
+    <string name="statusbar_expand">显示通知</string>
+    <string name="statusbar_expand_sum">用两根手指向下滑动时</string>
+    <string name="pinch_to_overview_pref_title">缩放预览</string>
+    <string name="animate_overview_pref_title">预览中的滚动效果</string>
+    <string name="pinch_to_overview_pref_summary">在屏幕上捏合以打开预览</string>
+    <string name="home_opens_drawer_pref_title">使用主页按钮打开应用抽屉</string>
+    <string name="home_opens_drawer_any_screen_pref_title">从任何界面中打开</string>
+    <string name="home_opens_drawer_pref_summary">在主屏幕上按主页按钮打开应用程序抽屉</string>
+    <string name="keep_scroll_state_pref_title">保存滚动位置</string>
+    <string name="keep_scroll_state_pref_summary">保存抽屉中的滚动位置</string>
+    <string name="pixel_search_layout">Pixel 搜索布局</string>
+    <string name="pixel_search_layout_sum">在某些设备上可能不受支持</string>
+    <string name="default_launcher_title">更改默认桌面</string>
+    <string name="default_launcher_message"此操作将更改您的默认启动器。 你确定要继续吗？</string>
 
     <!-- Icon pack -->
     <string name="default_iconpack" translatable="false">使用系统默认</string>
-    <string name="default_iconpack_title">使用系统默认</string>
+    <string name="default_iconpack_title">使用系统默认图标</string>
     <string name="icons_pack_name">图标包</string>
-    <string name="edit_app">E编辑图标</string>
+    <string name="edit_app">编辑图标</string>
     <string name="all_icons">所有图标</string>
     <string name="similar_icons">小图标</string>
     <string name="ok">Ok</string>
-    <string name="icon_chooser">Icon chooser</string>
+    <string name="icon_chooser">图标选择</string>
     <string name="icon_search">搜索图标</string>
     <string name="use_background_from_iconpack">使用图标包背景</string>
-    <string name="alt_gen_iconpack">Alternative icon cropping</string>
-    <string name="custom_gen_iconpack">Icons generation options</string>
-    <string name="icon_pack_updated">当前使用的图标包有更新,可能有新图标可用.建议进入设置重新应用图标包.</string>
-    <string name="generate_adaptive_icons_title">Generate adaptive icon background</string>
-    <string name="generate_adaptive_icons_summary">For apps without adaptive icons</string>
-    <string name="generate_adaptive_background_title">Extract color from legacy icon</string>
-    <string name="generate_adaptive_background_summary">For generated adaptive icon backgrounds</string>
+    <string name="alt_gen_iconpack">替代图标裁剪方式</string>
+    <string name="custom_gen_iconpack">图标生成选项</string>
+    <string name="icon_pack_updated">当前使用的图标包有更新,可能有新图标可用。建议进入设置重新应用图标包。</string>
+    <string name="generate_adaptive_icons_title">生成自适应图标背景</string>
+    <string name="generate_adaptive_icons_summary">对于未带有自适应图标的应用</string>
+    <string name="generate_adaptive_background_title">从原图标中提取颜色</string>
+    <string name="generate_adaptive_background_summary">生成自适应图标背景</string>
     <string name="generate_random">随机颜色</string>
     <string name="generate_random_brightness">随机颜色最大亮度</string>
     <string name="background_color">背景颜色</string>
     <string name="custom_generate_new">生成新图标</string>
     <string name="custom_generate_new_one">生成新图标</string>
     <string name="reset_icon">重置图标</string>
-    <string name="custom_generate_new_sum">清楚缓存并根据当前设置重新生成图标</string>
-    <string name="use_dynamic_icons">Dynamic icons</string>
-    <string name="use_dynamic_clock">Dynamic clock icon</string>
-    <string name="use_dynamic_calendar">Dynamic calendar icon</string>
+    <string name="custom_generate_new_sum">清除缓存并根据当前设置重新生成图标</string>
+    <string name="use_dynamic_icons">动态图标</string>
+    <string name="use_dynamic_clock">动态时钟图标</string>
+    <string name="use_dynamic_calendar">动态日历图标</string>
     <string name="show_seconds">显示秒</string>
     <string name="save_close">保存且关闭</string>
 
     <!-- Spring -->
-    <string name="springanim">Spring animation</string>
-    <string name="springcoef">Spring flexibility level</string>
-    <string name="use_spring_sum">In the app drawer</string>
+    <string name="springanim">弹性动画</string>
+    <string name="springcoef">弹性越界等级</string>
+    <string name="use_spring_sum">在应用抽屉中</string>
 
     <!-- Favorite app -->
     <string name="favorite_assigned">已设置喜爱应用</string>
@@ -578,7 +578,7 @@
     <string name="favorite_not_found">没有设置喜爱应用</string>
     <string name="launch_favorite_app_title">打开喜爱应用</string>
     <string name="launch_favorite_app_summary">双指下滑</string>
-    <string name="bage_size">Badge size</string>
+    <string name="bage_size">圆点大小</string>
 
     <!-- Telegram -->
 
@@ -606,14 +606,14 @@
     <string name="backup_location_message">无法更改备份位置</string>
     <string name="backup_location_note">备份位置</string>
     <string name="backup_location_sum">内部储存\\Documents\\CPL\\</string>
-    <string name="perform_backup">Perform backup?</string>
-    <string name="perform_restore">Perform restore?</string>
-    <string name="current">Current:</string>
-    <string name="empty">Empty</string>
-    <string name="delete_mode">Delete backup</string>
-    <string name="delete_selected">Delete selected</string>
-    <string name="delete_success">Backup deleted</string>
-    <string name="empty_slot">Current backup slot is empty</string>
+    <string name="perform_backup">是否执行备份?</string>
+    <string name="perform_restore">是否执行恢复?</string>
+    <string name="current">当前:</string>
+    <string name="empty">空白</string>
+    <string name="delete_mode">删除备份</string>
+    <string name="delete_selected">删除已选择</string>
+    <string name="delete_success">备份已删除</string>
+    <string name="empty_slot">当前备份槽为空白</string>
 
     <!-- Donation -->
     <string name="donation_title">捐赠开发者</string>
@@ -624,56 +624,56 @@
     <!-- Misc -->
     <string name="attention">注意!</string>
     <string name="action_canceled">用户取消</string>
-    <string name="debug">Debug</string>
-    <string name="clean_all_settings_title">Reset to defaults</string>
-    <string name="clean_all_settings_sum">Reset CPL settings to default</string>
-    <string name="clean_all_settings">Reset all settings to default values?</string>
-    <string name="debug_sum">Restart or reset settings</string>
-    <string name="debug_recreate">Soft restart</string>
-    <string name="xda_tread">Thread on XDA</string>
-    <string name="chetyrepda_tread">Thread on 4PDA</string>
-    <string name="allow_two_line_labels_title">Allow two line labels</string>
+    <string name="debug">调试</string>
+    <string name="clean_all_settings_title">重置为默认值</string>
+    <string name="clean_all_settings_sum">重置 CPL 选项为默认值</string>
+    <string name="clean_all_settings">是否将所有设置重置为默认值?</string>
+    <string name="debug_sum">重启桌面或重置设置</string>
+    <string name="debug_recreate">软重启</string>
+    <string name="xda_tread">XDA上的原帖</string>
+    <string name="chetyrepda_tread">4PDA上的原帖</string>
+    <string name="allow_two_line_labels_title">允许两行标签</string>
 
     <!-- Popup More Options -->
-    <string name="additional_options">Additional options</string>
-    <string name="more">More</string>
-    <string name="find_in_store">Find in Play Store</string>
-    <string name="share">Share</string>
+    <string name="additional_options">高级设置</string>
+    <string name="more">更多</string>
+    <string name="find_in_store">在 Play 商店上查看</string>
+    <string name="share">分享</string>
 
-    <string name="drawer_buttons">Buttons in search bar</string>
-    <string name="drawer_buttons_select">Buttons</string>
-    <string name="drawer_button_settings">CPL settings</string>
-    <string name="drawer_button_settings_sum">On long click - system settings</string>
-    <string name="drawer_button_market">Play Store</string>
-    <string name="drawer_button_visibility">Hidden apps visibility</string>
-    <string name="drawer_button_visibility_sum">On long click - hidden apps menu</string>
-    <string name="drawer_button_mic">Microphone</string>
+    <string name="drawer_buttons">搜索栏按钮</string>
+    <string name="drawer_buttons_select">按钮</string>
+    <string name="drawer_button_settings">CPL 设置</string>
+    <string name="drawer_button_settings_sum">长按 - 系统设置</string>
+    <string name="drawer_button_market">Play 商店</string>
+    <string name="drawer_button_visibility">隐藏应用可见性</string>
+    <string name="drawer_button_visibility_sum">长按 - 隐藏应用菜单</string>
+    <string name="drawer_button_mic">麦克风</string>
 
-    <string name="qsb_text">Text in search bar</string>
-    <string name="qsb_text_sans">Use Google Sans font for text</string>
-    <string name="qsb_center_text">Center text alignment</string>
-    <string name="say_ok_google">Say “OK Google”</string>
+    <string name="qsb_text">搜索栏文字</string>
+    <string name="qsb_text_sans">使用 Google Sans 字体</string>
+    <string name="qsb_center_text">中心对齐</string>
+    <string name="say_ok_google">请说 “OK Google”</string>
 
-    <string name="extra_bottom_padding_title">Extra bottom padding for search bar</string>
-    <string name="extra_bottom_padding_summary">Enable if icons are too close to bottom search bar</string>
-    <string name="more_info">More information</string>
-    <string name="dock_opacity">Dock opacity</string>
-    <string name="drawer_opacity">Drawer opacity</string>
-    <string name="folder_opacity">Folder background opacity</string>
+    <string name="extra_bottom_padding_title">搜索栏底部额外填充</string>
+    <string name="extra_bottom_padding_summary">如果图标太靠近底部搜索栏，请启用此选项</string>
+    <string name="more_info">更多信息</string>
+    <string name="dock_opacity">底栏不透明度</string>
+    <string name="drawer_opacity">应用抽屉不透明度</string>
+    <string name="folder_opacity">文件夹背景不透明度</string>
 
-    <string name="default_color">Default color</string>
-    <string name="arrow_and_line_color">Caret and page indicator color</string>
-    <string name="folder_prewiew_color">Preview color</string>
-    <string name="folder_background_color">Background color</string>
-    <string name="transparent_nav_bar">Transparent navigation bar</string>
-    <string name="white_status_bar_icons">White status bar icons</string>
-    <string name="text_divider">Text divider</string>
-    <string name="disable_dock">Disable dock</string>
-    <string name="accent_drawer">Accent color</string>
-    <string name="accent_color_sum">Color of fast scroll popup, buttons and stock search bar</string>
-    <string name="rounded_corners">Rounded corners</string>
-    <string name="app_open_animation">App opening animation</string>
-    <string name="app_open_animation_sum">When opening a new app and returning to the Home Screen</string>
+    <string name="default_color">默认颜色</string>
+    <string name="arrow_and_line_color">指示符号和页面指示器颜色</string>
+    <string name="folder_prewiew_color">预览颜色</string>
+    <string name="folder_background_color">背景颜色</string>
+    <string name="transparent_nav_bar">透明导航栏r</string>
+    <string name="white_status_bar_icons">白色状态栏图标</string>
+    <string name="text_divider">文本分隔符</string>
+    <string name="disable_dock">关闭底栏</string>
+    <string name="accent_drawer">强调色</string>
+    <string name="accent_color_sum">弹出窗口，按钮和原生搜索栏的颜色</string>
+    <string name="rounded_corners">开启圆角</string>
+    <string name="app_open_animation">应用打开动画</string>
+    <string name="app_open_animation_sum">打开新应用程序和返回主屏幕动画</string>
     <string name="left_swipe">Left Swipe</string>
     <string name="right_swipe">Right Swipe</string>
     <string name="swipe_up">Swipe Up</string>
@@ -681,7 +681,7 @@
     <string name="zoom">Zoom</string>
     <string name="fall_down">Fall down</string>
     <string name="from_middle">From middle</string>
-    <string name="transition_effect">Scroll effect</string>
+    <string name="transition_effect">滚动效果</string>
     <string name="zoom_in">Zoom in</string>
     <string name="zoom_out">Zoom out</string>
     <string name="rotate_up">Rotate up</string>
@@ -695,87 +695,87 @@
     <string name="cylinder_in">Cylinder in</string>
     <string name="cylinder_out">Cylinder out</string>
     <string name="overview">Оverview</string>
-    <string name="wallpaper_scroll_title">Scroll wallpaper</string>
-    <string name="def">Default</string>
-    <string name="default_home">Default home screen</string>
-    <string name="all_apps">Apps list</string>
-    <string name="delete">Delete</string>
+    <string name="wallpaper_scroll_title">滚动壁纸</string>
+    <string name="def">默认</string>
+    <string name="default_home">默认主屏幕</string>
+    <string name="all_apps">应用列表</string>
+    <string name="delete">删除</string>
     <string name="lock">Lock</string>
     <string name="unlock">Unlock</string>
-    <string name="page_not_empty">This page is not empty. Those item will also be removed.</string>
-    <string name="pref_open_source_licenses_title">Open source licenses</string>
-    <string name="two_finger_up">Two finger swipe up</string>
-    <string name="two_finger_down">Two finger swipe down</string>
-    <string name="action_nothing">Nothing</string>
-    <string name="action_quick_search">Quick search</string>
-    <string name="action_voice_search">Voice search</string>
-    <string name="action_app_drawer">Open app drawer</string>
-    <string name="action_app_search">Open app search</string>
-    <string name="action_overview">Enter overview</string>
-    <string name="action_lock">Lock</string>
-    <string name="action_settings">Device settings</string>
-    <string name="action_default_screen">Go to default screen</string>
-    <string name="action_first_screen">Go to first screen</string>
-    <string name="action_last_screen">Go to last screen</string>
-    <string name="gestures">Gestures</string>
-    <string name="gestures_sum">Customize the Home screen gestures</string>
-    <string name="infinite_scroll">Infinite scroll</string>
-    <string name="long_tap">Long press</string>
-    <string name="home_button">Home button</string>
-    <string name="one_finger_down">One finger swipe down</string>
-    <string name="one_finger_up">One finger swipe up</string>
-    <string name="action_notifications">Open notifications panel</string>
-    <string name="action_notifications_with_settings">Open notifications panel with quick settings</string>
-    <string name="lock_screen_method_1">Immediately fully lock the device, requiring a PIN to unlock. This will not allow fingerprint unlock</string>
-    <string name="lock_screen_method_2">"Show a black screen for 5 seconds while the screen timeouts and turns off. This will respect your device's normal security settings when the screen times out, allowing fingerprint scanners to unlock"</string>
-    <string name="lock_screen_method_3">"Emulate pressing the power button"</string>
-    <string name="parallax_scrolling">Reverse wallpaper scrolling</string>
-    <string name="elastic_scrolling">Elastic scrolling</string>
-    <string name="elastic_scrolling_coeff">Elastic scrolling coefficient</string>
-    <string name="gradient_dock">Gradient dock</string>
-    <string name="search_bar">Search bar</string>
-    <string name="date_format_long">Long</string>
-    <string name="date_format_normal">Normal</string>
-    <string name="date_format_short">Short</string>
-    <string name="app_installing_progress">Show app installation progress</string>
-    <string name="home_screen_notification_bar">Show notification bar</string>
-    <string name="not_set">Not set</string>
-    <string name="hotseat_drag_indicator">Drag indicator</string>
-    <string name="dock_show_labels">Icon labels in the dock</string>
-    <string name="gallery">Gallery</string>
-    <string name="bridge_install">Install</string>
-    <string name="disable">Disabled</string>
-    <string name="style_1">Style 1</string>
-    <string name="style_2">Style 2</string>
-    <string name="show_dock_on_home_screen">Show dock on Home Screen</string>
-    <string name="hide_dock_from_home_screen">Hide Dock from Home Screen</string>
-    <string name="scrolling">Scrolling</string>
-    <string name="warning_cpl_not_default">Not set as default</string>
-    <string name="warning_cpl_not_default_sum">CPL is not set as the default launcher. Tap to set.</string>
-    <string name="resize_any_widget_sum">Allow resizing of widgets that normally are not resizeable</string>
-    <string name="resize_any_widget_title">Resize any widget</string>
-    <string name="widgets_in_dock_sum">Allow adding widgets to dock</string>
-    <string name="widgets_in_dock_title">Widgets in dock</string>
-    <string name="widget_padding_title">Widget padding</string>
-    <string name="vertical_only">Vertical only</string>
-    <string name="horizontal_only">Horizontal only</string>
-    <string name="folder_animation">Folder open animation</string>
-    <string name="scale">Scale</string>
-    <string name="circle">Circle</string>
-    <string name="hideapp">Hide from App drawer</string>
-    <string name="clean_user_icons">Reset alternative user app icons and labels?</string>
-    <string name="reset_user_icon">Reset user icon</string>
-    <string name="morepack">Get more icons</string>
-    <string name="hidden_apps_tint">Gray tint for hidden apps</string>
-    <string name="developer_mode">Developer mode</string>
-    <string name="restore_user_icons_title">Restore user icons database</string>
-    <string name="getplugin">Get Google Feed and Weather Plugin</string>
-    <string name="hidedonationbutton">Hide button</string>
-    <string name="buyapp">Buy Donation App</string>
-    <string name="shortcuts">Shortcuts</string>
-    <string name="show_folder_name">Show folder name</string>
-    <string name="folder_adaptive_icon">Adaptive folder icon</string>
-    <string name="extract_shortcut_color">Colorize shortcuts</string>
-    <string name="extract_shortcut_color_sum">Extract shortcut color from app icon</string>
-    <string name="add_translation">Add or improve translation</string>
+    <string name="page_not_empty">此页面不为空，在此页面上的部件也将被删除。</string>
+    <string name="pref_open_source_licenses_title">开放源代码许可</string>
+    <string name="two_finger_up">双指上滑</string>
+    <string name="two_finger_down">双指下滑</string>
+    <string name="action_nothing">空无一物</string>
+    <string name="action_quick_search">快速搜索</string>
+    <string name="action_voice_search">语音搜索</string>
+    <string name="action_app_drawer">打开应用抽屉</string>
+    <string name="action_app_search">打开应用搜索</string>
+    <string name="action_overview">进入预览</string>
+    <string name="action_lock">锁定</string>
+    <string name="action_settings">设备设置</string>
+    <string name="action_default_screen">转向默认主屏幕</string>
+    <string name="action_first_screen">转向第一个屏幕</string>
+    <string name="action_last_screen">转向最后一个屏幕</string>
+    <string name="gestures">手势</string>
+    <string name="gestures_sum">自定义主屏幕手势</string>
+    <string name="infinite_scroll">无限滚动屏幕</string>
+    <string name="long_tap">长按</string>
+    <string name="home_button">主页按钮</string>
+    <string name="one_finger_down">单指下滑</string>
+    <string name="one_finger_up">单指上滑</string>
+    <string name="action_notifications">打开通知面板</string>
+    <string name="action_notifications_with_settings">打开通知面板&快速设置</string>
+    <string name="lock_screen_method_1">立即锁定设备：不支持指纹解锁，需要输入PIN才能解锁。</string>
+    <string name="lock_screen_method_2">"在屏幕超时显示黑屏5秒钟：当屏幕超时时，此选项可以保持设备的正常安全状态，并允许指纹解锁"</string>
+    <string name="lock_screen_method_3">"模拟按下电源按钮"</string>
+    <string name="parallax_scrolling">反向壁纸滚动</string>
+    <string name="elastic_scrolling">弹性滚动</string>
+    <string name="elastic_scrolling_coeff">弹性滚动系数</string>
+    <string name="gradient_dock">渐变底栏</string>
+    <string name="search_bar">搜索栏</string>
+    <string name="date_format_long">长</string>
+    <string name="date_format_normal">正常</string>
+    <string name="date_format_short">短</string>
+    <string name="app_installing_progress">显示应用安装进程</string>
+    <string name="home_screen_notification_bar">显示通知栏</string>
+    <string name="not_set">未设置</string>
+    <string name="hotseat_drag_indicator">拖动指示器</string>
+    <string name="dock_show_labels">显示底栏图标标签</string>
+    <string name="gallery">相册</string>
+    <string name="bridge_install">安装</string>
+    <string name="disable">关闭</string>
+    <string name="style_1">风格 1</string>
+    <string name="style_2">风格 2</string>
+    <string name="show_dock_on_home_screen">显示主屏幕底栏</string>
+    <string name="hide_dock_from_home_screen">隐藏主屏幕底栏</string>
+    <string name="scrolling">滚动</string>
+    <string name="warning_cpl_not_default">未设置为默认</string>
+    <string name="warning_cpl_not_default_sum">CPL 不是您的默认桌面，点击设置：</string>
+    <string name="resize_any_widget_sum">允许调整不可调整大小的小部件</string>
+    <string name="resize_any_widget_title">调整任何小部件大小</string>
+    <string name="widgets_in_dock_sum">允许将微件添加到底栏</string>
+    <string name="widgets_in_dock_title">底栏微件</string>
+    <string name="widget_padding_title">微件填充</string>
+    <string name="vertical_only">仅竖直方向</string>
+    <string name="horizontal_only">仅水平方向</string>
+    <string name="folder_animation">文件夹打开动画</string>
+    <string name="scale">比例</string>
+    <string name="circle">圆形</string>
+    <string name="hideapp">从应用抽屉中隐藏</string>
+    <string name="clean_user_icons">是否重置已替换的用户应用图标和标签?</string>
+    <string name="reset_user_icon">重置用户应用图标</string>
+    <string name="morepack">获取更多图标</string>
+    <string name="hidden_apps_tint">显示隐藏应用为灰色色调</string>
+    <string name="developer_mode">开发者模式</string>
+    <string name="restore_user_icons_title">重置用户应用图标数据库</string>
+    <string name="getplugin">获取 Google Feed , Google 天气插件</string>
+    <string name="hidedonationbutton"> 隐藏按键</string>
+    <string name="buyapp">购买捐赠版本</string>
+    <string name="shortcuts">快捷图标</string>
+    <string name="show_folder_name">显示文件夹名称</string>
+    <string name="folder_adaptive_icon">自适应文件夹图标</string>
+    <string name="extract_shortcut_color">色彩化快捷图标</string>
+    <string name="extract_shortcut_color_sum">从应用图标中提取快捷图标颜色</string>
+    <string name="add_translation">添加或改进翻译</string>
 </resources>
