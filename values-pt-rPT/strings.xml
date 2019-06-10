@@ -232,15 +232,25 @@
     <string name="fade_out_animation">Animação de Saída</string>
     <string name="fade_out_animation_sum">Ao trocar de páginas</string>
     <string name="system_font_for_smartspace">Usar fonte do sistema</string>
-    <string name="system_font_for_smartspace_sum">Para o widget \"At a Glance"\</string>
-    <string name="smartspace_font">\"At a Glance\" widget fonte</string>
+    <string name="system_font_for_smartspace_sum">Para o widget \"At a Glance"</string>
+    <string name="smartspace_font">\"At a Glance\" fonte</string>
     <string name="smartspace_time">Adicionar relógio</string>
     <string name="smartspace_customize_in_settings">Customizar widget</string>
     <string name="smartspace_launchclock">App de relógio</string>
     <string name="smartspace_disable">Desabilitar "At a Glance" widget</string>
     <string name="smartspace_launchclock_sum">Ao pressionar o widget</string>
+    <string name="smartspace_launch_clock">Definir alarme</string>
+    <string name="smartspace_launch_timer">Definir timer</string>
+    <string name="smartspace_launch_keep">Google Keep</string>
+    <string name="smartspace_launch_tasks">Google Tarefas</string>
+    <string name="smartspace_launch_calendar">Calendário</string>
+    <string name="smartspace_show_popup">Menu de ações</string>
+    <string name="smartspace_show_popup_sum">Mostra um pop-up com ações ações rápidas ao tocar no widget</string>
+    <string name="show_top_shadow_title">Sombra Superior</string>
+    <string name="full_width_width_widgets_pref_title">Ocupar largura com widgets</string>
+    <string name="full_width_widgets_pref_summary">Permitir que widgets ocupem toda a largura da tela sem preenchimento</string>
 
-    <!-- Esconder rуtulos -->
+    <!-- Esconder Títulos -->
     <string name="desktop_show_labels">Rótulos de ícones na tela inicial</string>
     <string name="drawer_show_labels">Rótulos de ícones na gaveta de apps</string>
 
@@ -337,8 +347,13 @@
     <string name="backup_and_restore_pref_sum">Fazer backup ou restaurar configurações</string>
     <string name="backup_pref_title">Configurações de Backup</string>
     <string name="restore_pref_title">Configurações de restauração</string>
+    <string name="restore_settings_title">Restaurar configurações</string>
+    <string name="restore_icons_title">Restaurar Dados dos ícones</string>
+    <string name="restore_layout_title">Restaurar layout da Tela Inicial</string>
     <string name="settings_export_success">Backup das configurações feito com sucesso</string>
     <string name="settings_import_success">Configurações restauradas com sucesso</string>
+    <string name="icon_import_success">Dados dos Ícones Restaurados com sucesso</string>
+    <string name="layout_import_success">Layout da Tela Incial restaurado com successo</string>
     <string name="export_error">Não foi possível fazer o backup</string>
     <string name="import_error">Não foi possível restaurar</string>
     <string name="permission_ok">Permissão garantida</string>
@@ -350,6 +365,113 @@
     <string name="backup_date">Data de criação do backup</string>
     <string name="backup_location_message">A localização do backup não pode ser alterada</string>
     <string name="backup_location_note">Localização do backup</string>
+    <string name="backup_location_sum">Memória Interna\\Documents\\CPL\\</string>
+    <string name="perform_backup">Realizar backup?</string>
+    <string name="current">Atual:</string>
+    <string name="empty">Empty</string>
+    <string name="delete_mode">Excluir backup</string>
+    <string name="delete_selected">Excluir selecionado</string>
+    <string name="delete_success">Excluído com Sucesso</string>
+    <string name="empty_slot">O slot de backup atual está vazio</string>
 
+    <!-- Donation -->
+    <string name="donation_title">Apoie o desenvolvimento</string>
+</resources>
+
+    <!-- Misc -->
+    <string name="attention">Atenção!</string>
+    <string name="action_canceled">Ação cancelada pelo usuário</string>
+    <string name="debug">Depuração</string>
+    <string name="clean_all_settings_title">Redefinir para o padrão</string>
+    <string name="clean_all_settings_sum">Redifinir CPL para as configurações originais</string>
+    <string name="clean_all_settings">Redifinir todas as configuração para os valores padrão?</string>
+    <string name="debug_sum">Reiniciar ou redefinir as configurações</string>
+
+
+    <!-- Popup More Options -->
+    <string name="additional_options">Opções Adicionais</string>
+    <string name="more">Mais</string>
+    <string name="find_in_store">Encontrar na Play Store</string>
+    <string name="share">Compartilhar</string>
+
+    <string name="drawer_buttons">Botões na barra de pesquisa</string>
+    <string name="drawer_buttons_select">Botões</string>
+    <string name="drawer_button_settings">Configurações CPL</string>
+    <string name="drawer_button_settings_sum">Pressione - configurações do sistema</string>
+    <string name="drawer_button_market">Play Store</string>
+    <string name="drawer_button_visibility">visibilidade de apps ocultos</string>
+    <string name="drawer_button_visibility_sum">Pressione - menu de apps ocultos</string>
+    <string name="drawer_button_mic">Pesquisa por voz</string>
+
+    <string name="qsb_text">Texto na barra de pesquisa</string>
+    <string name="qsb_text_sans">Use a fonte Google Sans para o texto</string>
+    <string name="qsb_center_text">Alinhamento no centro do texto</string>
+    <string name="say_ok_google">Diga “OK Google”</string>
+
+    <string name="extra_bottom_padding_title">Acrescentar espaço inferior extra para a barra de pesquiss</string>
+    <string name="extra_bottom_padding_summary">Ativar caso os ícones estejam muito próximos à barra de pesquisa</string>
+    <string name="more_info">Mais informações</string>
+    <string name="dock_opacity">Opacidade da Dock</string>
+    <string name="drawer_opacity">Opacidade da gaveta de apps</string>
+    <string name="folder_opacity">Opacidade do fundo das pastas</string>
+
+    <string name="default_color">Cor Padrão</string>
+    <string name="folder_prewiew_color">Cor Prévia</string>
+    <string name="folder_background_color">Cor de Fundo</string>
+    <string name="transparent_nav_bar">Barra de navegação transparente</string>
+    <string name="white_status_bar_icons">Ícones brancos na barra de status</string>
+    <string name="text_divider">Dividir texto</string>
+    <string name="disable_dock">Disativar Dock</string>
+    <string name="accent_drawer">Cor de destaque</string>
+    <string name="accent_color_sum">Cor da barra deslizante, botões e barra de pesquisa padrão</string>
+    <string name="rounded_corners">Bordas redondas</string>
+    <string name="app_open_animation">Animação ao abrir app</string>
+    <string name="app_open_animation_sum">Ao abrir um novo aplicativo e retornar à tela inicial</string>
+    <string name="transition_effect">Efeito de transição</string>
+    <string name="wallpaper_scroll_title">Rolagem de papel de parede</string>
+    <string name="default_home">Tela inicial padrão</string>
+    <string name="delete">Remover</string>
+    <string name="lock">Bloquear</string>
+    <string name="unlock">Desbloquear</string>
+    <string name="page_not_empty">Esta página não está vazia. Todos os itens nela serão removidos.</string>
+    <string name="two_finger_up">Deslizar para cima com dois dedos</string>
+    <string name="two_finger_down">Deslizar para baixo como dois dedos</string>
+    <name="gestures">Gestos</string>
+    <string name="gestures_sum">Personalize os gestos da tela incial</string>
+    <string name="infinite_scroll">Rolagem infinita</string>
+    <string name="one_finger_down">Deslizar para baixo</string>
+    <string name="one_finger_up">Deslizar para cima</string>
+    <string name="lock_screen_method_1">"loquear o aparelho imediamente, exigindo um PIN de desbloqueio. Isto não permitirá o desbloqueio por impressão digital</string>
+    <string name="lock_screen_method_2">"Exibe uma tela preta por 5 segundos enquanto aguarda o tempo limite para desligar a tela. Isso respeitará as configurações normais de segurança do seu aparelho ao aguardar o tempo de tela expirar, permitindo que os scanners de impressão digital o desbloqueiem"</string>
+    <string name="lock_screen_method_3">"imita o pressionamento do botão Power"</string>
+    <string name="parallax_scrolling">Rolagem de wallpaper inversa</string>
+    <string name="elastic_scrolling">Rolagem elástica</string>
+    <string name="gradient_dock">Gradiente na dock</string>
+    <string name="search_bar">Barra de pesquisa</string>
+    <string name="app_installing_progress">Mostrar progresso de instalação de apps</string>
+    <string name="home_screen_notification_bar">Mostrar barra de notificação</string>
+    <string name="not_set">Não selecionadk</string>
+    <string name="hotseat_drag_indicator">indicador "Arraste"</string>
+    <string name="dock_show_labels">rótulos de ícones na dock</string>
+    <string name="gallery">Galeria</string>
+    <string name="bridge_install">Instalar</string>
+    <string name="disable">Desativado</string>
+    <string name="show_dock_on_home_screen">Mostrar Dock na Tela Inicial</string>
+    <string name="hide_dock_from_home_screen">Ocultar Dock na Tela Inicial</string>
+    <string name="warning_cpl_not_default">Não foi definido com padrão</string>
+    <string name="warning_cpl_not_default_sum">CPL não está definido como iniciador padrão. Toque para definir.</string>
+    <string name="resize_any_widget_sum">Permite redimensionar widgets que normalmente não são redimensionavéis</string>
+    <string name="resize_any_widget_title">Redimensionar qualquer widget</string>
+    <string name="widgets_in_dock_sum">Permite adicionar widgets na dock</string>
+    <string name="widgets_in_dock_title">Widgets na dock</string>
+    <string name="widget_padding_title">Preenchimento do widget</string>
+    <string name="folder_animation"Animação ao abrir pastas</string>
+    <string name="shortcuts">Atalhos</string>
+    <string name="show_folder_name">Mostrar nome da pasta</string>
+    <string name="folder_adaptive_icon">Ícone da pasta adaptativa</string>
+    <string name="extract_shortcut_color">Colorir atalhos</string>
+    <string name="extract_shortcut_color_sum">Extrair cor de atalho do ícone do aplicativo</string>
+
+    <!-- Donation -->   
     <string name="donation_title">Apoie o desenvolvimento</string>
 </resources>
