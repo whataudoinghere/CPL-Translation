@@ -29,7 +29,7 @@
     <string name="shortcut_not_available" msgid="2536503539825726397">"Raccourci non disponible"</string>
     <string name="home_screen" msgid="806512411299847073">"Écran d\'accueil"</string>
     <string name="custom_actions" msgid="3747508247759093328">"Actions personnalisées"</string>
-    <string name="long_press_widget_to_add" msgid="7699152356777458215">"App. de manière prolongée pour sélectionner le widget."</string>
+    <string name="long_press_widget_to_add" msgid="7699152356777458215">"Appuyez de manière prolongée pour sélectionner le widget."</string>
     <string name="long_accessible_way_to_add" msgid="4289502106628154155">"Appuyez 2 fois et maintenez la pression pour sélectionner widget ou utilisez actions personnalisées."</string>
     <string name="widget_dims_format" msgid="2370757736025621599">"%1$d x %2$d"</string>
     <string name="widget_accessible_dims_format" msgid="3640149169885301790">"%1$d de largeur et %2$d de hauteur"</string>
@@ -56,7 +56,7 @@
     <string name="msg_no_phone_permission" msgid="9208659281529857371">"L\'application <xliff:g id="APP_NAME">%1$s</xliff:g> n\'est pas autorisée à passer des appels téléphoniques."</string>
     <string name="gadget_error_text" msgid="6081085226050792095">"Problème lors du chargement du widget."</string>
     <string name="gadget_setup_text" msgid="8274003207686040488">"Configuration"</string>
-    <string name="uninstall_system_app_text" msgid="4172046090762920660">"Impossible de désinstaller cette application car il s\'agit d\'une application système."</string>
+    <string name="uninstall_system_app_text" msgid="4172046090762920660">"Impossible de désinstaller cette application car c'est une application système."</string>
     <string name="folder_hint_text" msgid="6617836969016293992">"Dossier sans nom"</string>
     <string name="disabled_app_label" msgid="6673129024321402780">"<xliff:g id="APP_NAME">%1$s</xliff:g> est désactivé."</string>
     <string name="default_scroll_format" msgid="7475544710230993317">"Page %1$d sur %2$d"</string>
@@ -74,7 +74,7 @@
     <string name="msg_disabled_by_admin" msgid="6898038085516271325">"Désactivé par votre administrateur"</string>
     <string name="accessibility_action_overview" msgid="6257665857640347026">"Vue d\'ensemble"</string>
     <string name="allow_rotation_title" msgid="7728578836261442095">"Autoriser la rotation de l\'écran d\'accueil"</string>
-    <string name="allow_rotation_desc" msgid="8662546029078692509">"Lorsque vous faites pivoter le téléphone"</string>
+    <string name="allow_rotation_desc" msgid="8662546029078692509">"Autoriser la rodation du téléphone"</string>
     <string name="allow_rotation_blocked_desc" msgid="3212602545192996253">"Le paramètre d\'affichage actuel n\'autorise pas la rotation."</string>
     <string name="icon_badging_title" msgid="874121399231955394">"Pastilles de notification"</string>
     <string name="icon_badging_desc_on" msgid="2627952638544674079">"Activé"</string>
@@ -90,7 +90,7 @@
     <string name="icon_shape_squircle" msgid="5658049910802669495">"Squircle"</string>
     <string name="icon_shape_circle" msgid="6550072265930144217">"Cercle"</string>
     <string name="icon_shape_teardrop" msgid="4525869388200835463">"Goutte"</string>
-    <string name="icon_shape_override_progress" msgid="3461735694970239908">"Application des modifications de forme des icônes…"</string>
+    <string name="icon_shape_override_progress" msgid="3461735694970239908">"Application qui modifie les forme d'icônes…"</string>
     <string name="package_state_unknown" msgid="7592128424511031410">"Inconnu"</string>
     <string name="abandoned_clean_this" msgid="7610119707847920412">"Supprimer"</string>
     <string name="abandoned_search" msgid="891119232568284442">"Rechercher"</string>
@@ -134,7 +134,7 @@
     <string name="pref_icon_pack">"Pack d'icônes"</string>
     <string name="state_loading">"Application en cours..."</string>
     <string name="smartspace_preferences_in_settings">En bref</string>
-    <string name="smartspace_preferences_in_settings_desc">"En haut de votre écran d'accueil"</string>
+    <string name="smartspace_preferences_in_settings_desc">"En haut de l'écran d'accueil"</string>
     <string name="title_show_google_app">Afficher %1$s</string>
     <string name="msg_minus_one_on_left">"Sur la gauche de l'écran d'accueil principal"</string>
     <string name="about">À propos</string>
