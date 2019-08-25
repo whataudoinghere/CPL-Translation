@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!-- 
+<?xml version="1.0" encoding="utf-8"?>
+<!--
 /*
 * Copyright (C) 2008 The Android Open Source Project
 *
@@ -15,132 +15,769 @@
 * See the License for the specific language governing permissions and
 * limitations under the License.
 */
- -->
+-->
 
-<resources xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="app_name" msgid="649227358658669779">"Launcher3"</string>
-    <string name="folder_name" msgid="7371454440695724752"></string>
-    <string name="work_folder_name" msgid="3753320833950115786">"Kantor"</string>
-    <string name="activity_not_found" msgid="8071924732094499514">"Aplikasi tidak dipasang."</string>
-    <string name="activity_not_available" msgid="7456344436509528827">"Aplikasi tidak tersedia"</string>
-    <string name="safemode_shortcut_error" msgid="9160126848219158407">"Aplikasi yang didownload dinonaktifkan dalam mode Aman"</string>
-    <string name="safemode_widget_error" msgid="4863470563535682004">"Widget dinonaktifkan dalam mode Aman"</string>
-    <string name="shortcut_not_available" msgid="2536503539825726397">"Pintasan tidak tersedia"</string>
-    <string name="home_screen" msgid="806512411299847073">"Layar utama"</string>
-    <string name="custom_actions" msgid="3747508247759093328">"Tindakan khusus"</string>
-    <string name="long_press_widget_to_add" msgid="7699152356777458215">"Sentuh lama untuk memilih widget."</string>
-    <string name="long_accessible_way_to_add" msgid="4289502106628154155">"Ketuk dua kalip &amp; tahan untuk mengambil widget atau menggunakan tindakan khusus."</string>
-    <string name="widget_dims_format" msgid="2370757736025621599">"%1$d × %2$d"</string>
-    <string name="widget_accessible_dims_format" msgid="3640149169885301790">"lebar %1$d x tinggi %2$d"</string>
-    <string name="add_item_request_drag_hint" msgid="5899764264480397019">"Sentuh &amp; tahan untuk menempatkan secara manual"</string>
-    <string name="place_automatically" msgid="8064208734425456485">"Tambahkan otomatis"</string>
-    <string name="all_apps_search_bar_hint" msgid="1390553134053255246">"Telusuri aplikasi"</string>
-    <string name="all_apps_loading_message" msgid="5813968043155271636">"Memuat aplikasi…"</string>
-    <string name="all_apps_no_search_results" msgid="3200346862396363786">"Tidak ditemukan aplikasi yang cocok dengan \"<xliff:g id="QUERY">%1$s</xliff:g>\""</string>
-    <string name="all_apps_search_market_message" msgid="1366263386197059176">"Telusuri aplikasi lainnya"</string>
-    <string name="notifications_header" msgid="1404149926117359025">"Notifikasi"</string>
-    <string name="out_of_space" msgid="4691004494942118364">"Tidak ada ruang lagi pada layar Utama ini."</string>
-    <string name="hotseat_out_of_space" msgid="7448809638125333693">"Tidak ada ruang tersisa di baki Favorit"</string>
-    <string name="all_apps_button_label" msgid="8130441508702294465">"Daftar aplikasi"</string>
-    <string name="all_apps_home_button_label" msgid="252062713717058851">"Layar Utama"</string>
-    <string name="remove_drop_target_label" msgid="7812859488053230776">"Hapus"</string>
-    <string name="uninstall_drop_target_label" msgid="4722034217958379417">"Uninstal"</string>
-    <string name="app_info_drop_target_label" msgid="692894985365717661">"Info aplikasi"</string>
-    <string name="permlab_install_shortcut" msgid="5632423390354674437">"memasang pintasan"</string>
-    <string name="permdesc_install_shortcut" msgid="923466509822011139">"Mengizinkan aplikasi menambahkan pintasan tanpa campur tangan pengguna."</string>
-    <string name="permlab_read_settings" msgid="1941457408239617576">"membaca setelan dan pintasan layar Utama"</string>
-    <string name="permdesc_read_settings" msgid="5833423719057558387">"Mengizinkan aplikasi membaca setelan dan pintasan di layar Utama."</string>
-    <string name="permlab_write_settings" msgid="3574213698004620587">"menulis setelan dan pintasan layar Utama"</string>
-    <string name="permdesc_write_settings" msgid="5440712911516509985">"Mengizinkan aplikasi mengubah setelan dan pintasan di layar Utama."</string>
-    <string name="msg_no_phone_permission" msgid="9208659281529857371">"<xliff:g id="APP_NAME">%1$s</xliff:g> tidak diizinkan untuk melakukan panggilan telepon"</string>
-    <string name="gadget_error_text" msgid="6081085226050792095">"Masalah memuat widget"</string>
-    <string name="gadget_setup_text" msgid="8274003207686040488">"Siapkan"</string>
-    <string name="uninstall_system_app_text" msgid="4172046090762920660">"Ini adalah aplikasi sistem dan tidak dapat dicopot pemasangannya."</string>
-    <string name="folder_hint_text" msgid="6617836969016293992">"Folder Tanpa Nama"</string>
-    <string name="disabled_app_label" msgid="6673129024321402780">"<xliff:g id="APP_NAME">%1$s</xliff:g> dinonaktifkan"</string>
-    <string name="default_scroll_format" msgid="7475544710230993317">"Laman %1$d dari %2$d"</string>
-    <string name="workspace_scroll_format" msgid="8458889198184077399">"Layar utama %1$d dari %2$d"</string>
-    <string name="workspace_new_page" msgid="257366611030256142">"Laman layar utama baru"</string>
-    <string name="folder_opened" msgid="94695026776264709">"Folder dibuka, <xliff:g id="WIDTH">%1$d</xliff:g> x <xliff:g id="HEIGHT">%2$d</xliff:g>"</string>
-    <string name="folder_tap_to_close" msgid="4625795376335528256">"Ketuk untuk menutup folder"</string>
-    <string name="folder_tap_to_rename" msgid="4017685068016979677">"Ketuk untuk menyimpan ganti nama"</string>
-    <string name="folder_closed" msgid="4100806530910930934">"Folder ditutup"</string>
-    <string name="folder_renamed" msgid="1794088362165669656">"Folder diganti namanya menjadi <xliff:g id="NAME">%1$s</xliff:g>"</string>
-    <string name="folder_name_format" msgid="6629239338071103179">"Folder: <xliff:g id="NAME">%1$s</xliff:g>"</string>
-    <string name="widget_button_text" msgid="2880537293434387943">"Widget"</string>
-    <string name="wallpaper_button_text" msgid="8404103075899945851">"Wallpaper"</string>
-    <string name="settings_button_text" msgid="8873672322605444408">"Setelan layar Utama"</string>
-    <string name="msg_disabled_by_admin" msgid="6898038085516271325">"Dinonaktifkan oleh admin"</string>
-    <string name="accessibility_action_overview" msgid="6257665857640347026">"Ringkasan"</string>
-    <string name="allow_rotation_title" msgid="7728578836261442095">"Izinkan layar Utama diputar"</string>
-    <string name="allow_rotation_desc" msgid="8662546029078692509">"Saat ponsel diputar"</string>
-    <string name="allow_rotation_blocked_desc" msgid="3212602545192996253">"Setelan Tampilan Saat Ini tidak memungkinkan putaran"</string>
-    <string name="icon_badging_title" msgid="874121399231955394">"Titik notifikasi"</string>
-    <string name="icon_badging_desc_on" msgid="2627952638544674079">"Aktif"</string>
-    <string name="icon_badging_desc_off" msgid="5503319969924580241">"Nonaktif"</string>
-    <string name="title_missing_notification_access" msgid="7503287056163941064">"Perlu akses notifikasi"</string>
-    <string name="msg_missing_notification_access" msgid="281113995110910548">"Guna menampilkan Titik Notifikasi, aktifkan notifikasi aplikasi untuk <xliff:g id="NAME">%1$s</xliff:g>"</string>
-    <string name="title_change_settings" msgid="1376365968844349552">"Ubah setelan"</string>
-    <string name="auto_add_shortcuts_label" msgid="8222286205987725611">"Tambahkan ikon ke layar Utama"</string>
-    <string name="auto_add_shortcuts_description" msgid="7117251166066978730">"Untuk aplikasi baru"</string>
-    <string name="icon_shape_override_label" msgid="2977264953998281004">"Ubah bentuk ikon"</string>
-    <string name="icon_shape_system_default" msgid="1709762974822753030">"Gunakan default sistem"</string>
-    <string name="icon_shape_square" msgid="633575066111622774">"Persegi"</string>
-    <string name="icon_shape_squircle" msgid="5658049910802669495">"Persegi bundar"</string>
-    <string name="icon_shape_circle" msgid="6550072265930144217">"Lingkaran"</string>
-    <string name="icon_shape_teardrop" msgid="4525869388200835463">"Butiran Air"</string>
-    <string name="icon_shape_override_progress" msgid="3461735694970239908">"Menerapkan perubahan bentuk ikon"</string>
-    <string name="package_state_unknown" msgid="7592128424511031410">"Tidak dikenal"</string>
-    <string name="abandoned_clean_this" msgid="7610119707847920412">"Buang"</string>
-    <string name="abandoned_search" msgid="891119232568284442">"Telusuri"</string>
-    <string name="abandoned_promises_title" msgid="7096178467971716750">"Aplikasi ini belum terpasang"</string>
-    <string name="abandoned_promise_explanation" msgid="3990027586878167529">"Aplikasi untuk ikon ini belum dipasang. Anda dapat membuangnya, atau menelusuri aplikasi dan memasangnya secara manual."</string>
-    <string name="app_downloading_title" msgid="8336702962104482644">"<xliff:g id="NAME">%1$s</xliff:g> sedang didownload, <xliff:g id="PROGRESS">%2$s</xliff:g> selesai"</string>
-    <string name="app_waiting_download_title" msgid="7053938513995617849">"<xliff:g id="NAME">%1$s</xliff:g> menunggu dipasang"</string>
-    <string name="widgets_bottom_sheet_title" msgid="2904559530954183366">"Widget <xliff:g id="NAME">%1$s</xliff:g>"</string>
-    <string name="action_add_to_workspace" msgid="8902165848117513641">"Tambahkan ke Layar Utama"</string>
-    <string name="action_move_here" msgid="2170188780612570250">"Pindahkan item ke sini"</string>
-    <string name="item_added_to_workspace" msgid="4211073925752213539">"Item ditambahkan ke layar utama"</string>
-    <string name="item_removed" msgid="851119963877842327">"Item dihapus"</string>
-    <string name="action_move" msgid="4339390619886385032">"Pindahkan item"</string>
-    <string name="move_to_empty_cell" msgid="2833711483015685619">"Pindahkan ke baris <xliff:g id="NUMBER_0">%1$s</xliff:g> kolom <xliff:g id="NUMBER_1">%2$s</xliff:g>"</string>
-    <string name="move_to_position" msgid="6750008980455459790">"PIndahkan ke posisi <xliff:g id="NUMBER">%1$s</xliff:g>"</string>
-    <string name="move_to_hotseat_position" msgid="6295412897075147808">"Pindahkan ke posisi favorit <xliff:g id="NUMBER">%1$s</xliff:g>"</string>
-    <string name="item_moved" msgid="4606538322571412879">"Item dipindahkan"</string>
-    <string name="add_to_folder" msgid="9040534766770853243">"Tambahkan ke folder: <xliff:g id="NAME">%1$s</xliff:g>"</string>
-    <string name="add_to_folder_with_app" msgid="4534929978967147231">"Tambahkan ke folder dengan <xliff:g id="NAME">%1$s</xliff:g>"</string>
-    <string name="added_to_folder" msgid="4793259502305558003">"Item ditambahkan ke folder"</string>
-    <string name="create_folder_with" msgid="4050141361160214248">"Buat folder dengan: <xliff:g id="NAME">%1$s</xliff:g>"</string>
-    <string name="folder_created" msgid="6409794597405184510">"Folder dibuat"</string>
-    <string name="action_move_to_workspace" msgid="1603837886334246317">"Pindahkan ke layar Utama"</string>
-    <string name="action_move_screen_left" msgid="8854216831569401665">"Pindahkan layar ke kiri"</string>
-    <string name="action_move_screen_right" msgid="329334910274311123">"Pindahkan layar ke kanan"</string>
-    <string name="screen_moved" msgid="266230079505650577">"Layar dipindahkan"</string>
-    <string name="action_resize" msgid="1802976324781771067">"Ubah ukuran"</string>
-    <string name="action_increase_width" msgid="8773715375078513326">"Tambahi lebar"</string>
-    <string name="action_increase_height" msgid="459390020612501122">"Tambahi tinggi"</string>
-    <string name="action_decrease_width" msgid="1374549771083094654">"Kurangi lebar"</string>
-    <string name="action_decrease_height" msgid="282377193880900022">"Kurangi tinggi"</string>
-    <string name="widget_resized" msgid="9130327887929620">"Widget diubah ukurannya menjadi lebar <xliff:g id="NUMBER_0">%1$s</xliff:g> tinggi <xliff:g id="NUMBER_1">%2$s</xliff:g>"</string>
-    <string name="action_deep_shortcut" msgid="2864038805849372848">"Pintasan"</string>
-    <string name="shortcuts_menu_description" msgid="406159963824238648">"<xliff:g id="NUMBER_OF_SHORTCUTS">%1$d</xliff:g> pintasan untuk <xliff:g id="APP_NAME">%2$s</xliff:g>"</string>
-    <string name="shortcuts_menu_with_notifications_description" msgid="8985659504915468840">"<xliff:g id="NUMBER_OF_SHORTCUTS">%1$d</xliff:g> pintasan dan <xliff:g id="NUMBER_OF_NOTIFICATIONS">%2$d</xliff:g> notifikasi untuk <xliff:g id="APP_NAME">%3$s</xliff:g>"</string>
-    <string name="action_dismiss_notification" msgid="5909461085055959187">"Tutup"</string>
-    <string name="notification_dismissed" msgid="6002233469409822874">"Notifikasi ditutup"</string>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- General -->
+    <skip />
+
+    <!-- Application name -->
+    <!-- Default folder name -->
+    <string name="folder_name"></string>
+    <!-- Work folder name -->
+    <string name="work_folder_name">Kerja</string>
+    <!-- Displayed when user selects a shortcut for an app that was uninstalled [CHAR_LIMIT=none]-->
+    <string name="activity_not_found">Aplikasi tidak dipasang</string>
+    <!-- Displayed when user selects a shortcut for an app that is current not available [CHAR_LIMIT=none]-->
+    <string name="activity_not_available">Aplikasi tidak tersedia</string>
+    <!-- SafeMode shortcut error string -->
+    <string name="safemode_shortcut_error">Aplikasi yang diunduh dinonaktifkan dalam mode Aman</string>
+    <!-- SafeMode widget error string -->
+    <string name="safemode_widget_error">Widget dinonaktifkan dalam mode Aman</string>
+    <!-- Message shown when a shortcut is not available. It could have been temporarily disabled and may start working again after some time. -->
+    <string name="shortcut_not_available">Pintasan tidak tersedia</string>
+    <!-- User visible name for the launcher/home screen. [CHAR_LIMIT=30] -->
+    <string name="home_screen">Beranda</string>
+    <!-- Label for showing custom action list of a shortcut or widget. [CHAR_LIMIT=30] -->
+    <string name="custom_actions">Tindakan khusus</string>
+
+    <!-- Widgets -->
+    <!-- Message to tell the user to press and hold on a widget to add it [CHAR_LIMIT=50] -->
+    <string name="long_press_widget_to_add">Sentuh &amp; tahan untuk memilih widget</string>
+    <!-- Accessibility spoken hint message in widget picker, which allows user to add a widget. Custom action is the label for additional accessibility actions available in this mode [CHAR_LIMIT=100] -->
+    <string name="long_accessible_way_to_add">Ketuk 2 kali &amp; tahan untuk memilih widget atau gunakan tindakan khusus</string>
+    <!-- The format string for the dimensions of a widget in the drawer -->
+    <!-- There is a special version of this format string for Farsi -->
+    <string name="widget_dims_format">%1$d \u00d7 %2$d</string>
+    <!-- Accessibility spoken message format for the dimensions of a widget in the drawer -->
+    <string name="widget_accessible_dims_format">%1$d lebar dan %2$d tinggi</string>
+    <!-- Message to tell the user to press and hold a widget/icon to add it  -->
+    <string name="add_item_request_drag_hint">Sentuh &amp; tahan untuk menempatkan secara manual</string>
+    <!-- Button label to automatically add icon on home screen [CHAR_LIMIT=50] -->
+    <string name="place_automatically">Tambahkan secara otomatis</string>
+
+    <!-- All Apps -->
+    <!-- Search bar text in the apps view. [CHAR_LIMIT=50] -->
+    <string name="all_apps_search_bar_hint">Cari Aplikasi</string>
+    <!-- Loading apps text. [CHAR_LIMIT=50] -->
+    <string name="all_apps_loading_message">Memuat aplikasi&#8230;</string>
+    <!-- No-search-results text. [CHAR_LIMIT=50] -->
+    <string name="all_apps_no_search_results">Tidak ditemukan aplikasi yang cocok dengan \"<xliff:g id="query" example="Android">%1$s</xliff:g>\"</string>
+    <!-- Label for the button which allows the user to get app search results. [CHAR_LIMIT=50] -->
+    <string name="all_apps_search_market_message">Cari lebih banyak aplikasi</string>
+
+    <!-- Popup items -->
+    <!-- Text to display as the header above notifications. [CHAR_LIMIT=30] -->
+    <string name="notifications_header">Notifikasi</string>
+
+    <!-- Drag and drop -->
+    <skip />
+    <!-- Error message when user has filled a home screen -->
+    <string name="out_of_space">Tidak ada ruang tersisa pada layar Beranda ini</string>
+    <!-- Error message when user has filled the hotseat -->
+    <string name="hotseat_out_of_space">Tidak ada ruang tersisa di dalam baki Favorit</string>
+
+    <!-- All applications label -->
+    <string name="all_apps_button_label">Daftar aplikasi</string>
+    <!-- Label for button in all applications label to go back home (to the workspace / desktop)
+         for accessibilty (spoken when the button gets focus). -->
+    <string name="all_apps_home_button_label">Beranda</string>
+
+    <!-- Label for remove drop target. [CHAR_LIMIT=20] -->
+    <string name="remove_drop_target_label">Buang</string>
+    <!-- Label for uninstall drop target. [CHAR_LIMIT=20]-->
+    <string name="uninstall_drop_target_label">Copot</string>
+    <!-- Label for app info drop target. [CHAR_LIMIT=20] -->
+    <string name="app_info_drop_target_label">Info Aplikasi</string>
+
+    <!-- Permissions: -->
+    <skip />
+    <!-- Permission short label -->
+    <string name="permlab_install_shortcut">Memasang pintasan</string>
+    <!-- Permission description -->
+    <string name="permdesc_install_shortcut">Mengizinkan aplikasi menambahkan pintasan tanpa intervensi pengguna</string>
+    <!-- Permission short label -->
+    <string name="permlab_read_settings">Baca pengaturan dan pintasan Beranda</string>
+    <!-- Permission description -->
+    <string name="permdesc_read_settings">Mengizinkan aplikasi membaca pengaturan dan pintasan pada layar Beranda</string>
+    <!-- Permission short label -->
+    <string name="permlab_write_settings">Simpan pengaturan dan pintasan Beranda</string>
+    <!-- Permission description -->
+    <string name="permdesc_write_settings">Mengizinkan aplikasi mengubah pengaturan dan pintasan pada layar Beranda</string>
+
+    <!-- Toast shown on clicking a direct call shortcut. [CHAR_LIMIT=80] -->
+    <string name="msg_no_phone_permission"><xliff:g id="app_name" example="Launcher3">%1$s</xliff:g> tidak diizinkan membuat panggilan telepon</string>
+
+    <!-- Widgets: -->
+    <skip />
+
+    <!-- Text to show user in place of a gadget when we can't display it properly -->
+    <string name="gadget_error_text">Ada masalah saat memuat widget</string>
+
+    <!-- Text to show user in place of a gadget when it is not yet initialized. -->
+    <string name="gadget_setup_text">Persiapan</string>
+
+    <!-- Text to inform the user that they can't uninstall a system application -->
+    <string name="uninstall_system_app_text">Ini adalah aplikasi sistem dan tidak bisa dicopot</string>
+
+    <!-- Default folder title -->
+    <string name="folder_hint_text">Folder tanpa nama</string>
+
+    <!-- Accessibility -->
+    <!-- The format string for when an app is temporarily disabled. -->
+    <string name="disabled_app_label">Nonaktifkan <xliff:g id="app_name" example="Messenger">%1$s</xliff:g></string>
+    <skip />
+
+    <!-- The format string for default page scroll text [CHAR_LIMIT=none] -->
+    <string name="default_scroll_format">Halaman %1$d dari %2$d</string>
+    <!-- The format string for Workspace page scroll text [CHAR_LIMIT=none] -->
+    <string name="workspace_scroll_format">Layar Beranda %1$d dari %2$d</string>
+    <!-- Description for a new page on homescreen[CHAR_LIMIT=none] -->
+    <string name="workspace_new_page">Halaman layar Beranda baru</string>
+
+    <!-- Folder accessibility -->
+    <!-- The format string for when a folder is opened, speaks the dimensions -->
+    <string name="folder_opened">Folder dibuka, <xliff:g id="width" example="5">%1$d</xliff:g> oleh <xliff:g id="height" example="3">%2$d</xliff:g></string>
+    <!-- Instruction that clicking outside will close folder -->
+    <string name="folder_tap_to_close">Ketuk untuk menutup folder</string>
+    <!-- Instruction that clicking outside will commit folder rename -->
+    <string name="folder_tap_to_rename">Ketuk untuk menyimpan nama baru</string>
+    <!-- Indication that folder closed -->
+    <string name="folder_closed">Folder ditutup</string>
+    <!-- Folder renamed format -->
+    <string name="folder_renamed">Folder diubah namanya menjadi <xliff:g id="name" example="Games">%1$s</xliff:g></string>
+    <!-- Folder name format -->
+    <string name="folder_name_format">Folder: <xliff:g id="name" example="Games">%1$s</xliff:g></string>
+
+    <!-- Strings for the customization mode -->
+    <!-- Text for widget add button -->
+    <string name="widget_button_text">Widget</string>
+    <!-- Text for wallpaper change button -->
+    <string name="wallpaper_button_text">Wallpaper</string>
+    <!-- Text for settings button -->
+    <string name="settings_button_text">Pengaturan Beranda</string>
+    <!-- Message shown when a feature is disabled by the administrator -->
+    <string name="msg_disabled_by_admin">Dinonaktifkan oleh admin anda</string>
+    <!-- Text for custom accessibility action to go to the overview mode, where users can look and change the overall UI of the launcher. -->
+    <string name="accessibility_action_overview">Tinjauan</string>
+
+    <!-- Strings for settings -->
+    <!-- Title for Allow Rotation setting. [CHAR LIMIT=50] -->
+    <string name="allow_rotation_title">Rotasi layar Beranda</string>
+    <!-- Text explaining when the home screen will get rotated. [CHAR LIMIT=100] -->
+    <string name="allow_rotation_desc">Ketika rotasi telepon berubah</string>
+    <!-- Text explaining that rotation is disabled in Display settings. 'Display' refers to the Display section in system settings [CHAR LIMIT=100] -->
+    <string name="allow_rotation_blocked_desc">Pengaturan tampilan saat ini tidak mengizinkan rotasi layar</string>
+    <!-- Title for Notification dots setting. Tapping this will link to the system Notifications settings screen where the user can turn off notification dots globally. [CHAR LIMIT=50] -->
+    <string name="icon_badging_title">Titik notifikasi</string>
+    <!-- Text to indicate that the system icon badging setting is on [CHAR LIMIT=100] -->
+    <string name="icon_badging_desc_on">Nyala</string>
+    <!-- Text to indicate that the system icon badging setting is off [CHAR LIMIT=100] -->
+    <string name="icon_badging_desc_off">Mati</string>
+    <!-- Title for the dialog shown when the app does not has notification access, explaining the requirement for notification access [CHAR LIMIT=50] -->
+    <string name="title_missing_notification_access">Membutuhkan akses notifikasi</string>
+    <!-- Message explaining to the user that the notification access is required by the app for showing 'Notification dots' [CHAR LIMIT=NONE] -->
+    <string name="msg_missing_notification_access">Untuk menampilkan titik notifikasi, aktifkan notifikasi aplikasi untuk <xliff:g id="name" example="My App">%1$s</xliff:g></string>
+    <!-- Button text in the confirmation dialog which would take the user to the system settings [CHAR LIMIT=50] -->
+    <string name="title_change_settings">Ubah pengaturan</string>
+
+    <!-- Label for the setting that allows the automatic placement of launcher shortcuts for applications and games installed on the device [CHAR LIMIT=40] -->
+    <string name="auto_add_shortcuts_label">Tambahkan ikon ke layar Beranda</string>
+    <!-- Text description of the setting that allows the automatic placement of launcher shortcuts for applications and games installed on the device [CHAR LIMIT=NONE] -->
+    <string name="auto_add_shortcuts_description">Untuk aplikasi baru</string>
+
+    <!-- Message shown in the progress dialog when the icon shape override is being applied [CHAR LIMIT=100]-->
+    <string name="icon_shape_override_progress">Menerapkan perubahan bentuk ikon</string>
+
+    <!-- Label on an icon that references an uninstalled package, for which we have no information about when it might be installed. [CHAR_LIMIT=15] -->
+    <string name="package_state_unknown">Tidak diketahui</string>
+
+    <!-- Button for abandoned promises dialog, to removes this abandoned promise icon. -->
+    <string name="abandoned_clean_this">Buang</string>
+    <!-- Button for abandoned promise dialog, to search in the market for the missing package. -->
+    <string name="abandoned_search">Cari</string>
+    <!-- Title for abandoned promise dialog. -->
+    <string name="abandoned_promises_title">Aplikasi ini tidak dipasang</string>
+    <!-- Explanation for abandoned promise dialog. "The first 'it' refers to the shortcut icon.
+    The second "it" refers to the app. -->
+    <string name="abandoned_promise_explanation">Aplikasi untuk ikon ini tidak dipasang.
+        Anda bisa membuangnya, atau cari aplikasi dan pasang secara manual.
+    </string>
+    <!-- Title for an app which is being downloaded. -->
+    <string name="app_downloading_title"><xliff:g id="name" example="Messenger">%1$s</xliff:g> mengunduh, <xliff:g id="progress" example="30%">%2$s</xliff:g> selesai</string>
+    <!-- Title for an app whose download has been started. -->
+    <string name="app_waiting_download_title"><xliff:g id="name" example="Messenger">%1$s</xliff:g> menunggu untuk dipasang</string>
+
+    <!-- Strings for widgets & more in the popup container/bottom sheet -->
+    <!-- Title for a bottom sheet that shows widgets for a particular app -->
+    <string name="widgets_bottom_sheet_title">Widget <xliff:g id="name" example="Messenger">%1$s</xliff:g></string>
+
+    <!-- Strings for accessibility actions -->
+    <!-- Accessibility action to add an app to workspace. [CHAR_LIMIT=30] -->
+    <string name="action_add_to_workspace">Tambahkan ke layar Beranda</string>
+
+    <!-- Accessibility action to move item to the current location. [CHAR_LIMIT=30] -->
+    <string name="action_move_here">Pindahkan item di sini</string>
+
+    <!-- Accessibility confirmation for item added to workspace. -->
+    <string name="item_added_to_workspace">Item ditambahkan ke layar Beranda</string>
+
+    <!-- Accessibility confirmation for item removed. -->
+    <string name="item_removed">Item dibuang</string>
+
+    <!-- Accessibility action to move an item on the workspace. [CHAR_LIMIT=30] -->
+    <string name="action_move">Pindahkan item</string>
+
+    <!-- Accessibility description to move item to empty cell. -->
+    <string name="move_to_empty_cell">Pindahkan ke baris <xliff:g id="number" example="1">%1$s</xliff:g> kolom <xliff:g id="number" example="1">%2$s</xliff:g></string>
+
+    <!-- Accessibility description to move item inside a folder. -->
+    <string name="move_to_position">Pindahkan ke posisi <xliff:g id="number" example="1">%1$s</xliff:g></string>
+
+    <!-- Accessibility description to move item to the hotseat. -->
+    <string name="move_to_hotseat_position">Pindahkan ke posisi favorit <xliff:g id="number" example="1">%1$s</xliff:g></string>
+
+    <!-- Accessibility confirmation for item move. -->
+    <string name="item_moved">Item dipindahkan</string>
+
+    <!-- Accessibility description to move item into an existing folder. -->
+    <string name="add_to_folder">Tambahkan ke folder: <xliff:g id="name" example="Games">%1$s</xliff:g></string>
+
+    <!-- Accessibility description to move item into an existing folder containing an app. -->
+    <string name="add_to_folder_with_app">Tambahkan ke folder bersama <xliff:g id="name" example="Messenger">%1$s</xliff:g></string>
+
+    <!-- Accessibility confirmation for item added to folder. -->
+    <string name="added_to_folder">Item ditambahkan ke folder</string>
+
+    <!-- Accessibility description to create folder with another item. -->
+    <string name="create_folder_with">Buat folder bersama: <xliff:g id="name" example="Game">%1$s</xliff:g></string>
+
+    <!-- Accessibility confirmation for folder created. -->
+    <string name="folder_created">Folder dibuat</string>
+
+    <!-- Accessibility action to move an item from folder to workspace. [CHAR_LIMIT=30] -->
+    <string name="action_move_to_workspace">Pindahkan ke layar Beranda</string>
+
+    <!-- Accessibility action to move an homescreen to the left. [CHAR_LIMIT=30] -->
+    <string name="action_move_screen_left">Pindahkan layar ke sebelah kiri</string>
+
+    <!-- Accessibility action to move an homescreen to the right. [CHAR_LIMIT=30] -->
+    <string name="action_move_screen_right">Pindahkan layar ke sebelah kanan</string>
+
+    <!-- Accessibility confirmation when a screen was moved. -->
+    <string name="screen_moved">Screen dipindahkan</string>
+
+    <!-- Accessibility action to resize a widget. [CHAR_LIMIT=30] -->
+    <string name="action_resize">Ubah ukuran</string>
+
+    <!-- Accessibility action to increase width of a widget. [CHAR_LIMIT=30] -->
+    <string name="action_increase_width">Tambah lebar</string>
+
+    <!-- Accessibility action to increase height of a widget. [CHAR_LIMIT=30] -->
+    <string name="action_increase_height">Tambah tinggi</string>
+
+    <!-- Accessibility action to decrease width of a widget. [CHAR_LIMIT=30] -->
+    <string name="action_decrease_width">Kurangi lebar</string>
+
+    <!-- Accessibility action to decrease height of a widget. [CHAR_LIMIT=30] -->
+    <string name="action_decrease_height">Kurangi tinggi</string>
+
+    <!-- Accessibility confirmation for widget resize. -->
+    <string name="widget_resized">Widget diubah ukurannya ke lebar <xliff:g id="number" example="2">%1$s</xliff:g> tinggi <xliff:g id="number" example="1">%2$s</xliff:g></string>
+
+    <!-- Accessibility action to show quick actions menu for an icon. [CHAR_LIMIT=30] -->
+    <string name="action_deep_shortcut">Pintasan</string>
+
+    <!-- Accessibility description for the shortcuts menu shown for an app. -->
+    <string name="shortcuts_menu_description"><xliff:g id="number_of_shortcuts" example="3">%1$d</xliff:g> pintasan untuk <xliff:g id="app_name" example="Messenger">%2$s</xliff:g></string>
+
+    <!-- Accessibility description when the shortcuts menu has notifications as well as shortcuts. -->
+    <string name="shortcuts_menu_with_notifications_description"><xliff:g id="number_of_shortcuts" example="3">%1$d</xliff:g> pintasan dan <xliff:g id="number_of_notifications" example="3">%2$d</xliff:g> notifikasi untuk <xliff:g id="app_name" example="Messenger">%3$s</xliff:g></string>
+
+    <!-- Accessibility action to dismiss a notification in the shortcuts menu for an icon. [CHAR_LIMIT=30] -->
+    <string name="action_dismiss_notification">Abaikan</string>
+
+    <string name="ee">…and then one day you find ten years have got behind you</string>
+
+    <!-- Accessibility confirmation for notification being dismissed. -->
+    <string name="notification_dismissed">Notifikasi diabaikan</string>
+    <string name="icon_badging_sum">Ubahsuai titik notifikasi</string>
+
+
+    <string name="icu_abbrev_wday_month_day_no_year">dMMMEEE</string>
     <string name="smartspace_preferences">Preferensi</string>
-    <string name="label_search">Telusuri</string>
-    <string name="label_voice_search">Penelusuran suara</string>
-    <string name="smartspace_preferences_in_settings">At A Glance</string>
-    <string name="smartspace_preferences_in_settings_desc">Di bagian atas Layar utama</string>
-    <string name="title_show_google_app">Tampilkan %1$s</string>
-    <string name="msg_minus_one_on_left">Di sebelah kiri layar Utama</string>
+    <string name="label_search">Pencarian</string>
+    <string name="label_voice_search">Pencarian suara</string>
+    <string name="default_live_wallpaper">com.breel.wallpapers/com.breel.wallpapers.dioramas.lagos.LagosWallpaperService</string>
+    <string name="state_loading">Menerapkan…</string>
+    <string name="smartspace_preferences_in_settings">Widget \"At a Glance\"</string>
+    <string name="smartspace_preferences_in_settings_desc">Atur apa yang harus ditampilkan widget pada bagian atas layar Beranda</string>
+    <string name="title_show_google_app">%1$s</string>
+    <string name="pref_show_google_now_summary">@string/msg_minus_one_on_left</string>
+    <string name="msg_minus_one_on_left">Ke bagian kiri layar Beranda utama</string>
     <string name="about">Tentang</string>
-    <string name="title_google_app">Google app</string>
-    <string name="title_app_suggestions">Tampilkan saran aplikasi</string>
-    <string name="summary_app_suggestions">Di bagian atas daftar Semua Aplikasi</string>
-    <string name="about_app_version">Versi</string>
+    <string name="title_google_app">Aplikasi Google</string>
+    <string name="title_app_suggestions">Saran aplikasi</string>
+    <string name="summary_app_suggestions">Di bagian atas laci aplikasi</string>
+    <string name="app_name_pixel_launcher">CPL</string>
     <string name="title_disable_suggestions_prompt">Nonaktifkan saran aplikasi?</string>
-    <string name="msg_disable_suggestions_prompt">Saran tidak akan muncul di bagian atas daftar aplikasi Anda, dan data penggunaan yang digunakan untuk membuatnya akan dihapus secara permanen.</string>
-    <string name="label_turn_off_suggestions">NONAKTIFKAN</string>
+    <string name="msg_disable_suggestions_prompt">"Saran tidak akan muncul di bagian atas daftar aplikasi anda, dan data penggunaan untuk membuatnya akan dihapus secara permanen."</string>
+    <string name="label_turn_off_suggestions">NONAKTIF</string>
+    <string name="smartspace_hours_mins">%1$s %2$s</string>
+
+    <!-- Developer setting to change the shape of icons on home screen. [CHAR LIMIT=50] -->
+    <string name="icon_shape_override_label">Bentuk ikon</string>
+    <string name="icon_shape_system_default">Default sistem</string>
+    <string name="icon_shape_square">Persegi</string>
+    <string name="icon_shape_rounded_square">Persegi bulat</string>
+    <string name="icon_shape_super_ellipse">Super elips</string>
+    <string name="icon_shape_squircle">Persegi membulat</string>
+    <string name="icon_shape_circle">Bulat</string>
+    <string name="icon_shape_teardrop">Butiran air</string>
+    <string name="icon_shape_cylinder">Silinder</string>
+    <string name="icon_shape_lemon">Lemon</string>
+    <string name="icon_shape_cloud">Awan</string>
+
+    <!-- Theme -->
+    <string name="custom_theme">Tema</string>
+    <string name="custom_theme_summary">Ubahsuai tema &amp; ikon</string>
+    <string name="white_theme">Putih</string>
+    <string name="white_withdarktext_theme">Putih dengan teks gelap</string>
+    <string name="dark_withdarktext_theme">Gelap dengan teks gelap</string>
+    <string name="black_withdarktext_theme">Hitam dengan teks gelap</string>
+    <string name="dark_theme">Gelap</string>
+    <string name="black_theme">Hitam</string>
+    <string name="auto_theme">Otomatis</string>
+    <string name="auto_theme_summary">Tema berdasarkan pada wallpaper</string>
+    <string name="apply_settings_theme">Terapkan tema ke pengaturan</string>
+
+    <!-- Hidden app -->
+    <string name="hide_app">Sembunyikan aplikasi</string>
+    <string name="hide_app_popup_hide">Sembunyikan</string>
+    <string name="hide_app_popup_show">Tampilkan</string>
+    <string name="hide_app_popup_show_toast">Aplikasi ditampilkan</string>
+    <string name="hide_app_popup_hide_toast">Aplikasi disembunyikan</string>
+    <string name="hide_app_sum">Sembunyikan aplikasi dari laci aplikasi</string>
+    <string name="hide_app_selected">&#160;dipilih</string>
+    <string name="hidden_app">Aplikasi tersembunyi</string>
+    <string name="reset_hidden_apps">Setel ulang semua</string>
+    <string name="reset_hidden_apps_hint_no_apps">Tidak ada aplikasi tersembunyi</string>
+    <string name="reset_hidden_apps_hint">Aplikasi tersembunyi sekarang telah tersedia</string>
+    <string name="hide_widgets_too">Sembunyikan widget</string>
+    <string name="hide_widgets_too_sum">Jangan tampilkan widget dari aplikasi tersembunyi</string>
+    <string name="show_hidden_pref_title">Tampilkan aplikasi tersembunyi</string>
+    <string name="show_hidden_pref_on">Aplikasi tersembunyi akan ditambahkan untuk mengubah pengaturan visibilitas</string>
+    <string name="show_hidden_pref_off">Aplikasi tersembunyi tidak akan ditampilkan</string>
+
+
+    <!-- Dock bar -->
+    <string name="custom_dockbar">Dok</string>
+    <string name="custom_dockbar_summary">Ubahsuai dok</string>
+    <string name="num_hotseat_icons_pref_title">Jumlah ikon dok</string>
+    <string name="force_mic">Tampilkan mikrofon</string>
+    <string name="use_assistant">Asisten Google</string>
+    <string name="use_assistant_sum">Asisten Google di dalam bilah pencarian di dalam dok</string>
+    <string name="use_assistant_drawer_sum">Asisten Google di dalam bilah pencarian</string>
+    <string name="force_colour_logo">Logo Google berwarna</string>
+    <string name="transparentqsb">Transparansi bilah pencarian</string>
+    <string name="hotseatShowArrow">Tampilkan carret</string>
+    <string name="hotseat_show_page_indicator">Tampilkan indikator halaman</string>
+    <string name="gradient_size">Ukuran gradasi</string>
+    <string name="remove_gradient">Nonaktifkan gradasi dok</string>
+    <string name="custom_qsb_in_dock">Pengaturan bilah pencarian</string>
+    <string name="qsb_in_dock_show">Bilah pencarian di dalam dok</string>
+    <string name="googleinappmenu">Bilah pencarian Google</string>
+    <string name="pdock">Sudut dok membulat</string>
+    <string name="pdock_sum">Gaya Android P</string>
+    <string name="pdock_settings">Pengaturan sudut dok</string>
+    <string name="pdock_radius">Radius sudut</string>
+    <string name="pdock_shadow">Ukuran bayangan</string>
+    <string name="dock_height">Tinggi dok</string>
+
+
+    <!-- Rows and Coloumns -->
+    <string name="change_grid_size">Ubah ukuran grid</string>
+    <string name="custom_grid_size">Ukuran grid</string>
+    <string name="custom_grid_size_on">Gunakan ukuran yang dipilih</string>
+    <string name="custom_grid_size_off">Ukuran grid tergantung pada DPI</string>
+    <string name="num_rows">Jumlah baris</string>
+    <string name="num_cols">Jumlah kolom</string>
+
+    <!-- About -->
+    <string name="about_sum">"CPL - Peluncur berbasis AOSP dengan tambahan fitur. Gratis dan tidak mengandung iklan."</string>
+    <string name="thanks">Terima kasih kepada</string>
+    <string name="sum_thanks">Amir Zaidi (amirzaidi), Lawnchair team (deletescape, paphonb, fonix232, divadsn, Rawi666), ezio84, arco, jrizzoli, nebkat, xyyx, Mazda—, chauek, Thecrazyskull, stavros3006, yukuku, hundeva, Naquaduh, martin-stone, materialdesignicons.com, WhiskeyMotel</string>
+    <string name="forgot">Mungkin saya melupakan seseorang…</string>
+    <string name="date">Tanggal bangun</string>
+    <string name="sum_aboutapp">Tentang aplikasi, informasi versi, kredit</string>
+    <string name="about_app_version_wtu">Versi</string>
+    <string name="custom_about_cpl">Tentang CPL</string>
+    <string name="custom_version">Versi</string>
+    <string name="translators">Penerjemah</string>
+    <string name="translators_sum">whataudoinghere, stavros3006, LeandroSB, zhushman00, zmni</string>
+
+    <!-- Reboot -->
+    <string name="reboot">Mulai ulang</string>
+    <string name="reboot_sum">Mulai ulang untuk menerapkan ulang pengaturan</string>
+
+    <!-- Allapp -->
+    <string name="custom_allapp">Semua aplikasi</string>
+    <string name="custom_allapp_summary">Ubahsuai laci aplikasi anda</string>
+    <string name="smallallaps">Bilah pencarian kecil</string>
+    <string name="smallallaps_sum">Hanya untuk bilah pencarian default</string>
+    <string name="drawer_transparent_background">Latar belakang transparan</string>
+
+    <!-- Icons -->
+    <string name="custom_ico">Ikon</string>
+    <string name="icon_size">Ukuran ikon</string>
+    <string name="text_size">Ukuran teks label</string>
+    <string name="label_font">Fon label</string>
+
+    <!-- Home screen -->
+    <string name="custom_hs">Beranda</string>
+    <string name="custom_hs_summary">Ubahsuai layar Beranda &amp; widget \"At a Glance\" anda</string>
+    <string name="edgemarginstock">Bawaan</string>
+    <string name="edgemarginsmall">Kecil</string>
+    <string name="diabledgemargin">Nonaktif</string>
+    <string name="diabledgemargin_sum">Padding horizontal layar</string>
+    <string name="settings_edit_allow_title">Izinkan perubahan layar Beranda</string>
+    <string name="settings_edit_allow_question">Izinkan perubahan layar Beranda</string>
+    <string name="settings_edit_allow_summary_on">Ikon dan widget bisa ditambahkan, dibuang dan dipindahkan pada layar Beranda</string>
+    <string name="settings_edit_allow_summary_off">Ikon dan widget tidak bisa ditambahkan, dibuang dan dipindahkan pada layar Beranda</string>
+    <string name="fade_out_animation">Animasi memudar</string>
+    <string name="fade_out_animation_sum">Saat berganti halaman</string>
+    <string name="system_font_for_smartspace">Gunakan fon sistem</string>
+    <string name="system_font_for_smartspace_sum">Untuk widget \"At a Glance\"</string>
+    <string name="smartspace_font">Fon widget \"At a Glance\"</string>
+    <string name="smartspace_time">Tambahkan jam</string>
+    <string name="smartspace_customize_in_settings">Ubahsuai  widget</string>
+    <string name="smartspace_launchclock">Buka aplikasi Jam</string>
+    <string name="smartspace_disable">Nonaktifkan widget \"At a Glance\"</string>
+    <string name="smartspace_launchclock_sum">Saat menekan lama pada widget</string>
+    <string name="smartspace_launch_clock">Setel alarm</string>
+    <string name="smartspace_launch_timer">Setel timer</string>
+    <string name="smartspace_launch_keep">Google Keep</string>
+    <string name="smartspace_launch_tasks">Google Tasks</string>
+    <string name="smartspace_launch_calendar">Kalender</string>
+    <string name="smartspace_show_popup">Menu tindakan</string>
+    <string name="smartspace_show_popup_sum">Tampilkan popup dengan tindakan cepat saat mengetuk widget</string>
+    <string name="show_top_shadow_title">Bayangan atas</string>
+    <string name="full_width_width_widgets_pref_title">Lebar widget penuh</string>
+    <string name="full_width_widgets_pref_summary">Izinkan widget mengisi seluruh lebar layar tanpa padding</string>
+
+    <!-- Hide labels -->
+    <string name="desktop_show_labels">Label ikon pada layar Beranda</string>
+    <string name="drawer_show_labels">Label ikon di dalam laci aplikasi</string>
+
+    <!-- Folders -->
+    <string name="custom_folders">Folder</string>
+    <string name="custom_folders_summary">Ubahsuai folder</string>
+    <string name="folder_show_labels">Label ikon di dalam folder</string>
+    <string name="old_folder_animation">Animasi folder terdahulu</string>
+
+    <!-- Date formats -->
+    <string name="date_format">Format tanggal</string>
+    <string name="clock_format">Format jam</string>
+    <string name="date_format_1">Selasa, 13 Feb</string>
+    <string name="date_format_2">Selasa</string>
+    <string name="date_format_3">Sel, 13 Februari</string>
+    <string name="date_format_4">Sel, 13/02</string>
+    <string name="date_format_5">Selasa 13</string>
+    <string name="date_format_6">Selasa, 13 Februari</string>
+
+    <!-- Color Changing -->
+    <string name="use_custom_label_color">Warna label khusus</string>
+    <string name="use_qsb_label_color">Warna latar belakang bilah pencarian khusus</string>
+    <string name="custom_label_color">Warna label</string>
+    <string name="custom_qsb_color">Warna latar belakang bilah pencarian</string>
+    <string name="custom_qsb_text_color">Warna teks bilah pencarian</string>
+
+    <!-- Behavior -->
+    <string name="behavior_pref_title">Perilaku</string>
+    <string name="behavior_pref_summary">Ubah bagaimana pelucur bekerja</string>
+    <string name="allow_vibration">Getar</string>
+    <string name="allow_vibration_sum">Saat menyentuh antarmuka elemen</string>
+    <string name="vibrationduration">Durasi getar</string>
+    <string name="vibrationdurationtest">Uji coba getar</string>
+    <string name="textinbadge">Lencana notifikasi</string>
+    <string name="textinbadge_sum">Tampilkan jumlah notifikasi pada lencana (jumlah mungkin tidak akurat)</string>
+    <string name="badge_place">Posisi lencana</string>
+    <string name="badge_place_1">Kanan Atas</string>
+    <string name="badge_place_2">Kanan Bawah</string>
+    <string name="badge_place_3">Kiri Atas</string>
+    <string name="badge_place_4">Kiri Bawah</string>
+    <string name="double_tap_to_lock_method">Metode penguncian</string>
+    <string name="double_tap_to_lock_method_null">Metode penguncian layar default belum diatur. Periksa pengaturan untuk memilihnya.</string>
+    <string name="double_tap_to_lock_method_not_set">Tidak diatur</string>
+    <string name="double_tap_to_lock_title">Ketuk 2 kali untuk mengunci</string>
+    <string name="double_tap">Ketuk 2 kali</string>
+    <string name="double_tap_to_lock_summary">Pada layar Beranda</string>
+    <string name="double_tap_to_lock_title_with_admin">Dengan akses Admin</string>
+    <string name="double_tap_to_lock_title_with_timeout">Dengan layar hitam</string>
+    <string name="double_tap_to_lock_title_with_root">Dengan akses root</string>
+    <string name="double_tap_to_lock_no_root">Akses root tidak tersedia atau ditolak</string>
+    <string name="double_tap_to_lock_summary_with_root">Untuk membuka perangkat dengan sidik jari</string>
+    <string name="double_tap_to_lock_hint">Untuk bisa mengunci, anda harus mengizinkan akses admin untuk Customized Pixel Launcher. Ini penguncian aman, artinya anda harus memasukkan PIN anda untuk membuka, jika ada.</string>
+    <string name="double_tap_to_lock_disable_warning">Jika anda menonaktifkan akses admin, anda tidak akan bisa mengunci layar beranda anda dengan gestur.</string>
+    <string name="action_edit">Sunting</string>
+    <string name="use_custom_badge_color">Warna lencana khusus</string>
+    <string name="custom_badge_color">Warna latar belakang lencana</string>
+    <string name="custom_badge_text_color">Warna teks lencana</string>
+    <string name="statusbar_expand">Tampilkan Notifikasi</string>
+    <string name="statusbar_expand_sum">Saat menggeser ke bawah dengan dua jari</string>
+    <string name="pinch_to_overview_pref_title">Cubit untuk tinjauan</string>
+    <string name="animate_overview_pref_title">Efek gulir di tinjuan</string>
+    <string name="pinch_to_overview_pref_summary">Cubit pada layar beranda untuk membuka tinjauan</string>
+    <string name="home_opens_drawer_pref_title">Tombol beranda membuka laci aplikasi</string>
+    <string name="home_opens_drawer_any_screen_pref_title">Dari layar manapun</string>
+    <string name="home_opens_drawer_pref_summary">Menekan tombol Beranda saat berada di layar Beranda akan membuka laci aplikasi</string>
+    <string name="keep_scroll_state_pref_title">Simpan posisi gulir</string>
+    <string name="keep_scroll_state_pref_summary">Simpan posisi gulir di dalam laci</string>
+    <string name="pixel_search_layout">Tata letak pencarian Pixel</string>
+    <string name="pixel_search_layout_sum">Mungkin tidak tersedia pada beberapa perangkat</string>
+    <string name="default_launcher_title">Ubah peluncur default</string>
+    <string name="default_launcher_message">Tindakan ini akan mengubah peluncur default. Apakah anda yakin ingin melanjutkan?</string>
+
+    <!-- Icon pack -->
+    <string name="default_iconpack" translatable="false">Use system default</string>
+    <string name="default_iconpack_title">Gunakan default sistem</string>
+    <string name="icons_pack_name">Paket ikon</string>
+    <string name="edit_app">Sunting ikon</string>
+    <string name="all_icons">Semua ikon</string>
+    <string name="similar_icons">Ikon serupa</string>
+    <string name="ok">Oke</string>
+    <string name="icon_chooser">Pemilih ikon</string>
+    <string name="icon_search">Cari ikon</string>
+    <string name="use_background_from_iconpack">Gunakan latar belakang dari paket ikon</string>
+    <string name="alt_gen_iconpack">Pembentuk ikon alternatif</string>
+    <string name="custom_gen_iconpack">Icons generation options</string>
+    <string name="icon_pack_updated">Paket ikon yang sedang aktif saat ini telah diperbarui, ikon baru untuk aplikasi anda mungkin telah tersedia. Silakan buka Pengaturan dan terapkan ulang paket ikon.</string>
+    <string name="generate_adaptive_icons_title">Generate adaptive icon background</string>
+    <string name="generate_adaptive_icons_summary">Untuk aplikasi tanpa ikon adaptif</string>
+    <string name="generate_adaptive_background_title">Ekstrak warna dari ikon legacy</string>
+    <string name="generate_adaptive_background_summary">For generated adaptive icon backgrounds</string>
+    <string name="generate_random">Warna acak</string>
+    <string name="generate_random_brightness">Kecerahan maksimum warna acak</string>
+    <string name="background_color">Warna latar belakang</string>
+    <string name="custom_generate_new">Generate new icons</string>
+    <string name="custom_generate_new_one">Generate new icon</string>
+    <string name="reset_icon">Setel ulang ikon</string>
+    <string name="custom_generate_new_sum">Clear icon cache and generate new icons with selected options</string>
+    <string name="use_dynamic_icons">Ikon dinamis</string>
+    <string name="use_dynamic_clock">Ikon jam dinamis</string>
+    <string name="use_dynamic_calendar">Ikon kalender dinamis</string>
+    <string name="show_seconds">Tampilkan detik</string>
+    <string name="save_close">Simpan &amp; tutup</string>
+
+    <!-- Spring -->
+    <string name="springanim">Animasi pantulan</string>
+    <string name="springcoef">Level fleksibilitas pantulan</string>
+    <string name="use_spring_sum">Di dalam laci aplikasi</string>
+
+    <!-- Favorite app -->
+    <string name="favorite_assigned">Aplikasi favorit ditetapkan</string>
+    <string name="make_favorite">Jadikan favorit</string>
+    <string name="favorite_not_found">Aplikasi favorit tidak ditemukan</string>
+    <string name="launch_favorite_app_title">Buka aplikasi favorit</string>
+    <string name="launch_favorite_app_summary">Saat menggeser ke bawah dengan dua jari</string>
+    <string name="bage_size">Ukuran lencana</string>
+
+    <!-- Telegram -->
+
+    <!-- Backup -->
+    <string name="backup_and_restore_pref_title">Cadangan &amp; Pemulihan</string>
+    <string name="backup_and_restore_pref_sum">Mencadangkan &amp; memulihkan pengaturan &amp; basis data anda</string>
+    <string name="backup_pref_title">Cadangkan</string>
+    <string name="restore_pref_title">Pulihkan</string>
+    <string name="restore_settings_title">Pulihkan pengaturan</string>
+    <string name="restore_icons_title">Pulihkan basis data ikon</string>
+    <string name="restore_layout_title">Pulihkan tata letak layar Beranda</string>
+    <string name="settings_export_success">Pengaturan berhasil dicadangkan</string>
+    <string name="settings_import_success">Pengaturan berhasil dipulihkan</string>
+    <string name="icon_import_success">Basis data ikon berhasil dipulihkan</string>
+    <string name="layout_import_success">Tata letak layar Beranda berhasil dipulihkan</string>
+    <string name="export_error">Tidak bisa mencadangkan</string>
+    <string name="import_error">Tidak bisa memulihkan</string>
+    <string name="permission_ok">Izin diberikan</string>
+    <string name="permission_not_ok">Izin ditolak</string>
+    <string name="permission_sum">Akses ke penyimpanan internal</string>
+    <string name="backup_slot">Slot cadangan</string>
+    <string name="backup_perm">Perizinan</string>
+    <string name="backup_not_found">Cadangan tidak ditemukan!</string>
+    <string name="backup_date">Tanggal cadangan dibuat</string>
+    <string name="backup_location_message">Lokasi cadangan tidak bisa diubah</string>
+    <string name="backup_location_note">Lokasi cadangan</string>
+    <string name="backup_location_sum">Penyimpanan internal\\Documents\\CPL\\</string>
+    <string name="perform_backup">Jalankan pencadangan?</string>
+    <string name="perform_restore">Jalankan pemulihan?</string>
+    <string name="current">Saat ini:</string>
+    <string name="empty">Kosong</string>
+    <string name="delete_mode">Hapus cadangan</string>
+    <string name="delete_selected">Hapus yang dipilih</string>
+    <string name="delete_success">Cadangan dihapus</string>
+    <string name="empty_slot">Slot cadangan saat ini kosong</string>
+
+    <!-- Donation -->
+    <string name="donation_title">Donasi ke pengembang</string>
+    <string name="donation_sum">CPL gratis dan tanpa iklan. Jika anda suka CPL dan ingin mendukung proses pengembangan, anda bisa donasi dengan cara membeli aplikasi donasi saya, atau melalui PayPal.</string>
+    <string name="donation_thanks">Fitur tambahan telah aktif</string>
+
+
+    <!-- Misc -->
+    <string name="attention">Perhatian!</string>
+    <string name="action_canceled">Tindakan dibatalkan oleh pengguna</string>
+    <string name="debug">Awakutu</string>
+    <string name="clean_all_settings_title">Setel ulang ke default</string>
+    <string name="clean_all_settings_sum">Menyetel ulang pengaturan CPL ke default</string>
+    <string name="clean_all_settings">Setel ulang semua pengaturan ke nilai default?</string>
+    <string name="debug_sum">Mulai atau setel ulang pengaturan</string>
+    <string name="debug_recreate">Soft restart</string>
+    <string name="xda_tread">Thread di XDA</string>
+    <string name="chetyrepda_tread">Thread di 4PDA</string>
+    <string name="allow_two_line_labels_title">Izinkan label dua baris</string>
+
+    <!-- Popup More Options -->
+    <string name="additional_options">Opsi tambahan</string>
+    <string name="more">Lainnya</string>
+    <string name="find_in_store">Temukan di Play Store</string>
+    <string name="share">Bagikan</string>
+
+    <string name="drawer_buttons">Tombol di dalam bilah pencarian</string>
+    <string name="drawer_buttons_select">Tombol</string>
+    <string name="drawer_button_settings">Pengaturan CPL</string>
+    <string name="drawer_button_settings_sum">Tekan lama - pengaturan sistem</string>
+    <string name="drawer_button_market">Play Store</string>
+    <string name="drawer_button_visibility">Visibilitas aplikasi tersembunyi</string>
+    <string name="drawer_button_visibility_sum">Tekan lama - menu aplikasi tersembunyi</string>
+    <string name="drawer_button_mic">Mikrofon</string>
+
+    <string name="qsb_text">Teks di dalam bilah pencarian</string>
+    <string name="qsb_text_sans">Gunakan fon Google Sans untuk teks</string>
+    <string name="qsb_center_text">Teks rata tengah</string>
+    <string name="say_ok_google">Katakan “OKE Google”</string>
+
+    <string name="extra_bottom_padding_title">Ekstra padding bawah untuk bilah pencarian</string>
+    <string name="extra_bottom_padding_summary">Aktifkan jika ikon terlalu dekat dengan bilah pencarian bawah</string>
+    <string name="more_info">Informasi lainnya</string>
+    <string name="dock_opacity">Opasitas dok</string>
+    <string name="drawer_opacity">Opasitas laci</string>
+    <string name="folder_opacity">Opasitas latar belakang folder</string>
+
+    <string name="default_color">Warna default</string>
+    <string name="arrow_and_line_color">Warna caret dan indikator halaman</string>
+    <string name="folder_prewiew_color">Pratinjau warna</string>
+    <string name="folder_background_color">Warna latar belakang</string>
+    <string name="transparent_nav_bar">Bilah navigasi transparan</string>
+    <string name="white_status_bar_icons">Ikon bilah status putih</string>
+    <string name="text_divider">Pemisah teks</string>
+    <string name="disable_dock">Nonaktifkan dok</string>
+    <string name="accent_drawer">Warna aksen</string>
+    <string name="accent_color_sum">Warna popup gulir cepat, tombol dan bilah pencarian bawaan</string>
+    <string name="rounded_corners">Sudut membulat</string>
+    <string name="app_open_animation">Animasi buka aplikasi</string>
+    <string name="app_open_animation_sum">Saat membuka aplikasi baru dan kembali ke layar Beranda</string>
+    <string name="left_swipe">Geser ke Kiri</string>
+    <string name="right_swipe">Geser ke Kanan</string>
+    <string name="swipe_up">Geser ke Atas</string>
+    <string name="fade">Fade in</string>
+    <string name="zoom">Zum</string>
+    <string name="fall_down">Jatuh</string>
+    <string name="from_middle">Dari tengah</string>
+    <string name="transition_effect">Efek gulir</string>
+    <string name="zoom_in">Membesar</string>
+    <string name="zoom_out">Mengecil</string>
+    <string name="rotate_up">Rotasi ke atas</string>
+    <string name="rotate_down">Rotasi ke bawah</string>
+    <string name="cube_in">Kubus membesar</string>
+    <string name="cube_out">Kubus mengecil</string>
+    <string name="stack">Tumpukan</string>
+    <string name="accordion">Akordeon</string>
+    <string name="flip">Membalik</string>
+    <string name="spin">Berputar</string>
+    <string name="cylinder_in">Silinder membesar</string>
+    <string name="cylinder_out">Silinder mengecil</string>
+    <string name="overview">Tinjauan</string>
+    <string name="wallpaper_scroll_title">Gulir wallpaper</string>
+    <string name="def">Default</string>
+    <string name="default_home">Layar beranda default</string>
+    <string name="all_apps">Daftar aplikasi</string>
+    <string name="delete">Hapus</string>
+    <string name="lock">Kunci</string>
+    <string name="unlock">Buka kunci</string>
+    <string name="page_not_empty">Halaman ini tidak kosong. Item yang ada juga akan dibuang.</string>
+    <string name="pref_open_source_licenses_title">Lisensi sumber terbuka</string>
+    <string name="two_finger_up">Geser ke atas dua jari</string>
+    <string name="two_finger_down">Geser ke bawah dua jari</string>
+    <string name="action_nothing">Tidak ada</string>
+    <string name="action_quick_search">Pencarian cepat</string>
+    <string name="action_voice_search">Pencarian suara</string>
+    <string name="action_app_drawer">Buka laci aplikasi</string>
+    <string name="action_app_search">Buka pencarian aplikasi</string>
+    <string name="action_overview">Buka tinjauan</string>
+    <string name="action_lock">Kunci</string>
+    <string name="action_settings">Pengaturan perangkat</string>
+    <string name="action_default_screen">Ke layar default</string>
+    <string name="action_first_screen">Ke layar pertama</string>
+    <string name="action_last_screen">Ke layar terakhir</string>
+    <string name="gestures">Gestur</string>
+    <string name="gestures_sum">Ubahsuai gestur layar Beranda</string>
+    <string name="infinite_scroll">Gulir tak terbatas</string>
+    <string name="long_tap">Tekan lama</string>
+    <string name="home_button">Tombol beranda</string>
+    <string name="one_finger_down">Geser ke bawah satu jari</string>
+    <string name="one_finger_up">Geser ke atas satu jari</string>
+    <string name="action_notifications">Buka panel notifikasi</string>
+    <string name="action_notifications_with_settings">Buka panel notifikasi dengan pengaturan cepat</string>
+    <string name="lock_screen_method_1">Langsung sepenuhnya mengunci perangkat, membutuhkan PIN untuk membuka. Tidak memungkinkan membuka dengan sidik jadi</string>
+    <string name="lock_screen_method_2">"Tampilkan layar hitam selama 5 detik lalu matikan. Ini akan mengikuti pengaturan keamanan normal perangkat anda saat layar mati, memungkinkan untuk membuka menggunakan sidik jari"</string>
+    <string name="lock_screen_method_3">"Sama seperti menekan tombol power"</string>
+    <string name="parallax_scrolling">Reverse wallpaper scrolling</string>
+    <string name="elastic_scrolling">Gulir elastis</string>
+    <string name="elastic_scrolling_coeff">Koefisien gulir elastis</string>
+    <string name="gradient_dock">Gradasi dok</string>
+    <string name="search_bar">Bilah pencarian</string>
+    <string name="date_format_long">Panjang</string>
+    <string name="date_format_normal">Normal</string>
+    <string name="date_format_short">Pendek</string>
+    <string name="app_installing_progress">Tampilkan laju pemasangan aplikasi</string>
+    <string name="home_screen_notification_bar">Tampilkan bilah notifikasi</string>
+    <string name="not_set">Belum diatur</string>
+    <string name="hotseat_drag_indicator">Indikator seret</string>
+    <string name="dock_show_labels">Label ikon di dalam dok</string>
+    <string name="gallery">Galeri</string>
+    <string name="bridge_install">Pasang</string>
+    <string name="disable">Nonaktif</string>
+    <string name="style_1">Gaya 1</string>
+    <string name="style_2">Gaya 2</string>
+    <string name="show_dock_on_home_screen">Tampilkan dok pada layar Beranda</string>
+    <string name="hide_dock_from_home_screen">Sembunyikan dok dari layar Beranda</string>
+    <string name="scrolling">Menggulir</string>
+    <string name="warning_cpl_not_default">Tidak diatur sebagai default</string>
+    <string name="warning_cpl_not_default_sum">CPL tidak diatur sebagai peluncur default. Sentuh untuk mengaktifkan.</string>
+    <string name="resize_any_widget_sum">Izinkan mengubah ukuran widget yang secara bawaan tidak bisa diubah ukurannyna</string>
+    <string name="resize_any_widget_title">Ubah ukuran semua widget</string>
+    <string name="widgets_in_dock_sum">Izinkan menambahkan widget ke dok</string>
+    <string name="widgets_in_dock_title">Widget di dalam dok</string>
+    <string name="widget_padding_title">Padding widget</string>
+    <string name="vertical_only">Hanya vertikal</string>
+    <string name="horizontal_only">Hanya horizontal</string>
+    <string name="folder_animation">Animasi buka folder</string>
+    <string name="scale">Skala</string>
+    <string name="circle">Lingkaran</string>
+    <string name="hideapp">Sembunyikan dari laci Aplikasi</string>
+    <string name="clean_user_icons">Setel ulang ikon dan label alternatif ikon aplikasi pengguna?</string>
+    <string name="reset_user_icon">Setel ulang ikon pengguna</string>
+    <string name="morepack">Dapatkan lebih banyak ikon</string>
+    <string name="hidden_apps_tint">Corak abu-abu untuk aplikasi tersembunyi</string>
+    <string name="developer_mode">Mode pengembang</string>
+    <string name="restore_user_icons_title">Pulihkan basis data ikon pengguna</string>
+    <string name="getplugin">Dapatkan plugin Google Feed and Weather</string>
+    <string name="hidedonationbutton">Sembunyikan tombol</string>
+    <string name="buyapp">Beli Aplikasi Donasi</string>
+    <string name="shortcuts">Pintasan</string>
+    <string name="show_folder_name">Tampilkan nama folder</string>
+    <string name="folder_adaptive_icon">Ikon folder adaptif</string>
+    <string name="extract_shortcut_color">Warnai pintasan</string>
+    <string name="extract_shortcut_color_sum">Ekstrak warna pintasan dari ikon aplikasi</string>
+    <string name="add_translation">Tambah atau perbaiki terjemahan</string>
 </resources>
