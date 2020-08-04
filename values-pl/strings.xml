@@ -22,14 +22,14 @@
     <string name="app_name" msgid="649227358658669779">"Launcher3"</string>
     <string name="folder_name" msgid="7371454440695724752"></string>
     <string name="work_folder_name" msgid="3753320833950115786">"Praca"</string>
-    <string name="activity_not_found" msgid="8071924732094499514">"Aplikacja nie jest zainstalowana."</string>
+    <string name="activity_not_found" msgid="8071924732094499514">"Aplikacja nie jest zainstalowana"</string>
     <string name="activity_not_available" msgid="7456344436509528827">"Aplikacja niedostępna"</string>
     <string name="safemode_shortcut_error" msgid="9160126848219158407">"Pobrana aplikacja została wyłączona w trybie awaryjnym"</string>
-    <string name="safemode_widget_error" msgid="4863470563535682004">"Widżety są wyłączone w trybie bezpiecznym"</string>
+    <string name="safemode_widget_error" msgid="4863470563535682004">"W trybie awaryjnym widżety są wyłączone "</string>
     <string name="shortcut_not_available" msgid="2536503539825726397">"Skrót nie jest dostępny"</string>
     <string name="home_screen" msgid="806512411299847073">"Ekran główny"</string>
     <string name="custom_actions" msgid="3747508247759093328">"Działania niestandardowe"</string>
-    <string name="long_press_widget_to_add" msgid="7699152356777458215">"Aby dodać widżet, kliknij go i przytrzymaj."</string>
+    <string name="long_press_widget_to_add" msgid="7699152356777458215">"Aby dodać widżet, kliknij go i przytrzymaj"</string>
     <string name="long_accessible_way_to_add" msgid="4289502106628154155">"Kliknij dwukrotnie i przytrzymaj, by wybrać widżet lub użyć działań niestandardowych."</string>
     <string name="widget_dims_format" msgid="2370757736025621599">"%1$d × %2$d"</string>
     <string name="widget_accessible_dims_format" msgid="3640149169885301790">"Szerokość %1$d, wysokość %2$d"</string>
@@ -47,11 +47,11 @@
     <string name="remove_drop_target_label" msgid="7812859488053230776">"Usuń"</string>
     <string name="uninstall_drop_target_label" msgid="4722034217958379417">"Odinstaluj"</string>
     <string name="app_info_drop_target_label" msgid="692894985365717661">"O aplikacji"</string>
-    <string name="permlab_install_shortcut" msgid="5632423390354674437">"instalowanie skrótów"</string>
+    <string name="permlab_install_shortcut" msgid="5632423390354674437">"Instalowanie skrótów"</string>
     <string name="permdesc_install_shortcut" msgid="923466509822011139">"Pozwala aplikacji dodawać skróty bez interwencji użytkownika."</string>
     <string name="permlab_read_settings" msgid="1941457408239617576">"odczytywanie ustawień i skrótów na ekranie głównym"</string>
     <string name="permdesc_read_settings" msgid="5833423719057558387">"Pozwala aplikacji na odczytywanie ustawień i skrótów na ekranie głównym."</string>
-    <string name="permlab_write_settings" msgid="3574213698004620587">"zapisywanie ustawień i skrótów na ekranie głównym"</string>
+    <string name="permlab_write_settings" msgid="3574213698004620587">"Zapisywanie ustawień i skrótów na ekranie głównym"</string>
     <string name="permdesc_write_settings" msgid="5440712911516509985">"Umożliwia aplikacji zmianę ustawień i skrótów na ekranie głównym."</string>
     <string name="msg_no_phone_permission" msgid="9208659281529857371">"<xliff:g id="APP_NAME">%1$s</xliff:g> nie może wykonywać połączeń telefonicznych"</string>
     <string name="gadget_error_text" msgid="6081085226050792095">"Problem podczas ładowania widżetu"</string>
@@ -114,9 +114,9 @@
     <string name="create_folder_with" msgid="4050141361160214248">"Utwórz folder z: <xliff:g id="NAME">%1$s</xliff:g>"</string>
     <string name="folder_created" msgid="6409794597405184510">"Folder został utworzony"</string>
     <string name="action_move_to_workspace" msgid="1603837886334246317">"Przenieś na ekran główny"</string>
-    <string name="action_move_screen_left" msgid="8854216831569401665">"Przenieś ekran w lewo"</string>
-    <string name="action_move_screen_right" msgid="329334910274311123">"Przenieś ekran w prawo"</string>
-    <string name="screen_moved" msgid="266230079505650577">"Ekran został przeniesiony"</string>
+    <string name="action_move_screen_left" msgid="8854216831569401665">"Przesuń ekran w lewo"</string>
+    <string name="action_move_screen_right" msgid="329334910274311123">"Przesuń ekran w prawo"</string>
+    <string name="screen_moved" msgid="266230079505650577">"Ekran został przesunięty"</string>
     <string name="action_resize" msgid="1802976324781771067">"Zmień rozmiar"</string>
     <string name="action_increase_width" msgid="8773715375078513326">"Zwiększ szerokość"</string>
     <string name="action_increase_height" msgid="459390020612501122">"Zwiększ wysokość"</string>
@@ -132,7 +132,7 @@
     <string name="label_search">Wyszukiwanie</string>
     <string name="label_voice_search">Wyszukiwanie głosowe</string>
     <string name="pref_icon_pack">Pakiet ikon</string>
-    <string name="state_loading">Stosowanie…</string>
+    <string name="state_loading">Zastosowywanie…</string>
     <string name="smartspace_preferences_in_settings">W skrócie</string>
     <string name="smartspace_preferences_in_settings_desc">U góry ekranu głównego</string>
     <string name="title_show_google_app">Wyświetl: %1$s</string>
@@ -140,7 +140,7 @@
     <string name="about">Informacje</string>
     <string name="title_google_app">Aplikacja Google</string>
     <string name="title_app_suggestions">Wyświetl sugerowane aplikacje</string>
-    <string name="summary_app_suggestions">U góry listy Wszystkie aplikacje</string>
+    <string name="summary_app_suggestions">U góry listy wszystkich aplikacji</string>
     <string name="about_app_version">Wersja</string>
     <string name="title_disable_suggestions_prompt">Wyłączyć sugerowane aplikacje?</string>
     <string name="msg_disable_suggestions_prompt">Sugestie nie będą pojawiać się u góry listy Twoich aplikacji, a dane o użytkowaniu służące do ich utworzenia zostaną trwale usunięte.</string>
